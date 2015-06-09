@@ -3,36 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Julian Varanda UI &amp; UX Designer</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- animsition CSS -->
-    <link rel="stylesheet" href="./dist/css/animsition.min.css">
-    <!-- vendor js -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- animsition js -->
-    <script src="./dist/js/jquery.animsition.min.js"></script>
-    <script type="text-javascript">
+    <link rel="stylesheet" href="animsition/dist/css/animsition.min.css">
 
-    </script>
   </head>
   <body>
-    <div class="header row">
+    <div class="header row animsition">
       <div class="large-12 columns">
 
-        <section class="branding">
-          <h1>Julian Varanda</h1>
-          <h2>UX & UI Designer</h2>
-        </section>
+        <header class="branding">
+          <a href="#">
+            <h1>Julian Varanda</h1>
+            <h2>UX &amp; UI Designer</h2>
+          </a>
+        </header>
 
       </div>
     </div>
-    <div class="nav row animsition">
+    <div class="nav row animsition_2">
       <div class="large-12 columns">
 
-        <nav>
+        <nav class="">
           <ul>
-            <li><a class="animsition-link" href="#">portfolio</a></li>
+            <li><a class='portfolio_nav animsition-link' href="#">portfolio</a></li>
             <li><a href="#">about</a></li>
             <li><a href="#">contact</a></li>
           </ul>
@@ -41,29 +37,77 @@
       </div>
     </div>
 
-    <div class="portfolio row overlay">
+
+    <section class="about row">
+      <div class="large-12 medium-12 columns">
+          <h3 class="page_header">About</h3>
+          <img src="images/about.png" alt="Image of Julian Varanda"/>
+
+          <div class="text">
+            <p>Seattle native, born and bred, I am an interaction designer with a passion for creating thoughtful user experiences.</p>
+            <p>I subscribe to clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams.</p>
+
+            <h4 class="paragraph_header">What I know</h4>
+              <ul class="skills">
+                <li>UX &amp; user-centered design principles</li>
+                <li>Adobe Creative Cloud</li>
+                <li>Sketch</li>
+                <li>PC &amp; Mac</li>
+                <li>HTML5 / CSS3 / SASS</li>
+                <li>Light jQuery</li>
+              </ul>
+
+              <h4 class="paragraph_header">Experience</h4>
+              <ul class="experience">
+                <li>
+                  <h5 class="list_header">Bing</h5>
+                  <span>Interaction Designer</span>
+                  <p>04/2014 &ndash; Present </p>
+                  <p>Description</p>
+                </li>
+                <li>
+                  <h5 class="list_header">Windows Phone</h5>
+                  <span>Design Integrator</span>
+                  <p>09/2013 &ndash; 12/2014 </p>
+                  <p>Description</p>
+                </li>
+                <li>
+                  <h5 class="list_header">Bizango</h5>
+                  <span>Visual Designer / Front-end Developer</span>
+                  <p>04/2012 &ndash; 09/2013</p>
+                  <p>Description</p>
+                </li>
+
+              </ul>
+          </div>
+
+      </div>
+    </section>
+
+    <section class="portfolio row">
       <div class="large-12 columns">
 
-        <div>
-          <!-- <h3></h3> -->
-          <img src="http://lorempixel.com/output/technics-q-g-470-300-4.jpg" alt="" width=""/>
+        <h3 class="page_header">Portfolio</h3>
 
-        </div>
+        <ul class="portfolio_items">
+          <li class="portfolio_otp">
+
+            <div class="portfolio_overlay clearing-bg">
+              <div class="logo small-6 columns">
+                <img src="images/bing-logo.png" alt=""/>
+              </div>
+              <div class="label small-6 columns">
+                <h4>iOS app</h4>
+                <h5>UI / UX Design</h4>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+
 
       </div>
-    </div>
-
-
-
-    <div class="blog row">
-      <div class="large-12 medium-12 columns">
-        <article class="entry">
-          <h3>About Me</h3>
-          <p>Vestibulum iaculis sed nunc sit amet efficitur. Nam vulputate felis id tempor ultricies. Integer dapibus, odio efficitur efficitur vestibulum, tortor metus malesuada ex, id laoreet nunc sem at elit. Pellentesque semper nulla nisi.</p>
-          <p>Curabitur ultrices, dui eu eleifend hendrerit, lectus lacus malesuada odio, ut rhoncus lectus urna eget velit. Nam condimentum eu sem at accumsan. Duis lacinia turpis sed tortor faucibus pellentesque. Quisque erat nibh, elementum sollicitudin lectus at, dignissim commodo risus.</p>
-        </article>
-      </div>
-    </div>
+    </section>
 
     <!-- <div class="row">
       <div class="large-8 medium-8 columns">
@@ -187,6 +231,10 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+
+    <!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+    <!-- animsition js -->
+    <script src="animsition/dist/js/jquery.animsition.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="286px" height="72px" viewBox="0 0 286 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>branding_home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="branding_home" sketch:type="MSLayerGroup" transform="translate(0.000000, -13.000000)">
+            <text id="Julian-Varanda" filter="url(#filter-1)" sketch:type="MSTextLayer" font-family="DINPro" font-size="42.32" font-weight="bold" sketch:alignment="middle" fill="#4A4A4A">
+                <tspan x="0.3778" y="44">Julian Varanda</tspan>
+            </text>
+            <text id="UI-&amp;-UX-Design" sketch:type="MSTextLayer" font-family="DINPro" font-size="18.4" font-weight="normal" sketch:alignment="middle" fill="#4A4A4A">
+                <tspan x="82.1336" y="79.0543478">UI &amp; UX Design</tspan>
+            </text>
+            <path d="M9.85078125,72.0435632 L63.1513187,72.0435632" id="Path-3" stroke-opacity="0.603883605" stroke="#9B9B9B" sketch:type="MSShapeGroup"></path>
+            <path d="M224.210781,72.0435632 L277.511319,72.0435632" id="Path-3-Copy" stroke-opacity="0.603883605" stroke="#9B9B9B" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
