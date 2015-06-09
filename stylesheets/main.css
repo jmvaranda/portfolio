@@ -1,5 +1,5 @@
 /* Custom Styles - Portfolio */
-/* line 13, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 .overlay {
   position: fixed;
   top: 105%;
@@ -12,49 +12,49 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  /* line 28, ../scss/main.scss */
+  /* line 29, ../scss/main.scss */
   .row {
     text-align: center;
   }
 
-  /* line 28, ../scss/main.scss */
+  /* line 29, ../scss/main.scss */
   .text {
     text-align: left;
   }
 
-  /* line 30, ../scss/main.scss */
+  /* line 31, ../scss/main.scss */
   p, ul {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: #555555;
   }
 
-  /* line 36, ../scss/main.scss */
+  /* line 37, ../scss/main.scss */
   .page_header {
     font-size: 1.7rem;
     font-weight: 100;
     margin-bottom: 2rem;
   }
 
-  /* line 41, ../scss/main.scss */
+  /* line 42, ../scss/main.scss */
   .paragraph_header {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
   }
 
-  /* line 47, ../scss/main.scss */
+  /* line 48, ../scss/main.scss */
   .list_header {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: #111111;
     margin-bottom: 0;
   }
 
-  /* line 53, ../scss/main.scss */
+  /* line 54, ../scss/main.scss */
   .branding {
     text-align: center;
     margin-top: 10rem;
   }
-  /* line 56, ../scss/main.scss */
+  /* line 57, ../scss/main.scss */
   .branding a {
     display: block;
     margin: 0 auto;
@@ -64,54 +64,54 @@
     background-position: center center;
   }
 
-  /* line 66, ../scss/main.scss */
+  /* line 67, ../scss/main.scss */
   .nav {
     text-align: center;
     margin-top: 2rem;
   }
-  /* line 69, ../scss/main.scss */
+  /* line 70, ../scss/main.scss */
   .nav ul {
     list-style: none;
     margin: 0;
   }
-  /* line 72, ../scss/main.scss */
+  /* line 73, ../scss/main.scss */
   .nav ul li {
     line-height: 2.75rem;
   }
-  /* line 75, ../scss/main.scss */
+  /* line 76, ../scss/main.scss */
   .nav ul a {
     padding: 0.75rem;
   }
 }
-/* line 88, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 .about {
   margin-top: 10rem;
 }
-/* line 90, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
 .about img {
   margin-bottom: 2rem;
 }
-/* line 94, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 .about .skills, .about .experience {
   margin: 0 0 2rem 0;
 }
-/* line 99, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 .about .skills li {
   margin-left: 1.5rem;
   padding-left: .5rem;
 }
-/* line 106, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 .about .experience li {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
 }
 
-/* line 116, ../scss/main.scss */
+/* line 117, ../scss/main.scss */
 .portfolio .portfolio_items {
   margin: 0 auto;
 }
-/* line 118, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 .portfolio .portfolio_items li {
   position: relative;
   display: block;
@@ -119,22 +119,47 @@
   min-width: 290px;
   min-height: 280px;
 }
-/* line 126, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay {
   position: relative;
   top: 5rem;
   display: block;
   padding: .5rem;
   width: 100%;
-  height: 8rem;
+  min-height: 8rem;
+  vertical-align: middle;
   background-color: rgba(34, 34, 34, 0.8);
 }
-/* line 134, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay h4, .portfolio .portfolio_items .portfolio_overlay h5 {
+/* line 139, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .project_logo, .portfolio .portfolio_items .portfolio_overlay .project_label {
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
+  vertical-align: middle;
+}
+/* line 148, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .project_label {
+  clear: right;
+}
+/* line 150, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .project_label h4, .portfolio .portfolio_items .portfolio_overlay .project_label h5 {
+  font-size: 1.2rem;
   color: #ffffff;
+  letter-spacing: -0.025rem;
   text-align: left;
 }
-/* line 146, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .project_label h5 {
+  color: #cccccc;
+}
+/* line 160, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_otp {
-  background: url("../images/portfolio_otp.png") center center/5rem no-repeat;
+  background: url("../images/portfolio_otp.png") center center/100% no-repeat;
+}
+
+/* line 167, ../scss/main.scss */
+.footer {
+  margin-top: 5rem;
+  padding: 10rem 0;
+  background-color: #222222;
+  color: #ffffff;
 }
