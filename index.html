@@ -11,6 +11,8 @@
 
   </head>
   <body>
+
+
     <div class="header row animsition">
       <div class="large-12 columns">
 
@@ -23,7 +25,7 @@
 
       </div>
     </div>
-    <div class="nav row animsition_2">
+    <!-- <div class="nav row animsition_2">
       <div class="large-12 columns">
 
         <nav class="">
@@ -33,50 +35,59 @@
             <li><a href="#">contact</a></li>
           </ul>
         </nav>
-
       </div>
+    </div> -->
+
+
+    <div id="magellan" class="magellan-nav animsition_2" data-magellan-expedition="fixed">
+      <dl class="sub-nav">
+        <dd data-magellan-arrival="about"><a class="animsition-link" href="#about">about</a></dd>
+        <dd data-magellan-arrival="portfolio"><a href="#portfolio">portfolio</a></dd>
+        <dd data-magellan-arrival="contact"><a href="#contact">contact</a></dd>
+      </dl>
     </div>
 
 
-    <section class="about row">
+    <section class="about row" data-magellan-destination="about">
+      <a name="about"></a>
       <div class="large-12 medium-12 columns">
-          <h3 class="page_header">About</h3>
+          <h2>About</h2>
           <img src="images/about.png" alt="Image of Julian Varanda"/>
 
           <div class="text">
             <p>Seattle native, born and bred, I am an interaction designer with a passion for creating thoughtful user experiences.</p>
             <p>I subscribe to clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams.</p>
 
-            <h4 class="paragraph_header">What I know</h4>
+            <h3 class="subheader">What I know</h3>
               <ul class="skills">
-                <li>UX &amp; user-centered design principles</li>
+                <li>UX &amp; User-centered design principles</li>
                 <li>Adobe Creative Cloud</li>
                 <li>Sketch</li>
-                <li>PC &amp; Mac</li>
+                <li>PC &amp; Mac fluent</li>
                 <li>HTML5 / CSS3 / SASS</li>
                 <li>Light jQuery</li>
                 <li>Git</li>
               </ul>
 
-              <h4 class="paragraph_header">Experience</h4>
+                <h3 class="subheader">Experience</h3>
               <ul class="experience">
                 <li>
-                  <h5 class="list_header">Bing</h5>
-                  <span>Interaction Designer</span>
-                  <p>04/2014 &ndash; Present </p>
-                  <p>Description</p>
+                  <p><strong>Bing</strong></p>
+                  <p>Interaction Designer <br/>
+                    04/2014 &ndash; Present</p>
+                  <p>Aliquam nec massa sit amet risus volutpat hendrerit. Morbi mi augue, consequat in nunc vel, viverra rutrum mauris. Curabitur consequat sapien a varius mollis. Etiam volutpat risus a lorem facilisis aliquet. Cras porta quam fermentum, rhoncus </p>
                 </li>
                 <li>
-                  <h5 class="list_header">Windows Phone</h5>
-                  <span>Design Integrator</span>
-                  <p>09/2013 &ndash; 12/2014 </p>
-                  <p>Description</p>
+                  <p><strong>Windows Phone</strong></p>
+                  <p>Design Integrator <br/>
+                  09/2013 &ndash; 12/2014 </p>
+                  <p>Proin sodales ullamcorper enim ac porta. Donec malesuada fringilla neque, vitae accumsan nisl tincidunt vel. Nulla facilisi. Sed ultricies ultricies mi sit amet euismod. Integer quis ante est. Nulla lacinia, neque eu volutpat pellentesque, arcu urna fringilla urna</p>
                 </li>
                 <li>
-                  <h5 class="list_header">Bizango</h5>
-                  <span>Visual Designer / Front-end Developer</span>
-                  <p>04/2012 &ndash; 09/2013</p>
-                  <p>Description</p>
+                  <p><strong>Bizango</strong></p>
+                  <p>Visual Designer / Front-end Developer <br/>
+                  04/2012 &ndash; 09/2013</p>
+                  <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
                 </li>
 
               </ul>
@@ -85,15 +96,16 @@
       </div>
     </section>
 
-    <section class="portfolio row">
-      <div class="large-12 columns">
+    <section class="portfolio row" data-magellan-destination="portfolio">
+      <a name="portfolio"></a>
+      <div class="">
 
-        <h3 class="page_header">Portfolio</h3>
-
+        <h2>Portfolio</h2>
+        <!-- Portfolio Items -->
         <ul class="portfolio_items">
-          <li class="portfolio_otp">
 
-            <div class="portfolio_overlay">
+          <li class="portfolio_otp">
+            <a href="#" class="portfolio_overlay">
               <div class="project_logo small-6 columns">
                 <img src="images/bing-logo.png" alt=""/>
               </div>
@@ -101,13 +113,55 @@
                 <h4>iOS app</h4>
                 <h5>UI / UX Design</h4>
               </div>
-            </div>
-
+            </a>
           </li>
-        </ul>
 
+          <li class="portfolio_qf">
+            <a href="#" class="portfolio_overlay">
+              <div class="project_logo small-6 columns">
+                <img src="images/bing-logo.png" alt=""/>
+              </div>
+              <div class="project_label small-6 columns">
+                <h4>Query formulation</h4>
+                <h5>UI / UX Design</h4>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_music_answer">
+            <a href="#" class="portfolio_overlay">
+              <div class="project_logo small-6 columns">
+                <img src="images/bing-logo.png" alt=""/>
+              </div>
+              <div class="project_label small-6 columns">
+                <h4>Mobile music answer</h4>
+                <h5>UI / UX Design</h4>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_immortal_palm">
+            <a href="#" class="portfolio_overlay">
+              <div class="project_logo small-6 columns">
+                <img src="images/bing-logo.png" alt=""/>
+              </div>
+              <div class="project_label small-6 columns">
+                <h4>Immortal Palm Martial Arts</h4>
+                <h5>UI &amp; UX Design / Front-End</h4>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+        <!-- Portfolio Items END -->
 
       </div>
+    </section>
+
+    <section class="contact row" data-magellan-destination="contact">
+        <a name="contact"></a>
+        <div class="large-12 columns">
+        </div>
     </section>
 
     <section class="footer row">

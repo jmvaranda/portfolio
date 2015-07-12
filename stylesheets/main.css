@@ -1,165 +1,83 @@
-/* Custom Styles - Portfolio */
-/* line 14, ../scss/main.scss */
-.overlay {
-  position: fixed;
-  top: 105%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.98);
-  backface-visibility: hidden;
-  z-index: 4;
-}
+/*
+Error: Undefined variable: "$oil".
+        on line 85 of C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss
 
-@media (min-width: 320px) and (max-width: 480px) {
-  /* line 29, ../scss/main.scss */
-  .row {
-    text-align: center;
-  }
+80:   .magellan-nav {
+81:     right: 0;
+82:   }
+83:   /* Fixed magellan nav styles, override default styles *\/
+84:   #magellan.fixed {
+85:     background-color: $oil;
+86:     @include single-transition;
+87:     opacity:.95 !important;
+88: 
+89:     dd.active a {background-color: $black;}
+90:   }
 
-  /* line 29, ../scss/main.scss */
-  .text {
-    text-align: left;
-  }
-
-  /* line 31, ../scss/main.scss */
-  p, ul {
-    font-size: 1.2rem;
-    color: #555555;
-  }
-
-  /* line 37, ../scss/main.scss */
-  .page_header {
-    font-size: 1.7rem;
-    font-weight: 100;
-    margin-bottom: 2rem;
-  }
-
-  /* line 42, ../scss/main.scss */
-  .paragraph_header {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-
-  /* line 48, ../scss/main.scss */
-  .list_header {
-    font-size: 1.2rem;
-    color: #111111;
-    margin-bottom: 0;
-  }
-
-  /* line 54, ../scss/main.scss */
-  .branding {
-    text-align: center;
-    margin-top: 10rem;
-  }
-  /* line 57, ../scss/main.scss */
-  .branding a {
-    display: block;
-    margin: 0 auto;
-    text-indent: -99999px;
-    background-image: url("../images/branding_home.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-  /* line 67, ../scss/main.scss */
-  .nav {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  /* line 70, ../scss/main.scss */
-  .nav ul {
-    list-style: none;
-    margin: 0;
-  }
-  /* line 73, ../scss/main.scss */
-  .nav ul li {
-    line-height: 2.75rem;
-  }
-  /* line 76, ../scss/main.scss */
-  .nav ul a {
-    padding: 0.75rem;
-  }
-}
-/* line 89, ../scss/main.scss */
-.about {
-  margin-top: 10rem;
-}
-/* line 91, ../scss/main.scss */
-.about img {
-  margin-bottom: 2rem;
-}
-/* line 95, ../scss/main.scss */
-.about .skills, .about .experience {
-  margin: 0 0 2rem 0;
-}
-/* line 100, ../scss/main.scss */
-.about .skills li {
-  margin-left: 1.5rem;
-  padding-left: .5rem;
-}
-/* line 107, ../scss/main.scss */
-.about .experience li {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 1.5rem;
-}
-
-/* line 117, ../scss/main.scss */
-.portfolio .portfolio_items {
-  margin: 0 auto;
-}
-/* line 119, ../scss/main.scss */
-.portfolio .portfolio_items li {
-  position: relative;
-  display: block;
-  list-style: none;
-  min-width: 290px;
-  min-height: 280px;
-}
-/* line 127, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay {
-  position: relative;
-  top: 5rem;
-  display: block;
-  padding: .5rem;
-  width: 100%;
-  min-height: 8rem;
-  vertical-align: middle;
-  background-color: rgba(34, 34, 34, 0.8);
-}
-/* line 139, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_logo, .portfolio .portfolio_items .portfolio_overlay .project_label {
-  padding-top: 1.75rem;
-  padding-bottom: 2rem;
-  vertical-align: middle;
-}
-/* line 148, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label {
-  clear: right;
-}
-/* line 150, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label h4, .portfolio .portfolio_items .portfolio_overlay .project_label h5 {
-  font-size: 1.2rem;
-  color: #ffffff;
-  letter-spacing: -0.025rem;
-  text-align: left;
-}
-/* line 156, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label h5 {
-  color: #cccccc;
-}
-/* line 160, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_otp {
-  background: url("../images/portfolio_otp.png") center center/100% no-repeat;
-}
-
-/* line 167, ../scss/main.scss */
-.footer {
-  margin-top: 5rem;
-  padding: 10rem 0;
-  background-color: #222222;
-  color: #ffffff;
-}
+Backtrace:
+C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss:85
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:512:in `visit_media'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$oil\".\A         on line 85 of C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss\A \A 80:   .magellan-nav {\A 81:     right: 0;\A 82:   }\A 83:   /* Fixed magellan nav styles, override default styles */\A 84:   #magellan.fixed {\A 85:     background-color: $oil;\A 86:     @include single-transition;\A 87:     opacity:.95 !important;\A 88: \A 89:     dd.active a {background-color: $black;}\A 90:   }"; }

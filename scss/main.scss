@@ -7,9 +7,13 @@ $lightgray: #cccccc;
 
 $padding: .75rem;
 $spacer: 2rem;
-$smallspacer: 1.5rem;
+$smallspacer: 2.5rem;
 
 $bodytext: 1.2rem;
+
+$rem-base: 14px;
+
+
 
 .overlay {
   position: fixed;
@@ -28,28 +32,30 @@ $bodytext: 1.2rem;
 
   .row {text-align: center;} .text { text-align: left;}
 
+
+
   p, ul {
-    font-size: $bodytext;
-    color:$primary;
+    //font-size: $bodytext;
+    //color:$primary;
   }
 
 
-  .page_header {
-    font-size:1.7rem;
-    font-weight:100;
-    margin-bottom: $spacer;
-  }
-  .paragraph_header {
-    font-size:$bodytext;
-    font-weight:bold;
-    margin-bottom: 1.5rem;
-  }
-
-  .list_header {
-    font-size:$bodytext;
-    color:$emphasis;
-    margin-bottom:0;
-    }
+  // .page_header {
+  //   font-size:1.7rem;
+  //   font-weight:100;
+  //   margin-bottom: $spacer;
+  // }
+  // .paragraph_header {
+  //   font-size:$bodytext;
+  //   font-weight:bold;
+  //   margin-bottom: 1.5rem;
+  // }
+  //
+  // .list_header {
+  //   font-size:$bodytext;
+  //   color:$emphasis;
+  //   margin-bottom:0;
+  //   }
 
   .branding {
     text-align:center;
@@ -63,6 +69,27 @@ $bodytext: 1.2rem;
       background-position: center center;
     }
   }
+
+  /* This centers magellan nav */
+  .sub-nav {
+    margin: 0 auto !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .magellan-nav {
+    right: 0;
+  }
+  /* Fixed magellan nav styles, override default styles */
+  #magellan.fixed {
+    background-color: $oil;
+    @include single-transition;
+    opacity:.95 !important;
+
+    dd.active a {background-color: $black;}
+  }
+
+
 
   .nav {
     text-align:center;
@@ -108,7 +135,11 @@ $bodytext: 1.2rem;
         list-style: none;
         padding: 0;
         margin-bottom:$smallspacer;
+        p:first-child {
+          margin-bottom: 0;
+        }
       }
+
     }
 
   }
@@ -122,6 +153,7 @@ $bodytext: 1.2rem;
           list-style: none;
           min-width: 290px;
           min-height: 280px;
+          margin-bottom:2rem;
         }
 
         .portfolio_overlay {
@@ -130,16 +162,18 @@ $bodytext: 1.2rem;
           display: block;
           padding: .5rem;
           width: 100%;
-          min-height: 8rem;
+          min-height: 9rem;
           vertical-align:middle;
-          background-color: rgba(#222222, 0.8);
+          background-color: rgba($oil, 0.8);
             h4, h5 {
 
             }
             .project_logo, .project_label {
-              padding-top: 1.75rem;
-              padding-bottom: 2rem;
-              vertical-align:middle;
+              //padding-top: 1.75rem;
+              position: relative;
+              top: 2rem;
+              transform: translateY(-20%);
+
             }
 
             .project_logo {
@@ -148,7 +182,7 @@ $bodytext: 1.2rem;
             .project_label {
               clear: right;
               h4, h5 {
-                font-size:$bodytext;
+                //font-size:$paragraph-font-size;
                 color: $white;
                 letter-spacing: -0.025rem;
                 text-align: left;
@@ -160,6 +194,12 @@ $bodytext: 1.2rem;
         .portfolio_otp {
           background: url('../images/portfolio_otp.png') center center / 100% no-repeat;
           }
+        .portfolio_qf {
+          background: url('../images/portfolio_qf.png') center center / 100% no-repeat;
+          }
+        .portfolio_music_answer {
+            background: url('../images/portfolio_music_answer.png') center center / 100% no-repeat;
+            }
       }
 
   }
