@@ -86,3 +86,16 @@ $(document).foundation();
         alert('success');
       });
     });
+
+    /* END Contact form */
+
+
+/* Slide reveal */
+
+  $('#slider').slideReveal({
+    trigger: $("#trigger"),
+    position: "right",
+    autoEscape: false,
+    width: 100,
+    speed: 700
+  });
