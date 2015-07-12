@@ -38,10 +38,13 @@
       </div>
     </div> -->
 
-
+    <!--
+      Bug:
+      class="animsition-link" adding fade-out class to header
+     -->
     <div id="magellan" class="magellan-nav animsition_2" data-magellan-expedition="fixed">
       <dl class="sub-nav">
-        <dd data-magellan-arrival="about"><a class="animsition-link" href="#about">about</a></dd>
+        <dd data-magellan-arrival="about"><a href="#about">about</a></dd>
         <dd data-magellan-arrival="portfolio"><a href="#portfolio">portfolio</a></dd>
         <dd data-magellan-arrival="contact"><a href="#contact">contact</a></dd>
       </dl>
@@ -56,7 +59,8 @@
 
           <div class="text">
             <p>Seattle native, born and bred, I am an interaction designer with a passion for creating thoughtful user experiences.</p>
-            <p>I subscribe to clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams.</p>
+            <p>I subscribe to clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences.</p>
+            <p class="subheader">When I'm not working, some of my other passions include: music composition and audio production or geeking out and playing futbol.</p>
 
             <h3 class="subheader">What I know</h3>
               <ul class="skills">
@@ -134,7 +138,7 @@
                 <img src="images/bing-logo.png" alt=""/>
               </div>
               <div class="project_label small-6 columns">
-                <h4>Mobile music answer</h4>
+                <h4>Mobile <br> music answer</h4>
                 <h5>UI / UX Design</h4>
               </div>
             </a>
@@ -146,7 +150,7 @@
                 <img src="images/bing-logo.png" alt=""/>
               </div>
               <div class="project_label small-6 columns">
-                <h4>Immortal Palm Martial Arts</h4>
+                <h4>Immortal Palm <br> Martial Arts</h4>
                 <h5>UI &amp; UX Design / Front-End</h4>
               </div>
             </a>
@@ -160,8 +164,68 @@
 
     <section class="contact row" data-magellan-destination="contact">
         <a name="contact"></a>
+
         <div class="large-12 columns">
-        </div>
+          <h2>Get in touch!</h2>
+          <p class="text">Drop a line here and I will get in contact with you as soon as I am available.
+          <!-- Contact form -->
+          <form id="contactForm" class="text">
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Name:
+                  <input type="text" placeholder="What's your name?" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+                <label>Subject:
+                  <input type="text" placeholder="What's this about?" />
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <div class="row collapse">
+                  <label>Email:</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="How do I get in touch with you?" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Message:
+                  <textarea placeholder="Drop a line"></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>What's your spirit animal:
+                  <select placeholder="Drop a line here">
+                    <option value="null">-</option>
+                    <option value="wolf">Wolf</option>
+                    <option value="tiger">Tiger</option>
+                    <option value="unicorn">Unicorn</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <input style="text-align:left;" class="button" type="submit" id="submitButton"  name="submitButton" value="Submit">
+              </div>
+            </div>
+
+          </form>
+      </div>
+
     </section>
 
     <section class="footer row">

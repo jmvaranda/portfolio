@@ -30,7 +30,8 @@ $rem-base: 14px;
 
   // All mobile elements are centered except text
 
-  .row {text-align: center;} .text { text-align: left;}
+  .text, .contact .row, .row label, .row input.button {text-align:left;}
+  .row {text-align: center;}
 
 
 
@@ -119,7 +120,7 @@ $rem-base: 14px;
       margin-bottom: $spacer;
     }
 
-    .skills, .experience {
+    p.subheader, .skills, .experience {
       margin:0 0 $spacer 0;
     }
 
