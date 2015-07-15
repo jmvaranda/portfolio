@@ -1,11 +1,18 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
+
+// init Foundation
 $(document).foundation();
 
+//After DOM loads, remove nojs class to prevent flickering
+$(document).ready(function() {
+    setTimeout(function() {
+         $('.slider_overlay').removeClass('nojs');
+    }, 2000);
+});
 
-
+  //On load set animations for header and nav
   $(".animsition").animsition({
-
     inClass               :   'fade-in-up',
     inDuration            :    1500,
     loadingParentElement  :   'body', //animsition wrapper element
@@ -16,7 +23,6 @@ $(document).foundation();
                             ]
   });
   $(".animsition_2").animsition({
-
     inClass               :   'fade-in-up',
     inDuration            :    1600,
     loadingParentElement  :   'body', //animsition wrapper element
@@ -26,46 +32,6 @@ $(document).foundation();
                               '-o-animation-duration'
                             ]
   });
-
-  //Hide portfolio
-  //$('.portfolio').hide();
-
-  //On portfolio nav item click
-  $('.portfolio_nav').click(function() {
-    // TEST make link red
-    //$(this).css('color','red');
-
-    //Show Portfolio Overlay
-    $('.portfolio').animsition({
-
-    inClass               :   'overlay-slide-in-top',
-    outClass              :   'overlay-slide-out-top',
-    inDuration            :    1500,
-    outDuration           :    800,
-    linkElement           :   '.animsition-link',
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-
-    overlay               :   true,
-    //overlayClass          :   'animsition-overlay-slide',
-    overlayParentElement  :   'body'
-  });
-
-  });
-
-
-
- //Execute animsition function
-
-
  /* Contact form */
 
     /* attach a submit handler to the form */
@@ -89,13 +55,23 @@ $(document).foundation();
 
     /* END Contact form */
 
+// Slide reveal
+  //Slider item 1
+  $('#slider_otp').slideReveal({
+    trigger: $('.trigger_otp'),
+    position: 'right',
+    //on slider show, hide magellan nav
+    shown: function(slider, trigger){
+      $('#magellan.fixed').addClass('hide');
+    },
+    //on slider close, show magellan nav
+    hide: function(slider, trigger){
+      $('#magellan.fixed').removeClass('hide');
+    }
+  });
 
-/* Slide reveal */
-
-  $('#slider').slideReveal({
-    trigger: $("#trigger"),
-    position: "right",
-    autoEscape: false,
-    width: 100,
-    speed: 700
+  //Slider item 2
+  $('#slider_qf').slideReveal({
+    trigger: $('.trigger_qf'),
+    position: 'right',
   });

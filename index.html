@@ -11,6 +11,10 @@
   </head>
   <body>
 
+      <script>
+        //prevent flickering
+          document.body.className += ' js';
+      </script>
 
     <div class="header row animsition">
       <div class="large-12 columns">
@@ -24,22 +28,6 @@
 
       </div>
     </div>
-
-    <div id='slider'>Hello World!!</div>
-    <button id='trigger'>Trigger</button>
-
-    <!-- <div class="nav row animsition_2">
-      <div class="large-12 columns">
-
-        <nav class="">
-          <ul>
-            <li><a class='portfolio_nav animsition-link' href="#">portfolio</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div> -->
 
     <!--
       Bug:
@@ -61,9 +49,9 @@
           <img src="images/about.png" alt="Image of Julian Varanda"/>
 
           <div class="text">
-            <p>Seattle native, born and bred, I am an interaction designer with a passion for creating thoughtful user experiences.</p>
+            <p class="emphasis">Seattle&ndash;native, born and bred. I am an interaction designer with a passion for creating thoughtful user experiences.</p>
             <p>I subscribe to clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences.</p>
-            <p class="subheader">When I'm not working, some of my other passions include: music composition and audio production or geeking out and playing futbol.</p>
+            <p class="smallspacer">When I'm not working, some other passions of mine include: music composition and audio production or geeking out and playing futbol.</p>
 
             <h3 class="subheader">What I know</h3>
               <ul class="skills">
@@ -92,7 +80,7 @@
                 </li>
                 <li>
                   <p><strong>Bizango</strong></p>
-                  <p>Visual Designer / Front-end Developer <br/>
+                  <p>Visual Designer &amp; Front-end Developer <br/>
                   04/2012 &ndash; 09/2013</p>
                   <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
                 </li>
@@ -105,14 +93,28 @@
 
     <section class="portfolio row" data-magellan-destination="portfolio">
       <a name="portfolio"></a>
-      <div class="">
 
         <h2>Portfolio</h2>
         <!-- Portfolio Items -->
+
         <ul class="portfolio_items">
 
-          <li class="portfolio_otp">
-            <a href="#" class="portfolio_overlay">
+          <!-- Slider hidden content -->
+          <section id="slider_otp" class="slider_overlay large-12 medium-12 columns nojs">
+            <div class="text">
+              <h2>Off the post</h2>
+              <!-- <p class="emphasis">Cool subheader here</p> -->
+              <!-- <p>Gluten-free keytar cornhole swag Portland selvage. Gentrify Shoreditch try-hard deep v, bitters meggings lomo brunch tilde craft beer. Butcher brunch next level scenester squid, irony meditation pop-up.</p> -->
+              <ul class="clearing-thumbs clearing-feature" data-clearing>
+                <li class="clearing-featured-img th"><a href="images\portfolio_01.jpg"><img src="images\portfolio_01.jpg"></a></li>
+                <li class="th"><a href="images\portfolio_02.jpg"><img class="hide" src="images\portfolio_02.jpg"></a></li>
+              </ul>
+              <input class="button trigger_otp" value="Close">
+            </div>
+          </section>
+
+          <li class="portfolio_otp trigger_otp">
+            <a class="portfolio_overlay">
               <div class="project_logo small-6 columns">
                 <img src="images/bing-logo.png" alt=""/>
               </div>
@@ -123,8 +125,11 @@
             </a>
           </li>
 
-          <li class="portfolio_qf">
-            <a href="#" class="portfolio_overlay">
+
+          <!-- <section id="slider_qf">Query formulation slider content</section> -->
+
+          <li class="portfolio_qf trigger_qf">
+            <a class="portfolio_overlay">
               <div class="project_logo small-6 columns">
                 <img src="images/bing-logo.png" alt=""/>
               </div>
@@ -136,7 +141,7 @@
           </li>
 
           <li class="portfolio_music_answer">
-            <a href="#" class="portfolio_overlay">
+            <a class="portfolio_overlay">
               <div class="project_logo small-6 columns">
                 <img src="images/bing-logo.png" alt=""/>
               </div>
@@ -148,7 +153,7 @@
           </li>
 
           <li class="portfolio_immortal_palm">
-            <a href="#" class="portfolio_overlay">
+            <a class="portfolio_overlay">
               <div class="project_logo small-6 columns">
                 <img src="images/bing-logo.png" alt=""/>
               </div>
@@ -162,7 +167,8 @@
         </ul>
         <!-- Portfolio Items END -->
 
-      </div>
+
+
     </section>
 
     <section class="contact row" data-magellan-destination="contact">
@@ -215,6 +221,7 @@
                     <option value="wolf">Wolf</option>
                     <option value="tiger">Tiger</option>
                     <option value="unicorn">Unicorn</option>
+                    <option value="unicorn">Still figuring that out</option>
                   </select>
                 </label>
               </div>
@@ -222,7 +229,7 @@
 
             <div class="row">
               <div class="large-12 columns">
-                <input style="text-align:left;" class="button" type="submit" id="submitButton"  name="submitButton" value="Submit">
+                <input class="button" type="submit" id="submitButton"  name="submitButton" value="Submit">
               </div>
             </div>
 
@@ -237,11 +244,13 @@
       </div>
     </section>
 
+    <!-- Load resources -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/slidereveal/dist/jquery.slidereveal.min.js"></script>
+    <script src="bower_components/slidereveal/src/slidereveal.js"></script>
     <script src="animsition/dist/js/jquery.animsition.min.js"></script>
     <script src="js/app.js"></script>
+
   </body>
 </html>

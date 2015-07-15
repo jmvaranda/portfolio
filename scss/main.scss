@@ -2,8 +2,12 @@
 
 $primary: #555555;
 $emphasis: #111111;
+
 $white: #ffffff;
-$lightgray: #cccccc;
+$offwhite: #f2f2f2;
+
+$lightgray: #aaaaaa;
+
 
 $padding: .75rem;
 $spacer: 2rem;
@@ -26,6 +30,10 @@ $rem-base: 14px;
   z-index: 4;
 }
 
+// Prevent flickering
+body.js .nojs { display: none; }
+
+
 @media (min-width: 320px) and (max-width: 480px) {
 
   // All mobile elements are centered except text
@@ -33,30 +41,26 @@ $rem-base: 14px;
   .text, .contact .row, .row label, .row input.button {text-align:left;}
   .row {text-align: center;}
 
-
-
-  p, ul {
-    //font-size: $bodytext;
-    //color:$primary;
+// Adjustments
+  h3.subheader {
+    color: $lightgray;
   }
 
+// Common elements
+  .emphasis {
+    font-size:1.25rem;
+    color:$lightgray;
+  }
 
-  // .page_header {
-  //   font-size:1.7rem;
-  //   font-weight:100;
-  //   margin-bottom: $spacer;
-  // }
-  // .paragraph_header {
-  //   font-size:$bodytext;
-  //   font-weight:bold;
-  //   margin-bottom: 1.5rem;
-  // }
-  //
-  // .list_header {
-  //   font-size:$bodytext;
-  //   color:$emphasis;
-  //   margin-bottom:0;
-  //   }
+  .th {
+    border: solid 4px #FFFFFF;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    line-height: 0;
+    max-width: 50%;
+  }
+
+  .smallspacer {margin-bottom:$smallspacer;}
 
   .branding {
     text-align:center;
@@ -86,8 +90,8 @@ $rem-base: 14px;
     background-color: $oil;
     @include single-transition;
     opacity:.95 !important;
-
-    dd.active a {background-color: $black;}
+    dd a {font-weight: bold; transition: all 150ms ease-out;}
+    dd.active a {background: none !important;}
   }
 
 
@@ -120,6 +124,7 @@ $rem-base: 14px;
       margin-bottom: $spacer;
     }
 
+
     p.subheader, .skills, .experience {
       margin:0 0 $spacer 0;
     }
@@ -148,7 +153,7 @@ $rem-base: 14px;
   .portfolio {
       .portfolio_items {
         margin:0 auto;
-        li {
+        > li {
           position: relative;
           display: block;
           list-style: none;
@@ -203,6 +208,15 @@ $rem-base: 14px;
             }
       }
 
+      /* Portfolio slider overlay styles*/
+      .slider_overlay {
+        //background: rgba($oil,1);
+        background: $offwhite;
+        z-index: 1;
+        .text {
+          margin-top:1rem;
+        }
+      }
   }
 
   .footer {

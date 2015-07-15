@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$oil".
-        on line 86 of C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss
+        on line 90 of C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss
 
-81:   .magellan-nav {
-82:     right: 0;
-83:   }
-84:   /* Fixed magellan nav styles, override default styles *\/
-85:   #magellan.fixed {
-86:     background-color: $oil;
-87:     @include single-transition;
-88:     opacity:.95 !important;
-89: 
-90:     dd.active a {background-color: $black;}
-91:   }
+85:   .magellan-nav {
+86:     right: 0;
+87:   }
+88:   /* Fixed magellan nav styles, override default styles *\/
+89:   #magellan.fixed {
+90:     background-color: $oil;
+91:     @include single-transition;
+92:     opacity:.95 !important;
+93:     dd a {font-weight: bold; transition: all 150ms ease-out;}
+94:     dd.active a {background: none !important;}
+95:   }
 
 Backtrace:
-C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss:86
+C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss:90
 C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -80,4 +80,4 @@ C:/Bitnami/rubystack-2.0.0-26/ruby/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/l
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$oil\".\A         on line 86 of C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss\A \A 81:   .magellan-nav {\A 82:     right: 0;\A 83:   }\A 84:   /* Fixed magellan nav styles, override default styles */\A 85:   #magellan.fixed {\A 86:     background-color: $oil;\A 87:     @include single-transition;\A 88:     opacity:.95 !important;\A 89: \A 90:     dd.active a {background-color: $black;}\A 91:   }"; }
+  content: "Error: Undefined variable: \"$oil\".\A         on line 90 of C:/Bitnami/wampstack-5.4.40-0/apache2/htdocs/portfolio/scss/main.scss\A \A 85:   .magellan-nav {\A 86:     right: 0;\A 87:   }\A 88:   /* Fixed magellan nav styles, override default styles */\A 89:   #magellan.fixed {\A 90:     background-color: $oil;\A 91:     @include single-transition;\A 92:     opacity:.95 !important;\A 93:     dd a {font-weight: bold; transition: all 150ms ease-out;}\A 94:     dd.active a {background: none !important;}\A 95:   }"; }
