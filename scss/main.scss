@@ -6,6 +6,7 @@ $emphasis: #111111;
 $white: #ffffff;
 $offwhite: #f2f2f2;
 
+$darkgray: #333333;
 $lightgray: #aaaaaa;
 
 
@@ -33,34 +34,14 @@ $rem-base: 14px;
 // Prevent flickering
 body.js .nojs { display: none; }
 
-
+// Begin MOBILE
+////////////
 @media (min-width: 320px) and (max-width: 480px) {
 
   // All mobile elements are centered except text
 
   .text, .contact .row, .row label, .row input.button {text-align:left;}
   .row {text-align: center;}
-
-// Adjustments
-  h3.subheader {
-    color: $lightgray;
-  }
-
-// Common elements
-  .emphasis {
-    font-size:1.25rem;
-    color:$lightgray;
-  }
-
-  .th {
-    border: solid 4px #FFFFFF;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    line-height: 0;
-    max-width: 50%;
-  }
-
-  .smallspacer {margin-bottom:$smallspacer;}
 
   .branding {
     text-align:center;
@@ -114,12 +95,12 @@ body.js .nojs { display: none; }
     }
   }
 }
-
+// End MOBILE
+////////////
 
 
 
 .about {
-    margin-top:10rem;
     img {
       margin-bottom: $spacer;
     }
@@ -210,18 +191,67 @@ body.js .nojs { display: none; }
 
       /* Portfolio slider overlay styles*/
       .slider_overlay {
-        //background: rgba($oil,1);
-        background: $offwhite;
+        background:rgb(68, 68, 68);
         z-index: 1;
+        overflow-y:none;
         .text {
-          margin-top:1rem;
+          margin-top:2rem;
+          color:$offwhite;
         }
       }
   }
 
   .footer {
-    margin-top:5rem;
     padding:10rem 0;
     background-color: #222222;
     color:$white;
   }
+
+  // Adjustments
+    h3.subheader {
+      color: $lightgray;
+    }
+
+  // Common elements
+
+  .about, .portfolio, .contact {
+    background-color:$offwhite;
+    padding-top:2rem;
+  }
+
+  .gradient {
+    // height on this should be mobile only
+    height:13.5rem;
+    background-color: $white;
+    background-image: linear-gradient(to bottom, $white, $offwhite);
+  }
+  .background_dark {background-color:$darkgray;}
+  .no_scroll {overflow:hidden;}
+
+    .emphasis {
+      font-size:1.25rem;
+      color:$lightgray;
+    }
+
+    //This animates slider background color
+    html {@include single-transition;}
+
+    .slider_close {
+      position:absolute;
+      top:-.5%;
+      left:-2.75rem;
+      display:block;
+      height:100px;
+      width:40px;
+      background: url('../images/arrow_back_white.svg') no-repeat center center / 20px;
+    }
+
+    .th {
+      border: solid 4px #FFFFFF;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      line-height: 0;
+      max-width: 50%;
+    }
+
+    .smallspacer {margin-bottom:$smallspacer;}

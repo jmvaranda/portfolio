@@ -56,22 +56,25 @@ $(document).ready(function() {
     /* END Contact form */
 
 // Slide reveal
+
   //Slider item 1
   $('#slider_otp').slideReveal({
     trigger: $('.trigger_otp'),
-    position: 'right',
-    //on slider show, hide magellan nav
-    shown: function(slider, trigger){
+    //on slider show, hide magellan nav + animate background
+    show: function(slider, trigger){
       $('#magellan.fixed').addClass('hide');
+      $('html').addClass('background_dark');
+      $('body').addClass('no_scroll');
     },
     //on slider close, show magellan nav
     hide: function(slider, trigger){
       $('#magellan.fixed').removeClass('hide');
+      $('html').removeClass('background_dark');
+      $('body').removeClass('no_scroll');
     }
   });
 
   //Slider item 2
   $('#slider_qf').slideReveal({
     trigger: $('.trigger_qf'),
-    position: 'right',
   });
