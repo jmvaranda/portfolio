@@ -65,12 +65,14 @@ $(document).ready(function() {
       $('#magellan.fixed').addClass('hide');
       $('html').addClass('background_dark');
       $('body').addClass('no_scroll');
+      $('.portfolio, .about').css( "opacity", ".05" );
     },
     //on slider close, show magellan nav
     hide: function(slider, trigger){
       $('#magellan.fixed').removeClass('hide');
       $('html').removeClass('background_dark');
       $('body').removeClass('no_scroll');
+      $('.portfolio, .about').css( "opacity", "1" );
     }
   });
 

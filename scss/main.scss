@@ -151,10 +151,7 @@ body.js .nojs { display: none; }
           width: 100%;
           min-height: 9rem;
           vertical-align:middle;
-          background-color: rgba($oil, 0.8);
-            h4, h5 {
-
-            }
+          background-color: rgba($darkgray, 0.8);
             .project_logo, .project_label {
               //padding-top: 1.75rem;
               position: relative;
@@ -188,17 +185,17 @@ body.js .nojs { display: none; }
             background: url('../images/portfolio_music_answer.png') center center / 100% no-repeat;
             }
       }
+  }
 
-      /* Portfolio slider overlay styles*/
-      .slider_overlay {
-        background:rgb(68, 68, 68);
-        z-index: 1;
-        overflow-y:none;
-        .text {
-          margin-top:2rem;
-          color:$offwhite;
-        }
-      }
+  // Portfolio slider overlay
+  .slider_overlay {
+    background:rgb(68, 68, 68);
+    z-index: 1;
+    overflow-y:none;
+    .text {
+      margin-top:2rem;
+      color:$offwhite;
+    }
   }
 
   .footer {
@@ -227,6 +224,8 @@ body.js .nojs { display: none; }
   }
   .background_dark {background-color:$darkgray;}
   .no_scroll {overflow:hidden;}
+  .fade_out {opacity:.2;}
+  .fade_in {opacity:1;}
 
     .emphasis {
       font-size:1.25rem;
@@ -234,7 +233,7 @@ body.js .nojs { display: none; }
     }
 
     //This animates slider background color
-    html {@include single-transition;}
+    html, .portfolio, .about {@include single-transition;}
 
     .slider_close {
       position:absolute;
