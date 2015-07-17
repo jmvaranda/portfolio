@@ -24,7 +24,7 @@ $(document).ready(function() {
   });
   $(".animsition_2").animsition({
     inClass               :   'fade-in-up',
-    inDuration            :    1600,
+    inDuration            :    1650,
     loadingParentElement  :   'body', //animsition wrapper element
     loadingClass          :   'animsition-loading',
     unSupportCss          : [ 'animation-duration',
@@ -57,15 +57,23 @@ $(document).ready(function() {
 
 // Slide reveal
 
+var $slider_close = $('.slider_overlay .slider_close');
+
   //Slider item 1
   $('#slider_otp').slideReveal({
     trigger: $('.trigger_otp'),
     //on slider show, hide magellan nav + animate background
+
     show: function(slider, trigger){
+
       $('#magellan.fixed').addClass('hide');
       $('html').addClass('background_dark');
       $('body').addClass('no_scroll');
-      $('.portfolio, .about').css( "opacity", ".05" );
+      $('.portfolio, .about').css( "opacity", ".25" );
+
+      $('.slider_close').css( "position", "fixed" );
+      // Pull slider_close out of slider overlay to prevent overflow from hiding element
+      $slider_close.parent().after($slider_close);
     },
     //on slider close, show magellan nav
     hide: function(slider, trigger){
@@ -73,6 +81,9 @@ $(document).ready(function() {
       $('html').removeClass('background_dark');
       $('body').removeClass('no_scroll');
       $('.portfolio, .about').css( "opacity", "1" );
+      $('.slider_close').css( "position", "" );
+      // Put slider_close back inside slider_overlay
+      $slider_close.siblings('section').append($slider_close);
     }
   });
 
