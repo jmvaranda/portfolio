@@ -57,13 +57,15 @@ $(document).ready(function() {
 
 // Slide reveal
 
+
+// set selector variables
 var $slider_close = $('.slider_overlay .slider_close');
+var $slider_overlay = $('slider_overlay');
 
   //Slider item 1
   $('#slider_otp').slideReveal({
     trigger: $('.trigger_otp'),
     //on slider show, hide magellan nav + animate background
-
     show: function(slider, trigger){
 
       $('#magellan.fixed').addClass('hide');

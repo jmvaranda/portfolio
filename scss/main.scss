@@ -1,5 +1,8 @@
 /* Custom Styles - Portfolio */
 
+@import "settings";
+@import "foundation";
+
 $primary: #555555;
 $emphasis: #111111;
 
@@ -36,6 +39,7 @@ body.js .nojs { display: none; }
 
 // Begin MOBILE
 ////////////
+
 @media (min-width: 320px) and (max-width: 480px) {
 
   // All mobile elements are centered except text
@@ -95,9 +99,15 @@ body.js .nojs { display: none; }
     }
   }
 }
+
+// Adjust vertical and horizontal spacing for larger mobile screen sizes
+@media (min-width: 375px) and (max-width: 415px) {
+  .slider_overlay {width:91% !important;}
+  .about {padding-top:14rem !important;}
+}
+
 // End MOBILE
 ////////////
-
 
 
 .about {
@@ -233,15 +243,6 @@ body.js .nojs { display: none; }
     //This animates slider background color
     html, .portfolio, .about {@include single-transition;}
 
-    // .slider_close {
-    //   position:absolute;
-    //   top:-.5%;
-    //   left:-2.75rem;
-    //   display:block;
-    //   height:100px;
-    //   width:40px;
-    //   background: url('../images/arrow_back_white.svg') no-repeat center center / 20px;
-    // }
     .slider_close {
       //position:fixed;
       top:0;
@@ -249,7 +250,7 @@ body.js .nojs { display: none; }
       display:block;
       height:100%;
       width:40px;
-      background: url('../images/arrow_back_white.svg') no-repeat 1rem 2.5rem / 20px;
+      background: url('../images/arrow_back_white.svg') no-repeat .45rem 2.5rem / 20px;
     }
 
     .th {
