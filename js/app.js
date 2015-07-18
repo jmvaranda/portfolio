@@ -72,8 +72,10 @@ var $slider_overlay = $('slider_overlay');
       $('html').addClass('background_dark');
       $('body').addClass('no_scroll');
       $('.portfolio, .about').css( "opacity", ".25" );
-
-      $('.slider_close').css( "position", "fixed" );
+      $('.slider_close').css({
+        'position' : 'fixed',
+        'opacity' : '1'
+      });
       // Pull slider_close out of slider overlay to prevent overflow from hiding element
       $slider_close.parent().after($slider_close);
     },
@@ -83,7 +85,10 @@ var $slider_overlay = $('slider_overlay');
       $('html').removeClass('background_dark');
       $('body').removeClass('no_scroll');
       $('.portfolio, .about').css( "opacity", "1" );
-      $('.slider_close').css( "position", "" );
+      $('.slider_close').css({
+        'position' : '',
+        'opacity' : '0'
+      });
       // Put slider_close back inside slider_overlay
       $slider_close.siblings('section').append($slider_close);
     }
@@ -93,3 +98,13 @@ var $slider_overlay = $('slider_overlay');
   $('#slider_qf').slideReveal({
     trigger: $('.trigger_qf'),
   });
+
+
+
+
+
+
+  //Max width clearing lightbox when slider overlay is opened
+  $(document.body).on("open.fndtn.clearing", function(event) {
+  console.info("About to open thumbnail with src ", $('img', event.target).attr('src'));
+});

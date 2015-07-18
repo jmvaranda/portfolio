@@ -181,7 +181,7 @@ body.js .nojs { display: none; }
                 letter-spacing: -0.025rem;
                 text-align: left;
               }
-              h5 {color:$lightgray}
+              h5 {color:$lightgray;}
             }
         }
 
@@ -199,12 +199,23 @@ body.js .nojs { display: none; }
 
   // Portfolio slider overlay
   .slider_overlay {
-    background-color:$oil;
+    //background-color:$oil;
     z-index: 1;
     overflow-y:scroll;
+    background-color: $offwhite;
+    header {
+      padding:2.75rem 1rem .75rem 1rem;
+      background-color: rgba($oil, .03);
+    }
+    h1{line-height:2rem; margin:0}
+    h2{line-height:1.25rem; margin:0 0 1.25rem 0;}
+    .emphasis {margin:0;}
+    .clearing-thumbs {
+      margin-bottom:1.5rem;
+    }
     .text {
-      margin-top:2rem;
-      color:$offwhite;
+      margin-top:1rem;
+      //color:$offwhite;
     }
   }
 
@@ -232,7 +243,7 @@ body.js .nojs { display: none; }
     background-color: $white;
     background-image: linear-gradient(to bottom, $white, $offwhite);
   }
-  .background_dark {background-color:#444444;}
+  //.background_dark {background-color:$offwhite;}
   .no_scroll {overflow:hidden;}
 
     .emphasis {
@@ -244,13 +255,15 @@ body.js .nojs { display: none; }
     html, .portfolio, .about {@include single-transition;}
 
     .slider_close {
-      //position:fixed;
+      opacity:0;
       top:0;
       left:0;
       display:block;
       height:100%;
       width:40px;
-      background: url('../images/arrow_back_white.svg') no-repeat .45rem 2.5rem / 20px;
+      background: url('../images/arrow_back_dark.svg') no-repeat .45rem 3.5rem / 20px;
+      @include single-transition;
+      background-color: rgba($oil, 0.15);
     }
 
     .th {

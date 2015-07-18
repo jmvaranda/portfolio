@@ -9627,73 +9627,93 @@ body.js .nojs {
 
 /* line 201, ../scss/main.scss */
 .slider_overlay {
-  background-color: #333333;
   z-index: 1;
   overflow-y: scroll;
+  background-color: #f2f2f2;
 }
-/* line 205, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
+.slider_overlay header {
+  padding: 2.75rem 1rem .75rem 1rem;
+  background-color: rgba(51, 51, 51, 0.03);
+}
+/* line 210, ../scss/main.scss */
+.slider_overlay h1 {
+  line-height: 2rem;
+  margin: 0;
+}
+/* line 211, ../scss/main.scss */
+.slider_overlay h2 {
+  line-height: 1.25rem;
+  margin: 0 0 1.25rem 0;
+}
+/* line 212, ../scss/main.scss */
+.slider_overlay .emphasis {
+  margin: 0;
+}
+/* line 213, ../scss/main.scss */
+.slider_overlay .clearing-thumbs {
+  margin-bottom: 1.5rem;
+}
+/* line 216, ../scss/main.scss */
 .slider_overlay .text {
-  margin-top: 2rem;
-  color: #f2f2f2;
+  margin-top: 1rem;
 }
 
-/* line 211, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .footer {
   padding: 10rem 0;
   background-color: #222222;
   color: #ffffff;
 }
 
-/* line 218, ../scss/main.scss */
+/* line 229, ../scss/main.scss */
 h3.subheader {
   color: #aaaaaa;
 }
 
-/* line 224, ../scss/main.scss */
+/* line 235, ../scss/main.scss */
 .about, .portfolio, .contact {
   background-color: #f2f2f2;
   padding-top: 2rem;
 }
 
-/* line 229, ../scss/main.scss */
+/* line 240, ../scss/main.scss */
 .gradient {
   height: 13.5rem;
   background-color: #ffffff;
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
 
-/* line 235, ../scss/main.scss */
-.background_dark {
-  background-color: #444444;
-}
-
-/* line 236, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .no_scroll {
   overflow: hidden;
 }
 
-/* line 238, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   color: #aaaaaa;
 }
 
-/* line 244, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 246, ../scss/main.scss */
+/* line 257, ../scss/main.scss */
 .slider_close {
+  opacity: 0;
   top: 0;
   left: 0;
   display: block;
   height: 100%;
   width: 40px;
-  background: url("../images/arrow_back_white.svg") no-repeat 0.45rem 2.5rem/20px;
+  background: url("../images/arrow_back_dark.svg") no-repeat 0.45rem 3.5rem/20px;
+  transition: all 300ms ease-out;
+  background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 256, ../scss/main.scss */
+/* line 269, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9702,7 +9722,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 264, ../scss/main.scss */
+/* line 277, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }
