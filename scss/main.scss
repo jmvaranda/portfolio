@@ -243,7 +243,7 @@ body.js .nojs { display: none; }
     background-color: $white;
     background-image: linear-gradient(to bottom, $white, $offwhite);
   }
-  //.background_dark {background-color:$offwhite;}
+  .background_dark {background-color:$offwhite;}
   .no_scroll {overflow:hidden;}
 
     .emphasis {
