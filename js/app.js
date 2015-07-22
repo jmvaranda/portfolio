@@ -58,15 +58,16 @@ $(document).ready(function() {
 // Slide reveal
 
 
-// Set portfolio overlay object
+// Set portfolio overlay object properties
 var $portfolio_items = {
   slider_overlay : $('.slider_overlay'),
+  magellan : $('#magellan'),
   html : $('html'),
   body : $('body'),
-  magellan : $('#magellan')
+  content_fade : $('.portfolio, .about')
 };
 
-//set portfolio items variables
+// Set portfolio trigger variables
 var $slider_otp_close = $('.slider_close.trigger_otp');
 var $slider_qf_close = $('.slider_close.trigger_qf');
 
@@ -78,12 +79,13 @@ var $slider_qf_close = $('.slider_close.trigger_qf');
       $portfolio_items.magellan.addClass('hide');
       $portfolio_items.html.addClass('background_dark');
       $portfolio_items.body.addClass('no_scroll');
-      $('.portfolio, .about').css( "opacity", ".25" );
+      $portfolio_items.content_fade.css( "opacity", ".25" );
       $slider_otp_close.css({
         'position' : 'fixed',
         'opacity' : '1'
       });
       // Pull slider_close out of slider overlay to prevent overflow from hiding element
+      //$slider_otp_close.parent().after($slider_otp_close);
       $slider_otp_close.parent().after($slider_otp_close);
     },
     //on slider close, show magellan nav
@@ -91,46 +93,48 @@ var $slider_qf_close = $('.slider_close.trigger_qf');
       $portfolio_items.magellan.removeClass('hide');
       $portfolio_items.html.removeClass('background_dark');
       $portfolio_items.body.removeClass('no_scroll');
-      $('.portfolio, .about').css( "opacity", "1" );
+      $portfolio_items.content_fade.css( "opacity", "1" );
       $slider_otp_close.css({
         'position' : '',
         'opacity' : '0'
       });
       // Put slider_close back inside slider_overlay
-      $slider_otp_close.siblings('section').append($slider_otp_close);
+      //$slider_otp_close.siblings('section').append($slider_otp_close);
+      $slider_otp_close.siblings('section.portfolio_slider').append(this);
     }
   });
 
-  //Slider item 2
-  // $('#slider_qf').slideReveal({
-  //   trigger: $('.trigger_qf'),
-  //   //on slider show, hide magellan nav + animate background
-  //   show: function(slider, trigger){
-  //     $('#magellan.fixed').addClass('hide');
-  //     $html.addClass('background_dark');
-  //     $body.addClass('no_scroll');
-  //     $('.portfolio, .about').css( "opacity", ".25" );
-  //     $slider_qf_close.css({
-  //       'position' : 'fixed',
-  //       'opacity' : '1'
-  //     });
-  //     // Pull slider_close out of slider overlay to prevent overflow from hiding element
-  //     $slider_otp_close.parent().after($slider_otp_close);
-  //   },
-  //   //on slider close, show magellan nav
-  //   hide: function(slider, trigger){
-  //     $('#magellan.fixed').removeClass('hide');
-  //     $html.removeClass('background_dark');
-  //     $body.removeClass('no_scroll');
-  //     $('.portfolio, .about').css( "opacity", "1" );
-  //     $slider_qf_close.css({
-  //       'position' : '',
-  //       'opacity' : '0'
-  //     });
-  //     // Put slider_close back inside slider_overlay
-  //     $slider_qf_close.siblings('section').append($slider_qf_close);
-  //   }
-  // });
+
+//Slider item 2
+  $('#slider_qf').slideReveal({
+    trigger: $('.trigger_qf'),
+    //on slider show, hide magellan nav + animate background
+    show: function(slider, trigger){
+      $portfolio_items.magellan.addClass('hide');
+      $portfolio_items.html.addClass('background_dark');
+      $portfolio_items.body.addClass('no_scroll');
+      $portfolio_items.content_fade.css( "opacity", ".25" );
+      $slider_qf_close.css({
+        'position' : 'fixed',
+        'opacity' : '1'
+      });
+      // Pull slider_close out of slider overlay to prevent overflow from hiding element
+      $slider_qf_close.parent().after($slider_qf_close);
+    },
+    //on slider close, show magellan nav
+    hide: function(slider, trigger){
+      $portfolio_items.magellan.removeClass('hide');
+      $portfolio_items.html.removeClass('background_dark');
+      $portfolio_items.body.removeClass('no_scroll');
+      $portfolio_items.content_fade.css( "opacity", "1" );
+      $slider_qf_close.css({
+        'position' : '',
+        'opacity' : '0'
+      });
+      // Put slider_close back inside slider_overlay
+      $slider_qf_close.siblings('section.portfolio_slider').append(this);
+    }
+  });
 
 
 
@@ -196,9 +200,10 @@ var $slider_qf_close = $('.slider_close.trigger_qf');
 
   //Remove overflow property to allow lightbox to expand full width
   $(document.body).on("open.fndtn.clearing", function(event) {
-  $('.slider_overlay').css('overflow-y' , 'none');
+  $('.slider_overlay').css('overflow-y' , 'none !important');
+  //alert('clearing open');
 });
 
   $(document.body).on("close.fndtn.clearing", function(event) {
-  $('.slider_overlay').css('overflow-y' , 'none');
+  //$('.slider_overlay').css('overflow-y' , 'none');
 });
