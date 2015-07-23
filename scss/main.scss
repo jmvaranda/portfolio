@@ -201,7 +201,7 @@ body.js .nojs { display: none; }
   .slider_overlay {
     //background-color:$oil;
     z-index: 1;
-    overflow-y:scroll;
+    //overflow-y:scroll;
     background-color: $offwhite;
     header {
       padding:2.75rem 1rem .75rem 1rem;
@@ -245,6 +245,7 @@ body.js .nojs { display: none; }
   }
   .background_dark {background-color:$offwhite;}
   .no_scroll {overflow:hidden;}
+  .scroll_y {overflow-y: scroll;}
 
     .emphasis {
       font-size:1.25rem;

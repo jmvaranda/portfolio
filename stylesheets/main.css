@@ -9628,7 +9628,6 @@ body.js .nojs {
 /* line 201, ../scss/main.scss */
 .slider_overlay {
   z-index: 1;
-  overflow-y: scroll;
   background-color: #f2f2f2;
 }
 /* line 206, ../scss/main.scss */
@@ -9694,18 +9693,23 @@ h3.subheader {
   overflow: hidden;
 }
 
-/* line 249, ../scss/main.scss */
+/* line 248, ../scss/main.scss */
+.scroll_y {
+  overflow-y: scroll;
+}
+
+/* line 250, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   color: #aaaaaa;
 }
 
-/* line 255, ../scss/main.scss */
+/* line 256, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 257, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 .slider_close {
   opacity: 0;
   top: 0;
@@ -9718,7 +9722,7 @@ html, .portfolio, .about {
   background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 269, ../scss/main.scss */
+/* line 270, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9727,7 +9731,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 277, ../scss/main.scss */
+/* line 278, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }
