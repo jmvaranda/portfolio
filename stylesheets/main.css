@@ -9457,23 +9457,54 @@ body.js .nojs {
   display: none;
 }
 
+/* This centers magellan nav */
+/* line 41, ../scss/main.scss */
+.sub-nav {
+  margin: 0 auto !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* line 47, ../scss/main.scss */
+.magellan-nav {
+  right: 0;
+}
+
+/* Fixed magellan nav styles, override default styles */
+/* line 51, ../scss/main.scss */
+#magellan.fixed {
+  background-color: #333333;
+  transition: all 300ms ease-out;
+  opacity: .95 !important;
+}
+/* line 55, ../scss/main.scss */
+#magellan.fixed dd a {
+  font-weight: bold;
+  transition: all 150ms ease-out;
+}
+/* line 56, ../scss/main.scss */
+#magellan.fixed dd.active a {
+  background: none !important;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
-  /* line 47, ../scss/main.scss */
+  /* line 66, ../scss/main.scss */
   .text, .contact .row, .row label, .row input.button {
     text-align: left;
   }
 
-  /* line 48, ../scss/main.scss */
+  /* line 67, ../scss/main.scss */
   .row {
     text-align: center;
   }
 
-  /* line 50, ../scss/main.scss */
+  /* line 69, ../scss/main.scss */
   .branding {
     text-align: center;
     margin-top: 10rem;
   }
-  /* line 53, ../scss/main.scss */
+  /* line 72, ../scss/main.scss */
   .branding a {
     display: block;
     margin: 0 auto;
@@ -9483,122 +9514,92 @@ body.js .nojs {
     background-position: center center;
   }
 
-  /* This centers magellan nav */
-  /* line 64, ../scss/main.scss */
-  .sub-nav {
-    margin: 0 auto !important;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  /* line 70, ../scss/main.scss */
-  .magellan-nav {
-    right: 0;
-  }
-
-  /* Fixed magellan nav styles, override default styles */
-  /* line 74, ../scss/main.scss */
-  #magellan.fixed {
-    background-color: #333333;
-    transition: all 300ms ease-out;
-    opacity: .95 !important;
-  }
-  /* line 78, ../scss/main.scss */
-  #magellan.fixed dd a {
-    font-weight: bold;
-    transition: all 150ms ease-out;
-  }
-  /* line 79, ../scss/main.scss */
-  #magellan.fixed dd.active a {
-    background: none !important;
-  }
-
-  /* line 84, ../scss/main.scss */
+  /* line 82, ../scss/main.scss */
   .nav {
     text-align: center;
     margin-top: 2rem;
   }
-  /* line 87, ../scss/main.scss */
+  /* line 85, ../scss/main.scss */
   .nav ul {
     list-style: none;
     margin: 0;
   }
-  /* line 90, ../scss/main.scss */
+  /* line 88, ../scss/main.scss */
   .nav ul li {
     line-height: 2.75rem;
   }
-  /* line 93, ../scss/main.scss */
+  /* line 91, ../scss/main.scss */
   .nav ul a {
     padding: 0.75rem;
   }
 
-  /* line 100, ../scss/main.scss */
+  /* line 98, ../scss/main.scss */
   .experience li {
     border-bottom: 1px solid #aaaaaa;
   }
-  /* line 102, ../scss/main.scss */
+  /* line 100, ../scss/main.scss */
   .experience li:last-child {
     border-bottom: none;
   }
 }
 @media (min-width: 375px) and (max-width: 415px) {
-  /* line 114, ../scss/main.scss */
+  /* line 112, ../scss/main.scss */
   .slider_overlay {
     width: 91% !important;
   }
 
-  /* line 115, ../scss/main.scss */
+  /* line 113, ../scss/main.scss */
   .about {
     padding-top: 14rem !important;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 124, ../scss/main.scss */
+  /* line 122, ../scss/main.scss */
   .about img {
     width: 100%;
   }
 }
 /* min-width 641px, medium screens */
-/* line 130, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 .header {
   background-color: #ffffff;
+  text-align: center;
 }
 
-/* line 134, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 body {
   background-color: #f2f2f2 !important;
 }
 
-/* line 140, ../scss/main.scss */
+/* line 139, ../scss/main.scss */
 .about img {
   margin-bottom: 2rem;
 }
-/* line 145, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 .about p.subheader, .about .skills, .about .experience {
   margin: 0 0 2rem 0;
 }
-/* line 150, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .about .skills li {
   margin-left: 2.5rem;
   padding-left: .5rem;
 }
-/* line 157, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .about .experience li {
   list-style: none;
   padding: 0 0 .5rem 0;
   margin-bottom: 2.5rem;
 }
-/* line 161, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 .about .experience li p:first-child {
   margin-bottom: 0;
 }
 
-/* line 171, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .portfolio .portfolio_items {
   margin: 0 auto;
 }
-/* line 173, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 .portfolio .portfolio_items > li {
   position: relative;
   display: block;
@@ -9607,7 +9608,7 @@ body {
   min-height: 280px;
   margin-bottom: 2rem;
 }
-/* line 182, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay {
   position: relative;
   top: 5rem;
@@ -9618,124 +9619,124 @@ body {
   vertical-align: middle;
   background-color: rgba(51, 51, 51, 0.8);
 }
-/* line 191, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_logo, .portfolio .portfolio_items .portfolio_overlay .project_label {
   position: relative;
   top: 2rem;
   transform: translateY(-20%);
 }
-/* line 202, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label {
   clear: right;
 }
-/* line 204, ../scss/main.scss */
+/* line 203, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label h4, .portfolio .portfolio_items .portfolio_overlay .project_label h5 {
   color: #ffffff;
   letter-spacing: -0.025rem;
   text-align: left;
 }
-/* line 210, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label h5 {
   color: #aaaaaa;
 }
-/* line 214, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_otp {
   background: url("../images/portfolio_otp.png") center center/100% no-repeat;
 }
-/* line 217, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_qf {
   background: url("../images/portfolio_qf.png") center center/100% no-repeat;
 }
-/* line 220, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_music_answer {
   background: url("../images/portfolio_music_answer.png") center center/100% no-repeat;
 }
 
-/* line 227, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 .slider_overlay {
   z-index: 1;
   background-color: #f2f2f2;
 }
-/* line 232, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 .slider_overlay header {
   padding: 2.75rem 1rem .75rem 1rem;
   background-color: rgba(51, 51, 51, 0.03);
 }
-/* line 236, ../scss/main.scss */
+/* line 235, ../scss/main.scss */
 .slider_overlay h1 {
   line-height: 2rem;
   margin: 0;
 }
-/* line 237, ../scss/main.scss */
+/* line 236, ../scss/main.scss */
 .slider_overlay h2 {
   line-height: 1.25rem;
   margin: 0 0 1.25rem 0;
 }
-/* line 238, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .slider_overlay .emphasis {
   margin: 0;
 }
-/* line 239, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .slider_overlay .clearing-thumbs {
   margin-bottom: 1.5rem;
 }
-/* line 242, ../scss/main.scss */
+/* line 241, ../scss/main.scss */
 .slider_overlay .text {
   margin-top: 1rem;
 }
 
-/* line 248, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .footer {
   padding: 10rem 0;
   background-color: #222222;
   color: #ffffff;
 }
 
-/* line 255, ../scss/main.scss */
+/* line 254, ../scss/main.scss */
 h3.subheader {
   color: #aaaaaa;
 }
 
-/* line 261, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 .about, .portfolio, .contact {
   background-color: #f2f2f2;
   padding-top: 2rem;
 }
 
-/* line 266, ../scss/main.scss */
+/* line 265, ../scss/main.scss */
 .gradient {
   height: 13.5rem;
   background-color: #ffffff;
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
 
-/* line 272, ../scss/main.scss */
+/* line 271, ../scss/main.scss */
 .background_dark {
   background-color: #f2f2f2;
 }
 
-/* line 273, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 .no_scroll {
   overflow: hidden;
 }
 
-/* line 274, ../scss/main.scss */
+/* line 273, ../scss/main.scss */
 .scroll_y {
   overflow-y: scroll;
 }
 
-/* line 276, ../scss/main.scss */
+/* line 275, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-/* line 283, ../scss/main.scss */
+/* line 282, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 285, ../scss/main.scss */
+/* line 284, ../scss/main.scss */
 .slider_close {
   opacity: 0;
   top: 0;
@@ -9748,7 +9749,7 @@ html, .portfolio, .about {
   background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 297, ../scss/main.scss */
+/* line 296, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9757,7 +9758,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 305, ../scss/main.scss */
+/* line 304, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }

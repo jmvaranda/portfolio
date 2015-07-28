@@ -37,11 +37,30 @@ $rem-base: 14px;
 // Prevent flickering
 body.js .nojs { display: none; }
 
+/* This centers magellan nav */
+.sub-nav {
+  margin: 0 auto !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.magellan-nav {
+  right: 0;
+}
+/* Fixed magellan nav styles, override default styles */
+#magellan.fixed {
+  background-color: $oil;
+  @include single-transition;
+  opacity:.95 !important;
+  dd a {font-weight: bold; transition: all 150ms ease-out;}
+  dd.active a {background: none !important;}
+}
+
+
+
 // Begin MOBILE
 ////////////
-
 @media (min-width: 320px) and (max-width: 480px) {
-
   // All mobile elements are centered except text
 
   .text, .contact .row, .row label, .row input.button {text-align:left;}
@@ -59,27 +78,6 @@ body.js .nojs { display: none; }
       background-position: center center;
     }
   }
-
-  /* This centers magellan nav */
-  .sub-nav {
-    margin: 0 auto !important;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .magellan-nav {
-    right: 0;
-  }
-  /* Fixed magellan nav styles, override default styles */
-  #magellan.fixed {
-    background-color: $oil;
-    @include single-transition;
-    opacity:.95 !important;
-    dd a {font-weight: bold; transition: all 150ms ease-out;}
-    dd.active a {background: none !important;}
-  }
-
-
 
   .nav {
     text-align:center;
@@ -129,6 +127,7 @@ body.js .nojs { display: none; }
 
 .header {
   background-color:$white;
+  text-align: center;
 }
 
 body {
