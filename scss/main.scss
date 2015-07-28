@@ -94,11 +94,20 @@ body.js .nojs { display: none; }
         padding: $padding;
       }
     }
-    .portfolio {
+  }
 
+  .experience {
+    li {
+      border-bottom: 1px solid $lightgray;
+      &:last-child {border-bottom: none;}
     }
   }
+
 }
+// End MOBILE
+
+
+
 
 // Adjust vertical and horizontal spacing for larger mobile screen sizes
 @media (min-width: 375px) and (max-width: 415px) {
@@ -106,8 +115,25 @@ body.js .nojs { display: none; }
   .about {padding-top:14rem !important;}
 }
 
-// End MOBILE
-////////////
+
+
+
+// Medium screen sizes +
+@media only screen and (min-width: 40.063em) {
+  .about {
+    img {
+      width: 100%;
+    }
+  }
+} /* min-width 641px, medium screens */
+
+.header {
+  background-color:$white;
+}
+
+body {
+  background-color:$offwhite !important;
+}
 
 
 .about {
@@ -130,7 +156,7 @@ body.js .nojs { display: none; }
     .experience {
       li {
         list-style: none;
-        padding: 0;
+        padding: 0 0 .5rem 0;
         margin-bottom:$smallspacer;
         p:first-child {
           margin-bottom: 0;
@@ -249,7 +275,8 @@ body.js .nojs { display: none; }
 
     .emphasis {
       font-size:1.25rem;
-      color:$lightgray;
+      font-weight:600;
+      //color:$lightgray;
     }
 
     //This animates slider background color

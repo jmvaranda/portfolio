@@ -16,24 +16,18 @@
           document.body.className += ' js';
       </script>
 
-    <div class="header row animsition">
-      <div class="large-12 columns">
-
+    <div class="header animsition">
+      <div class="row">
         <header class="branding">
           <a href="#">
             <h1>Julian Varanda</h1>
             <h2>UX &amp; UI Designer</h2>
           </a>
         </header>
-
       </div>
     </div>
 
-    <!--
-      Bug:
-      class="animsition-link" adding fade-out class to header
-     -->
-    <div id="magellan" class="magellan-nav animsition_2" data-magellan-expedition="fixed">
+    <div id="magellan" class="magellan-nav animsition" data-magellan-expedition="fixed">
       <dl class="sub-nav">
         <dd data-magellan-arrival="about"><a href="#about">about</a></dd>
         <dd data-magellan-arrival="portfolio"><a href="#portfolio">portfolio</a></dd>
@@ -43,17 +37,65 @@
 
     <div class="gradient"></div>
 
-    <section class="about row" data-magellan-destination="about">
+    <section class="about" data-magellan-destination="about">
       <a name="about"></a>
-      <div class="large-12 medium-12 columns">
-          <h2>About</h2>
-          <img src="images/about.png" alt="Image of Julian Varanda"/>
 
-          <div class="text">
+      <!-- About -->
+      <div class="row">
+          <h2 class="large-12 medium-12 columns">About</h2>
+          <div class="large-3 medium-3 columns">
+            <img src="images/about.png" alt="Image of Julian Varanda"/>
+          </div>
+          <div class="large-9 medium-9 columns text">
             <p class="emphasis">Seattle&ndash;native, born and bred. I am an interaction designer with a passion for creating thoughtful user experiences.</p>
-            <p>I subscribe to clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences.</p>
-            <p class="smallspacer">When I'm not working, some other passions of mine include: music composition and audio production or geeking out and playing futbol.</p>
+            <p>I subscribe to a clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences.</p>
+            <p class="smallspacer hide-for-medium-up">When I'm not working, some other passions of mine include: music composition and audio production or geeking out and playing futbol.</p>
+          </div>
+      </div>
 
+      <!-- Experience & Skills -->
+      <div class="row">
+
+        <!-- Appears first on mobile -->
+        <div class="show-for-small-only text columns">
+          <h3 class="subheader">What I know</h3>
+            <ul class="skills">
+              <li>UX &amp; User-centered design principles</li>
+              <li>Adobe Creative Cloud</li>
+              <li>Sketch</li>
+              <li>PC &amp; Mac fluent</li>
+              <li>HTML5 / CSS3 / SASS</li>
+              <li>Light jQuery</li>
+              <li>Git</li>
+            </ul>
+        </div>
+
+          <div class="large-8 medium-8 text columns">
+            <h3 class="subheader">Experience</h3>
+            <ul class="experience">
+              <li>
+                <p><strong>Bing</strong></p>
+                <p>Interaction Designer <br/>
+                  04/2014 &ndash; Present</p>
+                <p>Designing and producing user experiences for multiple platforms( mobile, desktop, tablet).</p> <p>Project involved communicating with various product teams and stakeholders, working within existing visual systems and creating new explorartory ...</p>
+              </li>
+              <li>
+                <p><strong>Windows Phone</strong></p>
+                <p>Design Integrator <br/>
+                09/2013 &ndash; 12/2014 </p>
+                <p>Proin sodales ullamcorper enim ac porta. Donec malesuada fringilla neque, vitae accumsan nisl tincidunt vel. Nulla facilisi. Sed ultricies ultricies mi sit amet euismod. Integer quis ante est. Nulla lacinia, neque eu volutpat pellentesque, arcu urna fringilla urna</p>
+              </li>
+              <li>
+                <p><strong>Bizango</strong></p>
+                <p>Visual Designer &amp; Front-end Developer <br/>
+                04/2012 &ndash; 09/2013</p>
+                <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
+              </li>
+            </ul>
+          </div>
+
+          <!--Show for medium screen sizes + -->
+          <div class="show-for-medium-up large-4 medium-4 text columns">
             <h3 class="subheader">What I know</h3>
               <ul class="skills">
                 <li>UX &amp; User-centered design principles</li>
@@ -63,29 +105,6 @@
                 <li>HTML5 / CSS3 / SASS</li>
                 <li>Light jQuery</li>
                 <li>Git</li>
-              </ul>
-
-                <h3 class="subheader">Experience</h3>
-              <ul class="experience">
-                <li>
-                  <p><strong>Bing</strong></p>
-                  <p>Interaction Designer <br/>
-                    04/2014 &ndash; Present</p>
-                  <p>Designing and producing user experiences for multiple platforms( mobile, desktop, tablet).</p> <p>Project involved communicating with various product teams and stakeholders, working within existing visual systems and creating new explorartory ...</p>
-                </li>
-                <li>
-                  <p><strong>Windows Phone</strong></p>
-                  <p>Design Integrator <br/>
-                  09/2013 &ndash; 12/2014 </p>
-                  <p>Proin sodales ullamcorper enim ac porta. Donec malesuada fringilla neque, vitae accumsan nisl tincidunt vel. Nulla facilisi. Sed ultricies ultricies mi sit amet euismod. Integer quis ante est. Nulla lacinia, neque eu volutpat pellentesque, arcu urna fringilla urna</p>
-                </li>
-                <li>
-                  <p><strong>Bizango</strong></p>
-                  <p>Visual Designer &amp; Front-end Developer <br/>
-                  04/2012 &ndash; 09/2013</p>
-                  <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
-                </li>
-
               </ul>
           </div>
 
@@ -151,7 +170,7 @@
         <!-- Portfolio Items END -->
     </section>
 
-    <section class="portfolio_slider">
+    <section class="portfolio_slider hide-for-medium-up">
       <!-- Slider Overlay Items BEGIN -->
 
       <section id="slider_otp" class="slider_overlay nojs">
@@ -189,7 +208,8 @@
             <li class="clearing-featured-img"><a href="images\portfolio_02.jpg"><img src="images\portfolio_02.jpg"></a></li>
             <li class="th"><a href="images\portfolio_01.jpg"><img class="hide" src="images\portfolio_01.jpg"></a></li>
           </ul>
-          <p>Some challenges included finding solutions to fitting data into smaller UI while still maintaining legibility and scannability,  working within the Bing visual framework and aligning with future the Windows 10 design release. With the new UX, query formulation engagement increased substantially (upwards of 400%).</p>
+          <p>Some challenges included finding solutions to fitting data into smaller UI while still maintaining legibility and scannability,  working within the Bing visual framework and aligning with future the Windows 10 design release.</p>
+          <p>With the new UX, query formulation engagement increased substantially (upwards of 400%).</p>
           <p>This involved multiple interaction scenarios to account for such as:</p>
           <ul class="square">
             <li>Single rich entity answer</li>
@@ -200,79 +220,11 @@
           </ul>
         </div>
       </section>
-
-
       <!-- Slider Overlay Items END -->
     </section>
 
 
-    <!-- <section class="contact row" data-magellan-destination="contact">
-        <a name="contact"></a>
-
-        <div class="large-12 columns">
-          <h2>Get in touch!</h2>
-          <p class="text">Drop a line here and I will get in contact with you as soon as I am available.
-
-          <form id="contactForm" class="text">
-            <div class="row">
-              <div class="large-12 columns">
-                <label>Name:
-                  <input id="name" type="text" placeholder="What's your name?" />
-                </label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-4 columns">
-                <label>Subject:
-                  <input id="subject" type="text" placeholder="What's this about?" />
-                </label>
-              </div>
-              <div class="large-4 columns">
-                <div class="row collapse">
-                  <label>Email:</label>
-                  <div class="small-9 columns">
-                    <input id="email" type="text" placeholder="How do I get in touch with you?" />
-                  </div>
-                  <div class="small-3 columns">
-                    <span class="postfix">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="large-12 columns">
-                <label>Message:
-                  <textarea id="message" placeholder="Drop a line"></textarea>
-                </label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="large-12 columns">
-                <label>What's your spirit animal:
-                  <select id="spirit_animal" placeholder="Drop a line here">
-                    <option value="null">-</option>
-                    <option value="wolf">Wolf</option>
-                    <option value="tiger">Tiger</option>
-                    <option value="unicorn">Unicorn</option>
-                    <option value="unicorn">Still figuring that out</option>
-                  </select>
-                </label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="large-12 columns">
-                <input class="button" type="submit" id="submitButton"  name="submitButton" value="Submit">
-              </div>
-            </div>
-
-          </form>
-      </div>
-    </section> -->
-
-
+  <!-- Contact Form BEGIN -->
   <section class="contact row" data-magellan-destination="contact">
     <a name="contact"></a>
 
@@ -327,7 +279,7 @@
     	</form>
     </div>
   </section>
-
+<!-- Contact Form END -->
 
     <section class="footer row">
       <div class="text large-12 columns">

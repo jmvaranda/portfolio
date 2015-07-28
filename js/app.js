@@ -23,21 +23,9 @@ $(document).ready(function() {
                               '-o-animation-duration'
                             ]
   });
-  $(".animsition_2").animsition({
-    inClass               :   'fade-in-up',
-    inDuration            :    1650,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ]
-  });
 
 
  // Contact form
-
-
  $("#submit").click(function(){
    $(".error").hide();
      // Get value of email input
