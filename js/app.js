@@ -6,13 +6,12 @@ $(document).foundation();
 
 // Wait for DOM to load.
 $(document).ready(function() {
-    //After DOM load, remove nojs class to prevent flickering
+    // After DOM load, remove nojs class to prevent flickering
     setTimeout(function() {
          $('.slider_overlay').removeClass('nojs');
     }, 2000);
 
-
-  //On load set animations for header and nav
+  // On load set animations for header and nav
   $(".animsition").animsition({
     inClass               :   'fade-in-up',
     inDuration            :    1500,
@@ -23,7 +22,6 @@ $(document).ready(function() {
                               '-o-animation-duration'
                             ]
   });
-
 
  // Contact form
  $("#submit").click(function(){
@@ -70,40 +68,11 @@ $(document).ready(function() {
           });
         });
       }
-
-
    return false;
  });
 
 
-    // // attach a submit handler to the form
-    // $("#contactForm").submit(function(event) {
-    //
-    //   // stop form from submitting normally
-    //   event.preventDefault();
-    //
-    //   // get some values from elements on the page:
-    //   var $form = $( this ),
-    //       url = $form.attr( 'action' );
-    //
-    //   // Send the data using post
-    //   var posting = $.post( url, {
-    //     name: $('#name').val(),
-    //     subject: $('#subject').val(),
-    //     email: $('#email').val(),
-    //     message: $('#message').val(),
-    //     spirit_animal: $('#spirit_animal').val()
-    //   });
-    //
-    //   // Alerts the results
-    //   posting.done(function( data ) {
-    //     alert(name + subject + email);
-    //   });
-    // });
-
-
-// Slide reveal
-///////////////
+// Slide reveal overlay for mobile
 
 // Set portfolio overlay object properties
 var $portfolio_items = {

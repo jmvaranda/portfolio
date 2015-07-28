@@ -16,9 +16,9 @@
           document.body.className += ' js';
       </script>
 
-    <div class="header animsition">
+    <div class="header">
       <div class="row">
-        <header class="branding">
+        <header class="branding animsition">
           <a href="#">
             <h1>Julian Varanda</h1>
             <h2>UX &amp; UI Designer</h2>
@@ -27,8 +27,8 @@
       </div>
     </div>
 
-    <div id="magellan" class="magellan-nav animsition" data-magellan-expedition="fixed">
-      <dl class="sub-nav">
+    <div id="magellan" class="magellan-nav" data-magellan-expedition="fixed">
+      <dl class="sub-nav animsition">
         <dd data-magellan-arrival="about"><a href="#about">about</a></dd>
         <dd data-magellan-arrival="portfolio"><a href="#portfolio">portfolio</a></dd>
         <dd data-magellan-arrival="contact"><a href="#contact">contact</a></dd>

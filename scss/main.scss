@@ -118,12 +118,31 @@ body.js .nojs { display: none; }
 
 // Medium screen sizes +
 @media only screen and (min-width: 40.063em) {
+
   .about {
     img {
       width: 100%;
     }
   }
 } /* min-width 641px, medium screens */
+
+
+// Adjust vertical spacing for screen sizes
+
+
+@media only screen and (min-width: 64.063em) { } // Large
+
+
+@media only screen and (min-width: 90.063em) { } // XLarge
+
+//section.about and header {padding-top:35rem;}
+@media only screen and (min-width: 120.063em) { } //XXLarge
+
+
+.header {
+  padding-top:15rem;
+}
+
 
 .header {
   background-color:$white;
@@ -224,9 +243,7 @@ body {
 
   // Portfolio slider overlay
   .slider_overlay {
-    //background-color:$oil;
     z-index: 1;
-    //overflow-y:scroll;
     background-color: $offwhite;
     header {
       padding:2.75rem 1rem .75rem 1rem;
