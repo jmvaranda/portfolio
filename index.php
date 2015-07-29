@@ -42,41 +42,41 @@
       <a name="about"></a>
 
       <!-- About -->
-      <div class="row">
+      <div class="intro row">
           <div class="show-for-small-only columns">
-            <h2 class="divider">About</h2>
+            <h3 class="divider">About</h3>
           </div>
 
-          <div class="medium-4 columns text">
-            <p class="emphasis">Seattle&ndash;native, born and raised. <!-- Designing user experiences is where I spend most of my days -->I'm an interaction designer with a passion for creating thoughtful user experiences.</p>
-          </div>
-          <div class="medium-4 columns">
+          <div class="medium-2 columns">
             <img src="images/about.png" alt="Image of Julian Varanda"/>
           </div>
-          <div class="medium-4 columns text">
-            <p>I subscribe to a clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences.</p>
+
+          <div class="medium-5 columns text">
+            <p class="emphasis">Seattle&ndash;native, born and raised. <!-- Designing user experiences is where I spend most of my days -->I'm an interaction designer with a passion for creating thoughtful user experiences.</p>
+          </div>
+          <div class="medium-5 columns text">
+            <p>I subscribe to a clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences. <a href="#" data-reveal-id="resume" class="hide-for-small">View my resume</a></p>
             <p class="smallspacer hide-for-medium-up">When I'm not working, some other passions of mine include: music composition and audio production or geeking out and playing futbol.</p>
           </div>
       </div>
+    </section>
 
+    <section id="resume" class="resume reveal-modal hide-for-small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
       <!-- Experience & Skills -->
-      <div class="row">
-
-        <!-- Appears first on mobile -->
-        <div class="show-for-small-only text columns">
-          <h3 class="subheader">What I know</h3>
-            <ul class="skills">
-              <li>UX &amp; User-centered design principles</li>
-              <li>Adobe Creative Cloud</li>
-              <li>Sketch</li>
-              <li>PC &amp; Mac fluent</li>
-              <li>HTML5 / CSS3 / SASS</li>
-              <li>Light jQuery</li>
-              <li>Git</li>
-            </ul>
-        </div>
-
-          <div class="large-8 medium-8 text columns">
+        <div class="row">
+          <div class="text columns">
+            <h3 class="subheader">What I know</h3>
+              <ul class="skills">
+                <li>UX &amp; User-centered design principles</li>
+                <li>Adobe Creative Cloud</li>
+                <li>Sketch</li>
+                <li>PC &amp; Mac fluent</li>
+                <li>HTML5 / CSS3 / SASS</li>
+                <li>Light jQuery</li>
+                <li>Git</li>
+              </ul>
+          </div>
+          <div class="large-7 medium-7 text columns">
             <h3 class="subheader">Experience</h3>
             <ul class="experience">
               <li>
@@ -100,21 +100,8 @@
             </ul>
           </div>
 
-          <!--Show for medium screen sizes + -->
-          <div class="show-for-medium-up large-4 medium-4 text columns">
-            <h3 class="subheader">What I know</h3>
-              <ul class="skills">
-                <li>UX &amp; User-centered design principles</li>
-                <li>Adobe Creative Cloud</li>
-                <li>Sketch</li>
-                <li>PC &amp; Mac fluent</li>
-                <li>HTML5 / CSS3 / SASS</li>
-                <li>Light jQuery</li>
-                <li>Git</li>
-              </ul>
-          </div>
-
-      </div>
+        </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </section>
 
     <section class="portfolio" data-magellan-destination="portfolio">
@@ -122,7 +109,7 @@
         <a name="portfolio"></a>
 
         <div class="large-12 medium-12 columns">
-          <h2 class="divider">Recent work</h2>
+          <h3 class="divider">Recent work</h3>
         </div>
           <!-- Portfolio Items -->
           <ul class="portfolio_items columns">
@@ -177,7 +164,7 @@
             </li>
 
             <!-- Second Row -->
-            <li class="row">
+            <!-- <li class="row">
               <ul>
 
                 <li class="large-4 medium-4 small-12 columns">
@@ -195,7 +182,7 @@
                 </li>
 
               </ul>
-            </li>
+            </li> -->
 
           </ul>
         </div>
@@ -255,12 +242,52 @@
       <!-- Slider Overlay Items END -->
     </section>
 
+    <!-- Experience & Skills -->
+    <section class="resume show-for-small-only">
+      <div class="row">
+        <div class="text columns">
+          <h3 class="subheader">What I know</h3>
+            <ul class="skills">
+              <li>UX &amp; User-centered design principles</li>
+              <li>Adobe Creative Cloud</li>
+              <li>Sketch</li>
+              <li>PC &amp; Mac fluent</li>
+              <li>HTML5 / CSS3 / SASS</li>
+              <li>Light jQuery</li>
+              <li>Git</li>
+            </ul>
+        </div>
+        <div class="large-7 medium-7 text columns">
+          <h3 class="subheader">Experience</h3>
+          <ul class="experience">
+            <li>
+              <p><strong>Bing</strong></p>
+              <p>Interaction Designer <br/>
+                04/2014 &ndash; Present</p>
+              <p>Designing and producing user experiences for multiple platforms( mobile, desktop, tablet).</p> <p>Project involved communicating with various product teams and stakeholders, working within existing visual systems and creating new explorartory ...</p>
+            </li>
+            <li>
+              <p><strong>Windows Phone</strong></p>
+              <p>Design Integrator <br/>
+              09/2013 &ndash; 12/2014 </p>
+              <p>Proin sodales ullamcorper enim ac porta. Donec malesuada fringilla neque, vitae accumsan nisl tincidunt vel. Nulla facilisi. Sed ultricies ultricies mi sit amet euismod. Integer quis ante est. Nulla lacinia, neque eu volutpat pellentesque, arcu urna fringilla urna</p>
+            </li>
+            <li>
+              <p><strong>Bizango</strong></p>
+              <p>Visual Designer &amp; Front-end Developer <br/>
+              04/2012 &ndash; 09/2013</p>
+              <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
   <!-- Contact Form BEGIN -->
   <section class="contact" data-magellan-destination="contact">
     <div class="row">
       <div class="large-12 medium-12 columns">
-        <h2 class="divider">Get in touch</h2>
+        <h3 class="divider">Get in touch</h3>
         <p class="text">Drop a line here and I will get in contact with you as soon as I am available.</p>
       </div>
       <div class="small-12">
@@ -315,6 +342,8 @@
         <p>&copy; 2015 by Julian Varanda</p>
       </div>
     </section>
+
+
 
     <!-- Load resources -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

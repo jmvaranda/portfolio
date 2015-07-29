@@ -108,15 +108,18 @@ body.js .nojs { display: none; }
 @media only screen and (min-width: 40.063em) {
 
   .about {
+    .intro {
+      //margin-bottom:1.5rem;
+    }
     img {
-      width: 70%;
+      width: 90%;
       display:block;
-      margin:0 auto;
+      //margin:0 auto;
     }
   }
 
   .emphasis {
-    text-align: right;
+    //text-align: right;
   }
 
   // Hover for portfolio items
@@ -180,32 +183,30 @@ body {
     img {
       margin-bottom: $spacer;
     }
-
-
-    p.subheader, .skills, .experience {
-      margin:0 0 $spacer 0;
-    }
-
-    .skills {
-      li {
-        margin-left:$smallspacer;
-        padding-left:.5rem;
-      }
-    }
-
-    .experience {
-      li {
-        list-style: none;
-        padding: 0 0 .5rem 0;
-        margin-bottom:$smallspacer;
-        p:first-child {
-          margin-bottom: 0;
-        }
-      }
-
-    }
-
   }
+
+  p.subheader, .skills, .experience {
+    margin:0 0 $spacer 0;
+  }
+
+  .skills {
+    li {
+      margin-left:$smallspacer;
+      padding-left:.5rem;
+    }
+  }
+
+  .experience {
+    li {
+      list-style: none;
+      padding: 0 0 .5rem 0;
+      margin-bottom:$smallspacer;
+      p:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
 
   .portfolio {
     ul {
@@ -304,7 +305,7 @@ body {
 
   // Common elements
 
-  .about, .portfolio, .contact {
+  .about, .portfolio, .resume, .contact {
     background-color:$offwhite;
     padding-top:2rem;
     background: url('../images/crossword.png') repeat;
