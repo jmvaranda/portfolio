@@ -131,12 +131,12 @@
                 <li class="large-4 medium-4 small-12 columns">
                 <div class="portfolio_grid portfolio_otp trigger_otp">
                   <a class="portfolio_overlay">
-                    <div class="project_logo small-5 columns">
+                    <div class="project_logo small-6 small-offset-3 columns">
                       <img src="images/bing-logo.png" alt=""/>
                     </div>
-                    <div class="project_label small-7 columns">
-                      <h4>iOS app</h4>
-                      <h5>UI / UX Design</h4>
+                    <div class="project_label small-12 columns">
+                      <h3><small>iOS app</small></h3>
+                      <h3 class="subhead"><small>UI / UX Design</small></h3>
                     </div>
                   </a>
                 </div>
@@ -145,12 +145,12 @@
                 <li class="large-4 medium-4 small-12 columns">
                 <div class="portfolio_grid portfolio_qf trigger_qf ">
                   <a class="portfolio_overlay">
-                    <div class="project_logo small-5 columns">
+                    <div class="project_logo small-6 small-offset-3 columns">
                       <img src="images/bing-logo.png" alt=""/>
                     </div>
-                    <div class="project_label small-7 columns">
-                      <h4>Query formulation</h4>
-                      <h5>UI / UX Design</h4>
+                    <div class="project_label small-12 columns">
+                      <h3><small>Query formulation</small></h3>
+                      <h3 class="subhead"><small>UI / UX Design</small></h3>
                     </div>
                   </a>
                 </div>
@@ -159,12 +159,12 @@
                 <li class="large-4 medium-4 small-12 columns">
                 <div class="portfolio_grid portfolio_music_answer ">
                   <a class="portfolio_overlay">
-                    <div class="project_logo small-5 columns">
+                    <div class="project_logo small-6 small-offset-3 columns">
                       <img src="images/bing-logo.png" alt=""/>
                     </div>
-                    <div class="project_label small-7 columns">
-                      <h4>Mobile <br> music answer</h4>
-                      <h5>UI / UX Design</h4>
+                    <div class="project_label small-12 columns">
+                      <h3><small>Mobile music answer</small></h3>
+                      <h3 class="subhead"><small>UI / UX Design</small></h3>
                     </div>
                   </a>
                 </div>
@@ -180,12 +180,12 @@
                 <li class="large-4 medium-4 small-12 columns">
                 <div class="portfolio_grid portfolio_immortal_palm ">
                   <a class="portfolio_overlay">
-                    <div class="project_logo small-5 columns">
+                    <div class="project_logo small-6 small-offset-3 columns">
                       <img src="images/bing-logo.png" alt=""/>
                     </div>
-                    <div class="project_label small-7 columns">
-                      <h4>Immortal Palm <br> Martial Arts</h4>
-                      <h5>UI &amp; UX Design / Front-End</h4>
+                    <div class="project_label small-12 columns">
+                      <h3><small>Immortal Palm Martial Arts</small></h3>
+                      <h3 class="subhead"><small>UI &amp; UX Design / Front-End</small></h3>
                     </div>
                   </a>
                 </div>

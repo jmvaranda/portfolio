@@ -202,11 +202,11 @@ body {
 
         .portfolio_overlay {
           position:relative;
-          top:5rem;
+          top:4rem;
           display: block;
           padding: .5rem;
           width: 100%;
-          min-height: 9rem;
+          min-height: 10rem;
           vertical-align:middle;
           background-color: rgba($darkgray, 0.8);
             .project_logo, .project_label {
@@ -214,21 +214,23 @@ body {
               position: relative;
               top: 2rem;
               transform: translateY(-20%);
-
             }
 
             .project_logo {
               //
             }
             .project_label {
-              clear: right;
-              h4, h5 {
-                //font-size:$paragraph-font-size;
-                color: $white;
-                letter-spacing: -0.025rem;
-                text-align: left;
+              margin-top:1rem;
+              text-align: center;
+              h3 {
+                line-height:1rem;
+                & small {
+                  color: $white;
+                  letter-spacing: -0.025rem;
+                  margin:0;
+                }
               }
-              h5 {color:$lightgray;}
+              h3.subhead small {color:$lightgray;}
             }
         }
 

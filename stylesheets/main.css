@@ -9603,11 +9603,11 @@ body {
 /* line 203, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay {
   position: relative;
-  top: 5rem;
+  top: 4rem;
   display: block;
   padding: .5rem;
   width: 100%;
-  min-height: 9rem;
+  min-height: 10rem;
   vertical-align: middle;
   background-color: rgba(51, 51, 51, 0.8);
 }
@@ -9617,108 +9617,113 @@ body {
   top: 2rem;
   transform: translateY(-20%);
 }
-/* line 223, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label {
-  clear: right;
+  margin-top: 1rem;
+  text-align: center;
 }
 /* line 225, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label h4, .portfolio .portfolio_items .portfolio_overlay .project_label h5 {
+.portfolio .portfolio_items .portfolio_overlay .project_label h3 {
+  line-height: 1rem;
+}
+/* line 227, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .project_label h3 small {
   color: #ffffff;
   letter-spacing: -0.025rem;
-  text-align: left;
+  margin: 0;
 }
-/* line 231, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label h5 {
+/* line 233, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .project_label h3.subhead small {
   color: #aaaaaa;
 }
-/* line 235, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_otp {
   background: url("../images/portfolio_otp.png") center center/100% no-repeat;
 }
-/* line 238, ../scss/main.scss */
+/* line 240, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_qf {
   background: url("../images/portfolio_qf.png") center center/100% no-repeat;
 }
-/* line 241, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_music_answer {
   background: url("../images/portfolio_music_answer.png") center center/100% no-repeat;
 }
 
-/* line 248, ../scss/main.scss */
+/* line 250, ../scss/main.scss */
 .slider_overlay {
   z-index: 1;
   background-color: #f2f2f2;
 }
-/* line 251, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .slider_overlay header {
   padding: 2.75rem 1rem .75rem 1rem;
   background-color: rgba(51, 51, 51, 0.03);
 }
-/* line 255, ../scss/main.scss */
+/* line 257, ../scss/main.scss */
 .slider_overlay h1 {
   line-height: 2rem;
   margin: 0;
 }
-/* line 256, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 .slider_overlay h2 {
   line-height: 1.25rem;
   margin: 0 0 1.25rem 0;
 }
-/* line 257, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .slider_overlay .emphasis {
   margin: 0;
 }
-/* line 258, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 .slider_overlay .clearing-thumbs {
   margin-bottom: 1.5rem;
 }
-/* line 261, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 .slider_overlay .text {
   margin-top: 1rem;
 }
 
-/* line 267, ../scss/main.scss */
+/* line 269, ../scss/main.scss */
 .footer {
   padding: 10rem 0;
   background-color: #222222;
   color: #ffffff;
 }
 
-/* line 274, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 h3.subheader {
   color: #aaaaaa;
 }
 
-/* line 280, ../scss/main.scss */
+/* line 282, ../scss/main.scss */
 .about, .portfolio, .contact {
   background-color: #f2f2f2;
   padding-top: 2rem;
   background: url("../images/crossword.png") repeat;
 }
 
-/* line 286, ../scss/main.scss */
+/* line 288, ../scss/main.scss */
 .gradient_up {
   height: 13.5rem;
   background-color: #ffffff;
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
 
-/* line 292, ../scss/main.scss */
+/* line 294, ../scss/main.scss */
 .background_dark {
   background-color: #f2f2f2;
 }
 
-/* line 293, ../scss/main.scss */
+/* line 295, ../scss/main.scss */
 .no_scroll {
   overflow: hidden;
 }
 
-/* line 294, ../scss/main.scss */
+/* line 296, ../scss/main.scss */
 .scroll_y {
   overflow-y: scroll;
 }
 
-/* line 296, ../scss/main.scss */
+/* line 298, ../scss/main.scss */
 .divider {
   color: #aaaaaa;
   width: 100%;
@@ -9727,7 +9732,7 @@ h3.subheader {
   text-align: center;
   line-height: 1.2em;
 }
-/* line 303, ../scss/main.scss */
+/* line 305, ../scss/main.scss */
 .divider:after, .divider:before {
   content: "";
   vertical-align: top;
@@ -9737,23 +9742,23 @@ h3.subheader {
   border-bottom: 1px solid #ccc;
   margin: 0 3% 0 -55%;
 }
-/* line 312, ../scss/main.scss */
+/* line 314, ../scss/main.scss */
 .divider:after {
   margin: 0 -55% 0 3%;
 }
 
-/* line 318, ../scss/main.scss */
+/* line 320, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-/* line 325, ../scss/main.scss */
+/* line 327, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 327, ../scss/main.scss */
+/* line 329, ../scss/main.scss */
 .slider_close {
   opacity: 0;
   top: 0;
@@ -9766,7 +9771,7 @@ html, .portfolio, .about {
   background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 339, ../scss/main.scss */
+/* line 341, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9775,7 +9780,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 347, ../scss/main.scss */
+/* line 349, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }
