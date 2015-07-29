@@ -66,37 +66,24 @@ body.js .nojs { display: none; }
   .text, .contact .row, .row label, .row input.button {text-align:left;}
   .row {text-align: center;}
 
-  .branding {
-    text-align:center;
-    margin-top:10rem;
-    a {
-      display: block;
-      margin: 0 auto;
-      text-indent:-99999px;
-      background-image: url('../images/branding_home.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
-
-  .nav {
-    text-align:center;
-    margin-top:$spacer;
-    ul {
-      list-style:none;
-      margin:0;
-      li {
-        line-height:2.75rem;
-      }
-      a {
-        padding: $padding;
-      }
-    }
-  }
+  // .nav {
+  //   text-align:center;
+  //   margin-top:$spacer;
+  //   ul {
+  //     list-style:none;
+  //     margin:0;
+  //     li {
+  //       line-height:2.75rem;
+  //     }
+  //     a {
+  //       padding: $padding;
+  //     }
+  //   }
+  // }
 
   .experience {
     li {
-      border-bottom: 1px solid $lightgray;
+      border-bottom: 1px solid #cccccc;
       &:last-child {border-bottom: none;}
     }
   }
@@ -128,8 +115,6 @@ body.js .nojs { display: none; }
 
 
 // Adjust vertical spacing for screen sizes
-
-
 @media only screen and (min-width: 64.063em) { } // Large
 
 
@@ -141,13 +126,25 @@ body.js .nojs { display: none; }
 
 .header {
   padding-top:15rem;
-}
-
-
-.header {
   background-color:$white;
   text-align: center;
 }
+
+.branding {
+  a {
+    display: block;
+    margin: 0 auto;
+    text-indent:-99999px;
+    background-image: url('../images/branding_home.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  h1 {
+    line-height:2.25rem;
+    small {display:inline-block;}
+  }
+}
+
 
 body {
   background-color:$offwhite !important;
@@ -186,16 +183,22 @@ body {
   }
 
   .portfolio {
+    ul {
+      margin:0;
+    }
+    li {
+      list-style: none;
+    }
+    .portfolio_grid {
+      position: relative;
+      display: block;
+      min-width: 290px;
+      min-height: 280px;
+      margin-bottom:2rem;
+    }
+
       .portfolio_items {
         margin:0 auto;
-        > li {
-          position: relative;
-          display: block;
-          list-style: none;
-          min-width: 290px;
-          min-height: 280px;
-          margin-bottom:2rem;
-        }
 
         .portfolio_overlay {
           position:relative;
@@ -277,9 +280,10 @@ body {
   .about, .portfolio, .contact {
     background-color:$offwhite;
     padding-top:2rem;
+    background: url('../images/crossword.png') repeat;
   }
 
-  .gradient {
+  .gradient_up {
     // height on this should be mobile only
     height:13.5rem;
     background-color: $white;
@@ -288,6 +292,28 @@ body {
   .background_dark {background-color:$offwhite;}
   .no_scroll {overflow:hidden;}
   .scroll_y {overflow-y: scroll;}
+
+  .divider{
+    color:$lightgray;
+    width:100%;
+    margin:20px auto;
+    overflow:hidden;
+    text-align:center;
+    line-height:1.2em;
+    &:after, &:before {
+      content:"";
+      vertical-align:top;
+      display:inline-block;
+      width:50%;
+      height:0.65em;
+      border-bottom:1px solid #ccc;
+      margin:0 3% 0 -55%;
+    }
+    &:after {
+      margin:0 -55% 0 3%;
+    }
+  }
+
 
     .emphasis {
       font-size:1.25rem;
