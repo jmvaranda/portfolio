@@ -37,12 +37,13 @@ $rem-base: 14px;
 // Prevent flickering
 body.js .nojs { display: none; }
 
-/* This centers magellan nav */
+// This centers magellan nav
 .sub-nav {
   margin: 0 auto !important;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  dd {margin-left:.75rem;}
 }
 .magellan-nav {
   right: 0;

@@ -31,7 +31,7 @@
     <div id="magellan" class="magellan-nav" data-magellan-expedition="fixed">
       <dl class="sub-nav animsition">
         <dd data-magellan-arrival="about"><a href="#about">about</a></dd>
-        <dd data-magellan-arrival="portfolio"><a href="#portfolio">portfolio</a></dd>
+        <dd data-magellan-arrival="portfolio"><a href="#portfolio">recent work</a></dd>
         <dd data-magellan-arrival="contact"><a href="#contact">contact</a></dd>
       </dl>
     </div>
@@ -43,7 +43,7 @@
 
       <!-- About -->
       <div class="row">
-          <div class="large-12 medium-12 columns">
+          <div class="show-for-small-only large-12 medium-12 columns">
             <h2 class="divider">About</h2>
           </div>
           <div class="large-3 medium-3 columns">
@@ -119,7 +119,7 @@
         <a name="portfolio"></a>
 
         <div class="large-12 medium-12 columns">
-          <h2 class="divider">Portfolio</h2>
+          <h2 class="divider">Recent work</h2>
         </div>
           <!-- Portfolio Items -->
           <ul class="portfolio_items columns">
