@@ -72,6 +72,28 @@ $(document).ready(function() {
  });
 
 
+// Portfolio items Hover
+
+// On hover
+$('.portfolio_grid').hover(
+  // function mouse i
+  function() {
+    // Full opacity on list item and overlay
+    $(this).addClass('opacity_show');
+    $(this).find('a.portfolio_overlay').addClass('opacity_show');
+  },
+  // function  mouse out
+  function() {
+    // Remove opacity on list item and overlay
+    $(this).removeClass('opacity_show');
+    $(this).find('a.portfolio_overlay').removeClass('opacity_show');
+  }
+);
+
+
+
+
+
 // Slide reveal overlay for mobile
 
 // Set portfolio overlay object properties

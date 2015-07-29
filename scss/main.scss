@@ -43,7 +43,7 @@ body.js .nojs { display: none; }
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  dd {margin-left:.75rem;}
+  dd {margin-left:.65rem;}
 }
 .magellan-nav {
   right: 0;
@@ -109,10 +109,34 @@ body.js .nojs { display: none; }
 
   .about {
     img {
-      width: 100%;
+      width: 70%;
+      display:block;
+      margin:0 auto;
     }
   }
+
+  .emphasis {
+    text-align: right;
+  }
+
+  // Hover for portfolio items
+  .portfolio_items {
+
+    .portfolio_grid,
+    .portfolio_overlay {@include single-transition;}
+
+    .portfolio_grid {
+      opacity:.5;
+    }
+    .portfolio_overlay {
+      opacity:0;
+    }
+
+  }
+
+
 } /* min-width 641px, medium screens */
+
 
 
 // Adjust vertical spacing for screen sizes
@@ -148,7 +172,7 @@ body.js .nojs { display: none; }
 
 
 body {
-  background-color:$offwhite !important;
+  //background-color:$offwhite !important;
 }
 
 
@@ -200,7 +224,7 @@ body {
 
       .portfolio_items {
         margin:0 auto;
-
+        .portfolio_grid {cursor:pointer; cursor:hand;}
         .portfolio_overlay {
           position:relative;
           top:4rem;
@@ -291,10 +315,12 @@ body {
     height:13.5rem;
     background-color: $white;
     background-image: linear-gradient(to bottom, $white, $offwhite);
+    border-bottom: 1px solid #ffffff;
   }
   .background_dark {background-color:$offwhite;}
   .no_scroll {overflow:hidden;}
   .scroll_y {overflow-y: scroll;}
+  .opacity_show {opacity:1 !important;}
 
   .divider{
     color:$lightgray;

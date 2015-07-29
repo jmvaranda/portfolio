@@ -43,14 +43,17 @@
 
       <!-- About -->
       <div class="row">
-          <div class="show-for-small-only large-12 medium-12 columns">
+          <div class="show-for-small-only columns">
             <h2 class="divider">About</h2>
           </div>
-          <div class="large-3 medium-3 columns">
+
+          <div class="medium-4 columns text">
+            <p class="emphasis">Seattle&ndash;native, born and raised. <!-- Designing user experiences is where I spend most of my days -->I'm an interaction designer with a passion for creating thoughtful user experiences.</p>
+          </div>
+          <div class="medium-4 columns">
             <img src="images/about.png" alt="Image of Julian Varanda"/>
           </div>
-          <div class="large-9 medium-9 columns text">
-            <p class="emphasis">Seattle&ndash;native, born and raised. <!-- Designing awesome user experiences is where I spend most of my days -->I'm an interaction designer with a passion for creating thoughtful user experiences.</p>
+          <div class="medium-4 columns text">
             <p>I subscribe to a clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences.</p>
             <p class="smallspacer hide-for-medium-up">When I'm not working, some other passions of mine include: music composition and audio production or geeking out and playing futbol.</p>
           </div>
