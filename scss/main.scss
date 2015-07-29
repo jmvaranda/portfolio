@@ -3,6 +3,10 @@
 @import "settings";
 @import "foundation";
 
+@mixin background_bg() {
+  background: url('../images/crossword.png') repeat;
+}
+
 $primary: #555555;
 $emphasis: #111111;
 
@@ -20,7 +24,6 @@ $smallspacer: 2.5rem;
 $bodytext: 1.2rem;
 
 $rem-base: 14px;
-
 
 
 .overlay {
@@ -92,12 +95,32 @@ body.js .nojs { display: none; }
 }
 // End MOBILE
 
+// Adjust width of slider overlay for various mobile device widths
+//320px
+@media (min-width: 320px) and (max-width: 359px) {
+  .slider_overlay {width:17.5rem !important;}
+}
+//360px
+@media (min-width: 360px) and (max-width: 374px) {
+  .slider_overlay {width:20rem !important;}
+}
+//375px
+@media (min-width: 375px) and (max-width: 383px) {
+  .slider_overlay {width:21rem !important;}
+}
 
+//384px
+@media (min-width: 384px) and (max-width: 410px) {
+  .slider_overlay {width:21.5rem !important;}
+}
 
+//410px
+@media (min-width: 412px) and (max-width: 414px) {
+  .slider_overlay {width:23.5rem !important;}
+}
 
 // Adjust vertical and horizontal spacing for larger mobile screen sizes
 @media (min-width: 375px) and (max-width: 415px) {
-  .slider_overlay {width:91% !important;}
   .about {padding-top:14rem !important;}
 }
 
@@ -110,6 +133,7 @@ body.js .nojs { display: none; }
   .about {
     .intro {
       //margin-bottom:1.5rem;
+      a {display:inline !important;}
     }
     img {
       width: 90%;
@@ -276,12 +300,14 @@ body {
   .slider_overlay {
     z-index: 1;
     background-color: $offwhite;
+    @include background_bg();
     header {
       padding:2.75rem 1rem .75rem 1rem;
-      background-color: rgba($oil, .03);
+      //background-color: rgba($oil, .03);
     }
     h1{line-height:2rem; margin:0}
-    h2{line-height:1.25rem; margin:0 0 1.25rem 0;}
+    h2{line-height:1.25rem; margin:.5rem 0 1.25rem 0;}
+    small {font-size:80%;}
     .emphasis {margin:0;}
     .clearing-thumbs {
       margin-bottom:1.5rem;
@@ -308,7 +334,7 @@ body {
   .about, .portfolio, .resume, .contact {
     background-color:$offwhite;
     padding-top:2rem;
-    background: url('../images/crossword.png') repeat;
+    @include background_bg();
   }
 
   .gradient_up {

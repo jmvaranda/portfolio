@@ -195,15 +195,16 @@
       <section id="slider_otp" class="slider_overlay nojs">
         <a class="slider_close trigger_otp"></a>
         <header>
+          <label><small>Case Study &mdash; iOS app experience</small></label>
           <h2>Off The Post</h2>
-          <h2><small>iOS app experience</small></h2>
-          <p class="emphasis">A creative thought experiment&ndash;I developed this design and product idea with soccer enthusiasts in mind.</p>
+          <!-- <h2>iOS app experience</h2> -->
         </header>
-        <div class="large-12 medium-12 columns text">
+        <div class="large-12 medium-12 text">
           <ul class="clearing-thumbs clearing-feature" data-clearing>
             <li class="clearing-featured-img"><a href="images\portfolio_01.jpg"><img src="images\portfolio_01.jpg"></a></li>
             <li class="th"><a href="images\portfolio_02.jpg"><img class="hide" src="images\portfolio_02.jpg"></a></li>
           </ul>
+          <p class="emphasis">A creative thought experiment&ndash;I developed this design and product idea with soccer enthusiasts in mind.</p>
           <p>The unique aspect of this experience is the interlinking of information such as players profiles to clubs, tagging players in articles, user &amp; community driven content and exploration of new content through a exploratory experience</p>
           <p>This project proved challenging with the organization of information being displayed. The app consisted of multiple template states such as: </p>
           <ul class="square">
@@ -218,8 +219,8 @@
       <section id="slider_qf" class="slider_overlay nojs">
         <a class="slider_close trigger_qf"></a>
         <header>
+          <label><small>Case Study &mdash; Bing homepage &amp; search experience</small></label>
           <h2>Query Formulation</h2>
-          <h2><small>Bing homepage &amp; search experience</small></h2>
           <p class="emphasis">Through Bing, this feature involved simplifying the previous QF experience to improve scannability, scalability and engagement metrics.</p>
         </header>
         <div class="large-12 medium-12 columns text">

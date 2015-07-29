@@ -79,7 +79,8 @@
       this.css({
           position: "fixed",
           //width: setting.width,
-          width: "85%",
+          //width: "85%",
+          width: "17.5rem",
           transition: transition,
           height: "100%",
           top: setting.top
