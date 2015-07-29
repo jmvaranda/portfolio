@@ -260,32 +260,27 @@
         <h2 class="divider">Get in touch</h2>
         <p class="text">Drop a line here and I will get in contact with you as soon as I am available.</p>
       </div>
-      <div class="small-12 columns">
+      <div class="small-12">
         <a name="contact"></a>
           <?php include('verify.php'); ?>
         	<form action="" method="post" id="sendEmail">
         		<ul class="forms no-bullet">
-              <li>
+              <li class="medium-5 large-5 columns">
                 <label for="subject">Name:</label>
                 <input type="text" name="subject" id="subject" placeholder="What's your name?" value="<?= $_POST['subject']; ?>" /><?php if(isset($subjectError)) echo '
                 <span class="error">'.$subjectError.'</span>'; ?>
               </li>
-        			<li>
+        			<li class="medium-5 large-5 columns">
                 <label for="emailFrom">Email:</label>
                 <input type="text" name="emailFrom" id="emailFrom" placeholder="How do I get in touch with you?" value="<?= $_POST['emailFrom']; ?>" /><?php if(isset($emailFromError)) echo '
                 <span class="error">'.$emailFromError.'</span>'; ?>
               </li>
-        			<li>
+        			<li class="medium-5 large-5 columns">
                 <label for="subject">Subject:</label>
                 <input type="text" name="subject" id="subject" placeholder="Subject line" value="<?= $_POST['subject']; ?>" /><?php if(isset($subjectError)) echo '
                 <span class="error">'.$subjectError.'</span>'; ?>
               </li>
-        			<li>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" placeholder="Drop a line"><?= $_POST['message']; ?></textarea><?php if(isset($messageError)) echo '
-                <span class="error">'.$messageError.'</span>'; ?>
-              </li>
-              <li>
+              <li class="medium-5 large-5 columns">
                 <label>What's your spirit animal:
                   <select id="spirit_animal">
                     <option value="null">-</option>
@@ -296,7 +291,12 @@
                   </select>
                 </label>
               </li>
-              <li class="buttons">
+        			<li class="medium-10 large-10 columns">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Drop a line"><?= $_POST['message']; ?></textarea><?php if(isset($messageError)) echo '
+                <span class="error">'.$messageError.'</span>'; ?>
+              </li>
+              <li class="medium-12 large-12 columns buttons">
                 <button type="submit" id="submit" class="button">Submit</button>
                 <input type="hidden" name="submitted" id="submitted" value="true" />
               </li>
