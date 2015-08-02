@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julian Varanda UI &amp; UX Designer</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <!-- animsition CSS -->
     <link rel="stylesheet" href="bower_components/animsition/dist/css/animsition.min.css">
 
   </head>
@@ -16,7 +15,7 @@
           document.body.className += ' js';
       </script>
 
-    <div class="header">
+    <!-- <div class="header">
       <div class="row">
         <header class="branding animsition">
           <a href="#">
@@ -34,7 +33,29 @@
         <dd data-magellan-arrival="portfolio"><a href="#portfolio">recent work</a></dd>
         <dd data-magellan-arrival="contact"><a href="#contact">contact</a></dd>
       </dl>
+    </div> -->
+
+    <div class="header">
+      <div class="row">
+        <header class="branding animsition">
+          <a href="#">
+            <img src="images/branding_home.svg" alt="" title="Julian Varanda"/>
+            <h1>Julian Varanda <br>
+              <small>UX &amp; UI Designer</small>
+            </h1>
+          </a>
+        </header>
+      </div>
     </div>
+
+    <div id="magellan" class="magellan-nav" data-magellan-expedition="fixed">
+      <dl class="sub-nav animsition">
+        <dd data-magellan-arrival="about"><a href="#about">about</a></dd>
+        <dd data-magellan-arrival="portfolio"><a href="#portfolio">recent work</a></dd>
+        <dd data-magellan-arrival="contact"><a href="#contact">contact</a></dd>
+      </dl>
+    </div>
+
 
     <div class="gradient_up"></div>
 
@@ -61,7 +82,7 @@
       </div>
     </section>
 
-    <section id="resume" class="resume reveal-modal hide-for-small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <section id="resume" class="resume reveal-modal medium hide-for-small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
       <!-- Experience & Skills -->
         <div class="row">
           <div class="text columns">
@@ -201,8 +222,8 @@
         </header>
         <div class="large-12 medium-12 text">
           <ul class="clearing-thumbs clearing-feature" data-clearing>
-            <li class="clearing-featured-img"><a href="images\portfolio_01.jpg"><img src="images\portfolio_01.jpg"></a></li>
-            <li class="th"><a href="images\portfolio_02.jpg"><img class="hide" src="images\portfolio_02.jpg"></a></li>
+            <li class="clearing-featured-img"><a href="images/portfolio_01.jpg"><img src="images/portfolio_01.jpg"></a></li>
+            <li class="th"><a href="images/portfolio_02.jpg"><img class="hide" src="images/portfolio_02.jpg"></a></li>
           </ul>
           <p class="emphasis">A creative thought experiment&ndash;I developed this design and product idea with soccer enthusiasts in mind.</p>
           <p>The unique aspect of this experience is the interlinking of information such as players profiles to clubs, tagging players in articles, user &amp; community driven content and exploration of new content through a exploratory experience</p>
@@ -225,8 +246,8 @@
         </header>
         <div class="large-12 medium-12 columns text">
           <ul class="clearing-thumbs clearing-feature" data-clearing>
-            <li class="clearing-featured-img"><a href="images\portfolio_02.jpg"><img src="images\portfolio_02.jpg"></a></li>
-            <li class="th"><a href="images\portfolio_01.jpg"><img class="hide" src="images\portfolio_01.jpg"></a></li>
+            <li class="clearing-featured-img"><a href="images/portfolio_02.jpg"><img src="images/portfolio_02.jpg"></a></li>
+            <li class="th"><a href="images/portfolio_01.jpg"><img class="hide" src="images/portfolio_01.jpg"></a></li>
           </ul>
           <p>Some challenges included finding solutions to fitting data into smaller UI while still maintaining legibility and scannability,  working within the Bing visual framework and aligning with future the Windows 10 design release.</p>
           <p>With the new UX, query formulation engagement increased substantially (upwards of 400%).</p>

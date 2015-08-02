@@ -28,7 +28,7 @@ $(document).ready(function() {
    $(".error").hide();
      // Get value of email input
      var hasError = false;
-     var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+     //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
 
      // Make sure email address is not empty or invalid
      var emailToVal = $("#emailTo").val();

@@ -42,6 +42,7 @@ body.js .nojs { display: none; }
 
 // This centers magellan nav
 .sub-nav {
+  display: table; // Centers nav on IE
   margin: 0 auto !important;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -121,7 +122,8 @@ body.js .nojs { display: none; }
 
 // Adjust vertical and horizontal spacing for larger mobile screen sizes
 @media (min-width: 375px) and (max-width: 415px) {
-  .about {padding-top:14rem !important;}
+  //.about {padding-top:14rem !important;}
+  .gradient_up {margin-top:8rem;}
 }
 
 
@@ -177,7 +179,7 @@ body.js .nojs { display: none; }
 
 
 .header {
-  padding-top:15rem;
+  padding-top:13rem;
   background-color:$white;
   text-align: center;
 }
@@ -185,14 +187,19 @@ body.js .nojs { display: none; }
 .branding {
   a {
     display: block;
+    width:286px;
+    height:72px;
     margin: 0 auto;
-    text-indent:-99999px;
-    background-image: url('../images/branding_home.svg');
+    //text-indent:-99999px;
+    //background-image: url('../images/branding_home.svg');
+    //background-image: url('../images/branding_home@3x.png');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
   }
   h1 {
     line-height:2.25rem;
+    text-indent:-99999px;
     small {display:inline-block;}
   }
 }
@@ -401,3 +408,8 @@ body {
     }
 
     .smallspacer {margin-bottom:$smallspacer;}
+
+// IE class elements
+
+.ie {}
+.lt-ie9 {}
