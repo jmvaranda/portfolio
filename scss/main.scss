@@ -7,6 +7,10 @@
   background: url('../images/crossword.png') repeat;
 }
 
+@mixin text_shadow($color) {
+  text-shadow: 4px 4px 3px $color;
+}
+
 $primary: #555555;
 $emphasis: #111111;
 
@@ -249,7 +253,7 @@ body {
     .portfolio_grid {
       position: relative;
       display: block;
-      min-width: 290px;
+      //min-width: 290px;
       min-height: 280px;
       margin-bottom:2rem;
     }
@@ -259,11 +263,11 @@ body {
         .portfolio_grid {cursor:pointer; cursor:hand;}
         .portfolio_overlay {
           position:relative;
-          top:4rem;
+          top:3.5rem;
           display: block;
           padding: .5rem;
           width: 100%;
-          min-height: 10rem;
+          min-height: 9.5rem;
           vertical-align:middle;
           background-color: rgba($darkgray, 0.8);
             .project_logo, .project_label {
@@ -279,6 +283,7 @@ body {
             .project_label {
               margin-top:1rem;
               text-align: center;
+              @include text_shadow($primary);
               h3 {
                 line-height:1rem;
                 & small {
@@ -340,7 +345,7 @@ body {
 
   .about, .portfolio, .resume, .contact {
     background-color:$offwhite;
-    padding-top:2rem;
+    padding-top:5rem;
     @include background_bg();
   }
 
@@ -358,6 +363,7 @@ body {
 
   .divider{
     color:$lightgray;
+    @include text_shadow($offwhite);
     width:100%;
     margin:20px auto;
     overflow:hidden;
@@ -369,7 +375,7 @@ body {
       display:inline-block;
       width:50%;
       height:0.65em;
-      border-bottom:1px solid #ccc;
+      border-bottom:1px solid #dddddd;
       margin:0 3% 0 -55%;
     }
     &:after {
@@ -381,6 +387,7 @@ body {
     .emphasis {
       font-size:1.25rem;
       font-weight:600;
+      letter-spacing: .025rem;
       //color:$lightgray;
     }
 

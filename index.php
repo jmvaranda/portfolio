@@ -76,7 +76,7 @@
             <p class="emphasis">Seattle&ndash;native, born and raised. <!-- Designing user experiences is where I spend most of my days -->I'm an interaction designer with a passion for creating thoughtful user experiences.</p>
           </div>
           <div class="medium-5 columns text">
-            <p>I subscribe to a clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences. <a href="#" data-reveal-id="resume" class="hide-for-small">View my resume</a></p>
+            <p>I subscribe to a clean, functional, and user-centric design ideology. With a background in visual and web design I have worked with both large and small product teams creating clean visual UI and delightful user experiences. <a href="#" data-reveal-id="resume" class="hide-for-small">See my resume</a></p>
             <p class="smallspacer hide-for-medium-up">When I'm not working, some other passions of mine include: music composition and audio production or geeking out and playing futbol.</p>
           </div>
       </div>
