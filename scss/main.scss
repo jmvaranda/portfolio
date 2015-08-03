@@ -51,7 +51,7 @@ body.js .nojs { display: none; }
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  dd {margin-left:.65rem;}
+  dd {margin-left:.4rem;}
 }
 .magellan-nav {
   right: 0;
@@ -348,6 +348,7 @@ body {
     padding-top:5rem;
     @include background_bg();
   }
+  .about {padding-top:1rem;}
 
   .gradient_up {
     // height on this should be mobile only
@@ -365,7 +366,7 @@ body {
     color:$lightgray;
     @include text_shadow($offwhite);
     width:100%;
-    margin:20px auto;
+    margin:1.5rem auto;
     overflow:hidden;
     text-align:center;
     line-height:1.2em;

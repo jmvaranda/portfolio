@@ -6,35 +6,16 @@
     <title>Julian Varanda UI &amp; UX Designer</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="bower_components/animsition/dist/css/animsition.min.css">
-
   </head>
   <body>
 
       <script>
         //prevent flickering
           document.body.className += ' js';
+
       </script>
 
-    <!-- <div class="header">
-      <div class="row">
-        <header class="branding animsition">
-          <a href="#">
-            <h1>Julian Varanda <br>
-              <small>UX &amp; UI Designer</small>
-            </h1>
-          </a>
-        </header>
-      </div>
-    </div>
-
-    <div id="magellan" class="magellan-nav" data-magellan-expedition="fixed">
-      <dl class="sub-nav animsition">
-        <dd data-magellan-arrival="about"><a href="#about">about</a></dd>
-        <dd data-magellan-arrival="portfolio"><a href="#portfolio">recent work</a></dd>
-        <dd data-magellan-arrival="contact"><a href="#contact">contact</a></dd>
-      </dl>
-    </div> -->
-
+    <!-- <button id="load" onclick="sendAJAX()">Bring it!</button> -->
     <div class="header">
       <div class="row">
         <header class="branding animsition">
@@ -44,6 +25,7 @@
               <small>UX &amp; UI Designer</small>
             </h1>
           </a>
+          <div id="ajax"></div>
         </header>
       </div>
     </div>
@@ -129,140 +111,16 @@
       <div class="row">
         <a name="portfolio"></a>
 
-        <div class="large-12 medium-12 columns">
-          <h3 class="divider">Recent work</h3>
         </div>
-          <!-- Portfolio Items -->
-          <ul class="portfolio_items columns">
 
-            <!-- First Row -->
-            <li class="row">
-              <ul>
-
-                <li class="large-4 medium-4 small-12 columns">
-                <div class="portfolio_grid portfolio_otp trigger_otp">
-                  <a class="portfolio_overlay">
-                    <div class="project_logo small-6 small-offset-3 columns">
-                      <img src="images/bing-logo.png" alt=""/>
-                    </div>
-                    <div class="project_label small-12 columns">
-                      <h3><small>iOS app</small></h3>
-                      <h3 class="subhead"><small>UI / UX Design</small></h3>
-                    </div>
-                  </a>
-                </div>
-                </li>
-
-                <li class="large-4 medium-4 small-12 columns">
-                <div class="portfolio_grid portfolio_qf trigger_qf ">
-                  <a class="portfolio_overlay">
-                    <div class="project_logo small-6 small-offset-3 columns">
-                      <img src="images/bing-logo.png" alt=""/>
-                    </div>
-                    <div class="project_label small-12 columns">
-                      <h3><small>Query formulation</small></h3>
-                      <h3 class="subhead"><small>UI / UX Design</small></h3>
-                    </div>
-                  </a>
-                </div>
-                </li>
-
-                <li class="large-4 medium-4 small-12 columns">
-                <div class="portfolio_grid portfolio_music_answer ">
-                  <a class="portfolio_overlay">
-                    <div class="project_logo small-6 small-offset-3 columns">
-                      <img src="images/bing-logo.png" alt=""/>
-                    </div>
-                    <div class="project_label small-12 columns">
-                      <h3><small>Mobile music answer</small></h3>
-                      <h3 class="subhead"><small>UI / UX Design</small></h3>
-                    </div>
-                  </a>
-                </div>
-                </li>
-
-              </ul>
-            </li>
-
-            <!-- Second Row -->
-            <!-- <li class="row">
-              <ul>
-
-                <li class="large-4 medium-4 small-12 columns">
-                <div class="portfolio_grid portfolio_immortal_palm ">
-                  <a class="portfolio_overlay">
-                    <div class="project_logo small-6 small-offset-3 columns">
-                      <img src="images/bing-logo.png" alt=""/>
-                    </div>
-                    <div class="project_label small-12 columns">
-                      <h3><small>Immortal Palm Martial Arts</small></h3>
-                      <h3 class="subhead"><small>UI &amp; UX Design / Front-End</small></h3>
-                    </div>
-                  </a>
-                </div>
-                </li>
-
-              </ul>
-            </li> -->
-
-          </ul>
-        </div>
         <!-- Portfolio Items END -->
     </section>
 
     <section class="portfolio_slider hide-for-medium-up">
       <!-- Slider Overlay Items BEGIN -->
 
-      <section id="slider_otp" class="slider_overlay nojs">
-        <a class="slider_close trigger_otp"></a>
-        <header>
-          <label><small>Case Study &mdash; iOS app experience</small></label>
-          <h2>Off The Post</h2>
-          <!-- <h2>iOS app experience</h2> -->
-        </header>
-        <div class="large-12 medium-12 text">
-          <ul class="clearing-thumbs clearing-feature" data-clearing>
-            <li class="clearing-featured-img"><a href="images/portfolio_01.jpg"><img src="images/portfolio_01.jpg"></a></li>
-            <li class="th"><a href="images/portfolio_02.jpg"><img class="hide" src="images/portfolio_02.jpg"></a></li>
-          </ul>
-          <p class="emphasis">A creative thought experiment&ndash;I developed this design and product idea with soccer enthusiasts in mind.</p>
-          <p>The unique aspect of this experience is the interlinking of information such as players profiles to clubs, tagging players in articles, user &amp; community driven content and exploration of new content through a exploratory experience</p>
-          <p>This project proved challenging with the organization of information being displayed. The app consisted of multiple template states such as: </p>
-          <ul class="square">
-            <li>Single article experience</li>
-            <li>Player card experience</li>
-            <li>Club / team  experience</li>
-            <li>Auto suggest &amp; search disambiguation</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="slider_qf" class="slider_overlay nojs">
-        <a class="slider_close trigger_qf"></a>
-        <header>
-          <label><small>Case Study &mdash; Bing homepage &amp; search experience</small></label>
-          <h2>Query Formulation</h2>
-          <p class="emphasis">Through Bing, this feature involved simplifying the previous QF experience to improve scannability, scalability and engagement metrics.</p>
-        </header>
-        <div class="large-12 medium-12 columns text">
-          <ul class="clearing-thumbs clearing-feature" data-clearing>
-            <li class="clearing-featured-img"><a href="images/portfolio_02.jpg"><img src="images/portfolio_02.jpg"></a></li>
-            <li class="th"><a href="images/portfolio_01.jpg"><img class="hide" src="images/portfolio_01.jpg"></a></li>
-          </ul>
-          <p>Some challenges included finding solutions to fitting data into smaller UI while still maintaining legibility and scannability,  working within the Bing visual framework and aligning with future the Windows 10 design release.</p>
-          <p>With the new UX, query formulation engagement increased substantially (upwards of 400%).</p>
-          <p>This involved multiple interaction scenarios to account for such as:</p>
-          <ul class="square">
-            <li>Single rich entity answer</li>
-            <li>Multiple entity disambiguation</li>
-            <li>Direct navigation and URL queries</li>
-            <li>Weather &amp; stock price answers
-            </li>
-          </ul>
-        </div>
-      </section>
       <!-- Slider Overlay Items END -->
-    </section>
+      </section>
 
     <!-- Experience & Skills -->
     <section class="resume show-for-small-only">
@@ -368,9 +226,11 @@
 
 
     <!-- Load resources -->
+    <!-- NOTE convert common library to CDNs for caching -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/enquire/dist/enquire.min.js"></script>
     <script src="bower_components/slidereveal/src/slidereveal.js"></script>
     <script src="bower_components/animsition/dist/js/jquery.animsition.min.js"></script>
     <script src="js/app.js"></script>

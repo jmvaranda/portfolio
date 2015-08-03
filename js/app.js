@@ -4,6 +4,21 @@
 // init Foundation framework
 $(document).foundation();
 
+// Set animations
+var fadeAnimation = {
+  inClass               :   'fade-in',
+  outClass              :   'fade-out',
+  inDuration            :    1500,
+  outDuration           :    800,
+  loading               :    false,
+  unSupportCss          : [ 'animation-duration',
+                            '-webkit-animation-duration',
+                            '-o-animation-duration'
+                          ]
+};
+// On load set animations for header and nav
+$(".animsition").animsition(fadeAnimation);
+
 // Wait for DOM to load.
 $(document).ready(function() {
     // After DOM load, remove nojs class to prevent flickering
@@ -11,68 +26,75 @@ $(document).ready(function() {
          $('.slider_overlay').removeClass('nojs');
     }, 2000);
 
-  // On load set animations for header and nav
-  $(".animsition").animsition({
-    inClass               :   'fade-in',
-    inDuration            :    1500,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ]
-  });
 
- // Contact form
- $("#submit").click(function(){
-   $(".error").hide();
-     // Get value of email input
-     var hasError = false;
-     //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+    // NOTE
+    // Use this to allow Slider and Portfolio-related functions
 
-     // Make sure email address is not empty or invalid
-     var emailToVal = $("#emailTo").val();
-     if(emailToVal == '') {
-       $("#emailTo").after('<span class="error">You forgot to enter the email address to send to</span>');
-       hasError = true;
-       } else if(!emailReg.test(emailToVal)) {
-       $("#emailTo").after('<span class="error">Enter a valid email address to send to.</span>');
-       hasError = true;
+    // $.when(ajax1(), ajax2(), ajax3(), ajax4()).done(function(a1, a2, a3, a4){
+    //     // the code here will be executed when all four ajax requests resolve.
+    //     // a1, a2, a3 and a4 are lists of length 3 containing the response text,
+    //     // status, and jqXHR object for each of the four ajax calls respectively.
+    // });
+    //
+    // function ajax1() {
+    //     //  This function must return the value
+    //     //  from calling the $.ajax() method.
+    //     return $.ajax({
+    //         //url: "someUrl",
+    //         //dataType: "json",
+    //         //data:  yourJsonData,
+    //         //...
+    //     });
+    // }
+
+
+
+ //Load content depending on screen sizes
+
+ //Set portfolio contents container
+ var $portfolioContainer = $('section.portfolio');
+ var $portfolioSlider = $('section.portfolio_slider');
+
+ function portfolioDesktop() {
+   $portfolioContainer.load('ajax/portfolio-contents-desktop.html')
+   .animsition(fadeAnimation);
+ }
+ function portfolioMobile() {
+   $portfolioContainer.load('ajax/portfolio-contents-mobile.html')      .animsition(fadeAnimation);
+   $portfolioSlider.load('ajax/portfolio-slider-mobile.html');
+ }
+
+ enquire
+   // If MOBILE
+   .register("screen and (max-width: 40em)", {
+     //deferSetup : true,
+     match : function() {
+       // Load Desktop contents
+       portfolioMobile();
+     },
+     unmatch : function() {
+       // Empty portfolio contents
+       $portfolioContainer.empty();
      }
+   })
 
-     // Make sure subject is not empty or invalid
-     var subjectVal = $("#subject").val();
-     if(subjectVal == '') {
-       $("#subject").after('<span class="error">You forgot to enter the subject.</span>');
-       hasError = true;
+   // If DESKTOP
+   .register("screen and (min-width: 40.063em)", {
+     //deferSetup : true,
+     match : function() {
+       // Load Desktop contents
+       portfolioDesktop();
+       //$(portfolioSlider).empty();
+     },
+     unmatch : function() {
+       // Empty portfolio contents
+       $portfolioContainer.empty();
      }
-
-     // Make message field is not empty or invalid
-     var messageVal = $("#message").val();
-     if(messageVal == '') {
-       $("#message").after('<span class="error">You forgot to enter the message.</span>');
-       hasError = true;
-     }
-
-     // If no error, show loading and ...
-     if(hasError == false) {
- 			$(this).hide();
- 			$("#sendEmail li.buttons").append('<img src="/wp-content/themes/default/images/template/loading.gif" alt="Loading" id="loading" />');
-
-       // Send data via AJAX POST to PHP handler
-      $.post("sendmail.php",
-      { emailTo: emailToVal, emailFrom: emailFromVal, subject: subjectVal, message: messageVal },
-      function(data){
-        $("#sendEmail").slideUp("normal", function() {
-        	$("#sendEmail").before('<h1>Success</h1><p>Your email was sent.</p>');
-          });
-        });
-      }
-   return false;
  });
 
- // Slide reveal overlay for mobile
 
+
+ // Slide reveal overlay for mobile
  // Set portfolio overlay object properties
  var $portfolio_items = {
    slider_overlay : $('.slider_overlay'),
@@ -168,8 +190,10 @@ $(document).ready(function() {
      }
    });
 
-// Portfolio items Hover
 
+
+
+// Portfolio items Hover
 // On hover
 $('.portfolio_grid').hover(
   // function mouse i
@@ -187,23 +211,6 @@ $('.portfolio_grid').hover(
 );
 
 
-
-
-// $(window).resize(function() {
-//         // This will fire each time the window is resized:
-//         if($(window).width() >= 1024) {
-//             // if larger or equal
-//             $('.element').show();
-//         } else {
-//             // if smaller
-//             $('.element').hide();
-//         }
-//     }).resize(); // This will simulate a resize to trigger the initial run.
-
-
-
-
-
   // Remove overflow property to allow lightbox to expand full width
   $(document.body).on("open.fndtn.clearing", function(event) {
     $portfolio_items.slider_overlay.removeClass('scroll_y');
@@ -213,6 +220,53 @@ $('.portfolio_grid').hover(
     $portfolio_items.slider_overlay.addClass('scroll_y');
 });
 
+// Contact form
+$("#submit").click(function(){
+  $(".error").hide();
+    // Get value of email input
+    var hasError = false;
+    //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+
+    // Make sure email address is not empty or invalid
+    var emailToVal = $("#emailTo").val();
+    if(emailToVal == '') {
+      $("#emailTo").after('<span class="error">You forgot to enter the email address to send to</span>');
+      hasError = true;
+      } else if(!emailReg.test(emailToVal)) {
+      $("#emailTo").after('<span class="error">Enter a valid email address to send to.</span>');
+      hasError = true;
+    }
+
+    // Make sure subject is not empty or invalid
+    var subjectVal = $("#subject").val();
+    if(subjectVal == '') {
+      $("#subject").after('<span class="error">You forgot to enter the subject.</span>');
+      hasError = true;
+    }
+
+    // Make message field is not empty or invalid
+    var messageVal = $("#message").val();
+    if(messageVal == '') {
+      $("#message").after('<span class="error">You forgot to enter the message.</span>');
+      hasError = true;
+    }
+
+    // If no error, show loading and ...
+    if(hasError == false) {
+     $(this).hide();
+     $("#sendEmail li.buttons").append('<img src="/wp-content/themes/default/images/template/loading.gif" alt="Loading" id="loading" />');
+
+      // Send data via AJAX POST to PHP handler
+     $.post("sendmail.php",
+     { emailTo: emailToVal, emailFrom: emailFromVal, subject: subjectVal, message: messageVal },
+     function(data){
+       $("#sendEmail").slideUp("normal", function() {
+         $("#sendEmail").before('<h1>Success</h1><p>Your email was sent.</p>');
+         });
+       });
+     }
+  return false;
+});
 
 
 });

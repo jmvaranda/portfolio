@@ -9467,7 +9467,7 @@ body.js .nojs {
 }
 /* line 54, ../scss/main.scss */
 .sub-nav dd {
-  margin-left: .65rem;
+  margin-left: .4rem;
 }
 
 /* line 56, ../scss/main.scss */
@@ -9758,7 +9758,12 @@ h3.subheader {
   background: url("../images/crossword.png") repeat;
 }
 
-/* line 352, ../scss/main.scss */
+/* line 351, ../scss/main.scss */
+.about {
+  padding-top: 1rem;
+}
+
+/* line 353, ../scss/main.scss */
 .gradient_up {
   height: 13.5rem;
   background-color: #ffffff;
@@ -9766,37 +9771,37 @@ h3.subheader {
   border-bottom: 1px solid #ffffff;
 }
 
-/* line 359, ../scss/main.scss */
+/* line 360, ../scss/main.scss */
 .background_dark {
   background-color: #f2f2f2;
 }
 
-/* line 360, ../scss/main.scss */
+/* line 361, ../scss/main.scss */
 .no_scroll {
   overflow: hidden;
 }
 
-/* line 361, ../scss/main.scss */
+/* line 362, ../scss/main.scss */
 .scroll_y {
   overflow-y: scroll;
 }
 
-/* line 362, ../scss/main.scss */
+/* line 363, ../scss/main.scss */
 .opacity_show {
   opacity: 1 !important;
 }
 
-/* line 364, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
 .divider {
   color: #aaaaaa;
   text-shadow: 4px 4px 3px #f2f2f2;
   width: 100%;
-  margin: 20px auto;
+  margin: 1.5rem auto;
   overflow: hidden;
   text-align: center;
   line-height: 1.2em;
 }
-/* line 372, ../scss/main.scss */
+/* line 373, ../scss/main.scss */
 .divider:after, .divider:before {
   content: "";
   vertical-align: top;
@@ -9806,24 +9811,24 @@ h3.subheader {
   border-bottom: 1px solid #dddddd;
   margin: 0 3% 0 -55%;
 }
-/* line 381, ../scss/main.scss */
+/* line 382, ../scss/main.scss */
 .divider:after {
   margin: 0 -55% 0 3%;
 }
 
-/* line 387, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: .025rem;
 }
 
-/* line 395, ../scss/main.scss */
+/* line 396, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 397, ../scss/main.scss */
+/* line 398, ../scss/main.scss */
 .slider_close {
   opacity: 0;
   top: 0;
@@ -9836,7 +9841,7 @@ html, .portfolio, .about {
   background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 409, ../scss/main.scss */
+/* line 410, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9845,7 +9850,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 417, ../scss/main.scss */
+/* line 418, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }
