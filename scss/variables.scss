@@ -1,0 +1,20 @@
+@mixin background_bg() {
+  background: url('../images/crossword.png') repeat;
+}
+
+@mixin text_shadow($color) {
+  text-shadow: 4px 4px 3px $color;
+}
+
+$primary: #555555;
+$emphasis: #111111;
+$white: #ffffff;
+$offwhite: #f2f2f2;
+$darkgray: #333333;
+$lightgray: #aaaaaa;
+
+$padding: .75rem;
+$spacer: 2rem;
+$smallspacer: 2.5rem;
+$bodytext: 1.2rem;
+$rem-base: 14px;
