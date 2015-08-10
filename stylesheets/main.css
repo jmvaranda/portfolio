@@ -1,4 +1,5 @@
 /* Custom Styles - Portfolio */
+@import url(../bower_components/animsition/dist/css/animsition.min.css);
 /* line 364, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.2/";
@@ -9492,100 +9493,105 @@ body.js .nojs {
   background: none !important;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  /* line 48, ../scss/main.scss */
+@media (min-width: 320px) and (max-width: 500px) {
+  /* line 47, ../scss/main.scss */
   .text, .contact .row, .row label, .row input.button {
     text-align: left;
   }
 
-  /* line 49, ../scss/main.scss */
+  /* line 48, ../scss/main.scss */
   .row {
     text-align: center;
   }
 
-  /* line 66, ../scss/main.scss */
+  /* line 50, ../scss/main.scss */
   .experience {
     padding-right: 1rem;
   }
-  /* line 68, ../scss/main.scss */
+  /* line 52, ../scss/main.scss */
   .experience li {
     border-bottom: 1px solid #cccccc;
   }
-  /* line 70, ../scss/main.scss */
+  /* line 54, ../scss/main.scss */
   .experience li:last-child {
     border-bottom: none;
   }
+
+  /* line 58, ../scss/main.scss */
+  .portfolio .portfolio_grid {
+    min-height: 240px !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 359px) {
-  /* line 80, ../scss/main.scss */
+  /* line 68, ../scss/main.scss */
   .slider_overlay {
     width: 17.5rem !important;
   }
 }
 @media (min-width: 360px) and (max-width: 374px) {
-  /* line 84, ../scss/main.scss */
+  /* line 72, ../scss/main.scss */
   .slider_overlay {
     width: 20rem !important;
   }
 }
 @media (min-width: 375px) and (max-width: 383px) {
-  /* line 88, ../scss/main.scss */
+  /* line 76, ../scss/main.scss */
   .slider_overlay {
     width: 21rem !important;
   }
 }
 @media (min-width: 384px) and (max-width: 410px) {
-  /* line 93, ../scss/main.scss */
+  /* line 81, ../scss/main.scss */
   .slider_overlay {
     width: 21.5rem !important;
   }
 }
 @media (min-width: 412px) and (max-width: 414px) {
-  /* line 98, ../scss/main.scss */
+  /* line 86, ../scss/main.scss */
   .slider_overlay {
     width: 23.5rem !important;
   }
 }
 @media (min-width: 375px) and (max-width: 415px) {
-  /* line 104, ../scss/main.scss */
+  /* line 92, ../scss/main.scss */
   .gradient_up {
     margin-top: 8rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 116, ../scss/main.scss */
+  /* line 104, ../scss/main.scss */
   .about .intro a {
     display: inline !important;
   }
-  /* line 118, ../scss/main.scss */
+  /* line 106, ../scss/main.scss */
   .about img {
     width: 90%;
     display: block;
   }
 
-  /* line 132, ../scss/main.scss */
+  /* line 120, ../scss/main.scss */
   .portfolio_items .portfolio_grid,
   .portfolio_items .portfolio_overlay {
     transition: all 300ms ease-out;
   }
-  /* line 135, ../scss/main.scss */
+  /* line 123, ../scss/main.scss */
   .portfolio_items .portfolio_grid {
     opacity: .5;
   }
-  /* line 138, ../scss/main.scss */
+  /* line 126, ../scss/main.scss */
   .portfolio_items .portfolio_overlay {
     opacity: 0;
   }
 }
 /* min-width 641px, medium screens */
-/* line 159, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .header {
   padding-top: 13rem;
   background-color: #ffffff;
   text-align: center;
 }
 
-/* line 166, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 .branding a {
   display: block;
   width: 286px;
@@ -9595,68 +9601,68 @@ body.js .nojs {
   background-position: center center;
   background-size: cover;
 }
-/* line 178, ../scss/main.scss */
+/* line 166, ../scss/main.scss */
 .branding h1 {
   line-height: 2.25rem;
   text-indent: -99999px;
 }
-/* line 181, ../scss/main.scss */
+/* line 169, ../scss/main.scss */
 .branding h1 small {
   display: inline-block;
 }
 
-/* line 192, ../scss/main.scss */
+/* line 180, ../scss/main.scss */
 .about img {
   margin-bottom: 2rem;
 }
 
-/* line 197, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 p.subheader, .skills, .experience {
   margin: 0 0 2rem 0;
 }
 
-/* line 202, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 .skills li {
   margin-left: 1rem;
   padding-left: .5rem;
 }
 
-/* line 209, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 .experience li {
   list-style: none;
   padding: 0 0 .5rem 0;
   margin-bottom: 2.5rem;
 }
-/* line 213, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .experience li p:first-child {
   margin-bottom: 0;
 }
 
-/* line 225, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .portfolio ul {
   margin: 0;
 }
-/* line 228, ../scss/main.scss */
+/* line 212, ../scss/main.scss */
 .portfolio li {
   list-style: none;
 }
-/* line 231, ../scss/main.scss */
+/* line 215, ../scss/main.scss */
 .portfolio .portfolio_grid {
   position: relative;
   display: block;
   min-height: 280px;
   margin-bottom: 2rem;
 }
-/* line 239, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .portfolio .portfolio_items {
   margin: 0 auto;
 }
-/* line 241, ../scss/main.scss */
+/* line 224, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_grid {
   cursor: pointer;
-  border: 2px solid #aaaaaa;
+  border: 1px solid #aaaaaa;
 }
-/* line 245, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay {
   position: relative;
   top: 3.5rem;
@@ -9667,54 +9673,54 @@ p.subheader, .skills, .experience {
   vertical-align: middle;
   background-color: rgba(51, 51, 51, 0.8);
 }
-/* line 254, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_logo, .portfolio .portfolio_items .portfolio_overlay .project_label {
   position: relative;
   top: 2rem;
   transform: translateY(-20%);
 }
-/* line 264, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label {
   margin-top: 1rem;
   text-align: center;
   text-shadow: 4px 4px 3px #555555;
 }
-/* line 268, ../scss/main.scss */
+/* line 251, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label h3 {
   line-height: 1rem;
 }
-/* line 270, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label h3 small {
   color: #ffffff;
   letter-spacing: -0.025rem;
   margin: 0;
 }
-/* line 276, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .project_label h3.subhead small {
   color: #aaaaaa;
 }
-/* line 280, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_otp {
   background: url("../images/otp_grid.jpg") center center/100% no-repeat;
 }
-/* line 283, ../scss/main.scss */
+/* line 266, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_qf {
   background: url("../images/qf_grid.png") center center/100% no-repeat;
 }
-/* line 286, ../scss/main.scss */
+/* line 269, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_header {
   background: url("../images/header_grid.jpg") center center/100% no-repeat;
 }
-/* line 289, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_solutions {
   background: url("../images/solutions_grid.jpg") center center/100% no-repeat;
 }
-/* line 292, ../scss/main.scss */
+/* line 275, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_music_answer {
   background: url("../images/portfolio_music_answer.png") center center/100% no-repeat;
 }
 
-/* line 298, ../scss/main.scss */
+/* line 281, ../scss/main.scss */
 .viewport {
   float: left;
   height: 299px;
@@ -9725,13 +9731,13 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Link configuration that contains the image and label ----------------------------- */
-/* line 309, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
 .viewport a {
   display: block;
   position: relative;
 }
 
-/* line 314, ../scss/main.scss */
+/* line 297, ../scss/main.scss */
 .viewport a img {
   height: 332px;
   left: -20px;
@@ -9741,7 +9747,7 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Label configuration -------------------------------------------------------------- */
-/* line 323, ../scss/main.scss */
+/* line 306, ../scss/main.scss */
 .viewport a span {
   display: none;
   font-size: 3.0em;
@@ -9755,7 +9761,7 @@ p.subheader, .skills, .experience {
   z-index: 100;
 }
 
-/* line 335, ../scss/main.scss */
+/* line 318, ../scss/main.scss */
 .viewport a span em {
   display: block;
   font-size: 0.45em;
@@ -9763,49 +9769,53 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Dark hover background ------------------------------------------------------------ */
-/* line 342, ../scss/main.scss */
+/* line 325, ../scss/main.scss */
 .dark-background {
   background-color: rgba(51, 51, 51, 0.75);
   color: #fff;
   text-shadow: #000 0px 0px 20px;
 }
 
-/* line 347, ../scss/main.scss */
+/* line 330, ../scss/main.scss */
 .dark-background em {
   color: #ccc;
 }
 
-/* line 354, ../scss/main.scss */
+/* line 337, ../scss/main.scss */
 .portfolio_modal h2 {
   margin-bottom: 0;
   line-height: 2.5rem;
 }
-/* line 359, ../scss/main.scss */
+/* line 342, ../scss/main.scss */
 .portfolio_modal label {
   margin-bottom: 2rem;
 }
-/* line 363, ../scss/main.scss */
+/* line 346, ../scss/main.scss */
 .portfolio_modal .emphasis {
   margin-right: 15rem;
   margin-bottom: 2rem;
 }
-/* line 369, ../scss/main.scss */
+/* line 352, ../scss/main.scss */
 .portfolio_modal .row {
   margin-bottom: 2.5rem;
 }
-/* line 372, ../scss/main.scss */
+/* line 355, ../scss/main.scss */
 .portfolio_modal div.left {
   padding-right: 1.5rem;
 }
-/* line 375, ../scss/main.scss */
+/* line 358, ../scss/main.scss */
 .portfolio_modal li {
   position: relative;
 }
-/* line 375, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
+.portfolio_modal li a > img {
+  border: 1px solid #aaaaaa;
+}
+/* line 360, ../scss/main.scss */
 .portfolio_modal .clearing-featured-img img {
   width: 100%;
 }
-/* line 376, ../scss/main.scss */
+/* line 361, ../scss/main.scss */
 .portfolio_modal .caption {
   position: absolute;
   bottom: 0;
@@ -9820,68 +9830,68 @@ p.subheader, .skills, .experience {
   cursor: pointer;
 }
 
-/* line 393, ../scss/main.scss */
+/* line 378, ../scss/main.scss */
 .slider_overlay {
   z-index: 1;
   background-color: #f2f2f2;
   background: url("../images/crossword.png") repeat;
 }
-/* line 397, ../scss/main.scss */
+/* line 382, ../scss/main.scss */
 .slider_overlay header {
   padding: 2.75rem 1rem .75rem 1rem;
 }
-/* line 401, ../scss/main.scss */
+/* line 386, ../scss/main.scss */
 .slider_overlay h1 {
   line-height: 2rem;
   margin: 0;
 }
-/* line 402, ../scss/main.scss */
+/* line 387, ../scss/main.scss */
 .slider_overlay h2 {
   line-height: 1.25rem;
   margin: .5rem 0 1.25rem 0;
 }
-/* line 403, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .slider_overlay small {
   font-size: 80%;
 }
-/* line 404, ../scss/main.scss */
+/* line 389, ../scss/main.scss */
 .slider_overlay .emphasis {
   margin: 0;
 }
-/* line 405, ../scss/main.scss */
+/* line 390, ../scss/main.scss */
 .slider_overlay .clearing-thumbs {
   margin-bottom: 1.5rem;
 }
-/* line 408, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
 .slider_overlay .text {
   margin-top: 1rem;
 }
 
-/* line 414, ../scss/main.scss */
+/* line 399, ../scss/main.scss */
 .footer {
   padding: 10rem 0;
   background-color: #222222;
   color: #ffffff;
 }
 
-/* line 421, ../scss/main.scss */
+/* line 406, ../scss/main.scss */
 h3.subheader {
   color: #aaaaaa;
 }
 
-/* line 427, ../scss/main.scss */
+/* line 412, ../scss/main.scss */
 .about, .portfolio, .resume, .contact {
   background-color: #f2f2f2;
   padding-top: 5rem;
   background: url("../images/crossword.png") repeat;
 }
 
-/* line 432, ../scss/main.scss */
+/* line 417, ../scss/main.scss */
 .about {
   padding-top: 2rem;
 }
 
-/* line 434, ../scss/main.scss */
+/* line 419, ../scss/main.scss */
 .gradient_up {
   height: 13.5rem;
   background-color: #ffffff;
@@ -9889,27 +9899,27 @@ h3.subheader {
   border-bottom: 1px solid #ffffff;
 }
 
-/* line 441, ../scss/main.scss */
+/* line 426, ../scss/main.scss */
 .background_dark {
   background-color: #f2f2f2;
 }
 
-/* line 442, ../scss/main.scss */
+/* line 427, ../scss/main.scss */
 .no_scroll {
   overflow: hidden;
 }
 
-/* line 443, ../scss/main.scss */
+/* line 428, ../scss/main.scss */
 .scroll_y {
   overflow-y: scroll;
 }
 
-/* line 444, ../scss/main.scss */
+/* line 429, ../scss/main.scss */
 .opacity_show {
   opacity: 1 !important;
 }
 
-/* line 446, ../scss/main.scss */
+/* line 431, ../scss/main.scss */
 .divider {
   color: #aaaaaa;
   text-shadow: 4px 4px 3px #f2f2f2;
@@ -9919,7 +9929,7 @@ h3.subheader {
   text-align: center;
   line-height: 1.2em;
 }
-/* line 454, ../scss/main.scss */
+/* line 439, ../scss/main.scss */
 .divider:after, .divider:before {
   content: "";
   vertical-align: top;
@@ -9929,24 +9939,24 @@ h3.subheader {
   border-bottom: 1px solid #dddddd;
   margin: 0 3% 0 -55%;
 }
-/* line 463, ../scss/main.scss */
+/* line 448, ../scss/main.scss */
 .divider:after {
   margin: 0 -55% 0 3%;
 }
 
-/* line 469, ../scss/main.scss */
+/* line 454, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: .025rem;
 }
 
-/* line 477, ../scss/main.scss */
+/* line 462, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 479, ../scss/main.scss */
+/* line 464, ../scss/main.scss */
 .slider_close {
   opacity: 0;
   top: 0;
@@ -9959,7 +9969,7 @@ html, .portfolio, .about {
   background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 491, ../scss/main.scss */
+/* line 476, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9968,7 +9978,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 499, ../scss/main.scss */
+/* line 484, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }

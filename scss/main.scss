@@ -2,7 +2,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'variables.scss';
-
+@import '../bower_components/animsition/dist/css/animsition.min.css';
 
 .overlay {
   position: fixed;
@@ -42,26 +42,10 @@ body.js .nojs { display: none; }
 
 
 // Begin MOBILE
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 500px) {
   // All mobile elements are centered except text
-
   .text, .contact .row, .row label, .row input.button {text-align:left;}
   .row {text-align: center;}
-
-  // .nav {
-  //   text-align:center;
-  //   margin-top:$spacer;
-  //   ul {
-  //     list-style:none;
-  //     margin:0;
-  //     li {
-  //       line-height:2.75rem;
-  //     }
-  //     a {
-  //       padding: $padding;
-  //     }
-  //   }
-  // }
 
   .experience {
     padding-right:1rem;
@@ -70,7 +54,11 @@ body.js .nojs { display: none; }
       &:last-child {border-bottom: none;}
     }
   }
-
+  .portfolio {
+    .portfolio_grid {
+      min-height:240px !important;
+    }
+  }
 }
 // End MOBILE
 
@@ -216,11 +204,7 @@ body {
     }
   }
 
-  .resume {
-
-  }
-
-
+  .resume {}
   .portfolio {
     ul {
       margin:0;
@@ -231,7 +215,6 @@ body {
     .portfolio_grid {
       position: relative;
       display: block;
-      //min-width: 290px;
       min-height: 280px;
       margin-bottom:2rem;
     }
@@ -240,7 +223,7 @@ body {
         margin:0 auto;
         .portfolio_grid {
           cursor:pointer;
-          border:2px solid $lightgray;
+          border:1px solid $lightgray;
         }
         .portfolio_overlay {
           position:relative;
@@ -372,7 +355,9 @@ body {
     div.left {
       padding-right:1.5rem;
     }
-    li {position:relative;} .clearing-featured-img img {width:100%;}
+    li {position:relative;}
+    li a > img {border: 1px solid $lightgray;}
+    .clearing-featured-img img {width:100%;}
     .caption {
       position: absolute;
       bottom:0;

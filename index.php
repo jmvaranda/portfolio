@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julian Varanda UI &amp; UX Designer</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <link rel="stylesheet" href="bower_components/animsition/dist/css/animsition.min.css">
+    <!-- <link rel="stylesheet" href="bower_components/animsition/dist/css/animsition.min.css"> -->
   </head>
   <body>
 
@@ -67,7 +67,7 @@
         <ul class="experience">
           <li>
             <p><strong>Bing</strong></p>
-            <p>Interaction Designer <br/>
+            <p>Product Designer <br/>
               04/2014 &ndash; Present</p>
             <p>Designing and producing user experiences for multiple platforms( mobile, desktop, tablet).</p> <p>Project involved communicating with various product teams and stakeholders, working within existing visual systems and creating new explorartory ...</p>
           </li>
@@ -245,6 +245,7 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/enquire/dist/enquire.min.js"></script>
     <script src="bower_components/slidereveal/src/slidereveal.js"></script>
+    <script src="bower_components/jquery-zoom/jquery.zoom.min.js"></script>
     <script src="bower_components/animsition/dist/js/jquery.animsition.min.js"></script>
     <script src="js/app.js"></script>
 
