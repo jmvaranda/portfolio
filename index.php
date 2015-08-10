@@ -9,13 +9,8 @@
   </head>
   <body>
 
-      <script>
-        //prevent flickering
-          document.body.className += ' js';
+    <script>document.body.className += ' js'; //prevent flickering</script>
 
-      </script>
-
-    <!-- <button id="load" onclick="sendAJAX()">Bring it!</button> -->
     <div class="header">
       <div class="row">
         <header class="branding animsition">
@@ -65,10 +60,36 @@
     </section>
 
     <section id="resume" class="resume reveal-modal medium hide-for-small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <label>Resume</label>
+
+      <div class="large-7 medium-7 text left">
+        <h4>Experience</h4>
+        <ul class="experience">
+          <li>
+            <p><strong>Bing</strong></p>
+            <p>Interaction Designer <br/>
+              04/2014 &ndash; Present</p>
+            <p>Designing and producing user experiences for multiple platforms( mobile, desktop, tablet).</p> <p>Project involved communicating with various product teams and stakeholders, working within existing visual systems and creating new explorartory ...</p>
+          </li>
+          <li>
+            <p><strong>Windows Phone</strong></p>
+            <p>Design Integrator <br/>
+            09/2013 &ndash; 12/2014 </p>
+            <p>Proin sodales ullamcorper enim ac porta. Donec malesuada fringilla neque, vitae accumsan nisl tincidunt vel. Nulla facilisi. Sed ultricies ultricies mi sit amet euismod. Integer quis ante est. Nulla lacinia, neque eu volutpat pellentesque, arcu urna fringilla urna</p>
+          </li>
+          <li>
+            <p><strong>Bizango</strong></p>
+            <p>Visual Designer &amp; Front-end Developer <br/>
+            04/2012 &ndash; 09/2013</p>
+            <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
+          </li>
+        </ul>
+      </div>
+
       <!-- Experience & Skills -->
-        <div class="row">
-          <div class="text columns">
-            <h3 class="subheader">What I know</h3>
+        <div class="large-5 right">
+          <div class="text">
+            <h4>What I know</h4>
               <ul class="skills">
                 <li>UX &amp; User-centered design principles</li>
                 <li>Adobe Creative Cloud</li>
@@ -78,29 +99,20 @@
                 <li>Light jQuery</li>
                 <li>Git</li>
               </ul>
-          </div>
-          <div class="large-7 medium-7 text columns">
-            <h3 class="subheader">Experience</h3>
-            <ul class="experience">
-              <li>
-                <p><strong>Bing</strong></p>
-                <p>Interaction Designer <br/>
-                  04/2014 &ndash; Present</p>
-                <p>Designing and producing user experiences for multiple platforms( mobile, desktop, tablet).</p> <p>Project involved communicating with various product teams and stakeholders, working within existing visual systems and creating new explorartory ...</p>
-              </li>
-              <li>
-                <p><strong>Windows Phone</strong></p>
-                <p>Design Integrator <br/>
-                09/2013 &ndash; 12/2014 </p>
-                <p>Proin sodales ullamcorper enim ac porta. Donec malesuada fringilla neque, vitae accumsan nisl tincidunt vel. Nulla facilisi. Sed ultricies ultricies mi sit amet euismod. Integer quis ante est. Nulla lacinia, neque eu volutpat pellentesque, arcu urna fringilla urna</p>
-              </li>
-              <li>
-                <p><strong>Bizango</strong></p>
-                <p>Visual Designer &amp; Front-end Developer <br/>
-                04/2012 &ndash; 09/2013</p>
-                <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
-              </li>
-            </ul>
+
+              <h4>Education</h4>
+              <ul class="experience">
+                <li>
+                  <p><strong>Seattle Central Community College</strong></p>
+                  <p>Web Design &amp; Development <br/>
+                  09/2010 &ndash; 12/2011 </p>
+                </li>
+                <li>
+                  <p><strong>Art Institute of Seattle</strong></p>
+                  <p>Graphic Design<br/>
+                  09/2007 &ndash; 12/2009 </p>
+                </li>
+              </ul>
           </div>
 
         </div>
@@ -109,9 +121,8 @@
 
     <section class="portfolio" data-magellan-destination="portfolio">
       <div class="row">
-        <a name="portfolio"></a>
 
-        </div>
+      </div>
 
         <!-- Portfolio Items END -->
     </section>
@@ -121,6 +132,8 @@
 
       <!-- Slider Overlay Items END -->
       </section>
+
+
 
     <!-- Experience & Skills -->
     <section class="resume show-for-small-only">

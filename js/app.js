@@ -1,8 +1,7 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 
-// init Foundation framework
-$(document).foundation();
+
 
 // Set animations
 var fadeAnimation = {
@@ -21,6 +20,10 @@ $(".animsition").animsition(fadeAnimation);
 
 // Wait for DOM to load.
 $(document).ready(function() {
+
+  // init Foundation framework
+  $(document).foundation();
+
     // After DOM load, remove nojs class to prevent flickering
     setTimeout(function() {
          $('.slider_overlay').removeClass('nojs');
@@ -189,36 +192,30 @@ $(document).ready(function() {
        magellan_show();
      }
    });
+// End
+
+
 
 
 
 
 // Portfolio items Hover
 // On hover
-$('.portfolio_grid').hover(
-  // function mouse i
-  function() {
-    // Full opacity on list item and overlay
-    $(this).addClass('opacity_show');
-    $(this).find('a.portfolio_overlay').addClass('opacity_show');
-  },
-  // function  mouse out
-  function() {
-    // Remove opacity on list item and overlay
-    $(this).removeClass('opacity_show');
-    $(this).find('a.portfolio_overlay').removeClass('opacity_show');
-  }
-);
+// $('.portfolio_grid').hover(
+//   // function mouse i
+//   function() {
+//     // Full opacity on list item and overlay
+//     $(this).addClass('opacity_show');
+//     $(this).find('a.portfolio_overlay').addClass('opacity_show');
+//   },
+//   // function  mouse out
+//   function() {
+//     // Remove opacity on list item and overlay
+//     $(this).removeClass('opacity_show');
+//     $(this).find('a.portfolio_overlay').removeClass('opacity_show');
+//   }
+// );
 
-
-  // Remove overflow property to allow lightbox to expand full width
-  $(document.body).on("open.fndtn.clearing", function(event) {
-    $portfolio_items.slider_overlay.removeClass('scroll_y');
-});
-  // Add overflow property when lightbox closes
-  $(document.body).on("close.fndtn.clearing", function(event) {
-    $portfolio_items.slider_overlay.addClass('scroll_y');
-});
 
 // Contact form
 $("#submit").click(function(){

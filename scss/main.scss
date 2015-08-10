@@ -64,6 +64,7 @@ body.js .nojs { display: none; }
   // }
 
   .experience {
+    padding-right:1rem;
     li {
       border-bottom: 1px solid #cccccc;
       &:last-child {border-bottom: none;}
@@ -199,7 +200,7 @@ body {
 
   .skills {
     li {
-      margin-left:$smallspacer;
+      margin-left:1rem;
       padding-left:.5rem;
     }
   }
@@ -213,6 +214,10 @@ body {
         margin-bottom: 0;
       }
     }
+  }
+
+  .resume {
+
   }
 
 
@@ -233,7 +238,10 @@ body {
 
       .portfolio_items {
         margin:0 auto;
-        .portfolio_grid {cursor:pointer; cursor:hand;}
+        .portfolio_grid {
+          cursor:pointer;
+          border:2px solid $lightgray;
+        }
         .portfolio_overlay {
           position:relative;
           top:3.5rem;
@@ -270,18 +278,118 @@ body {
         }
 
         .portfolio_otp {
-          background: url('../images/portfolio_otp.png') center center / 100% no-repeat;
+          background: url('../images/otp_grid.jpg') center center / 100% no-repeat;
           }
         .portfolio_qf {
-          background: url('../images/portfolio_qf.png') center center / 100% no-repeat;
+          background: url('../images/qf_grid.png') center center / 100% no-repeat;
           }
+        .portfolio_header {
+            background: url('../images/header_grid.jpg') center center / 100% no-repeat;
+            }
+        .portfolio_solutions {
+            background: url('../images/solutions_grid.jpg') center center / 100% no-repeat;
+            }
         .portfolio_music_answer {
             background: url('../images/portfolio_music_answer.png') center center / 100% no-repeat;
             }
       }
   }
 
-  // Portfolio slider overlay
+  .viewport {
+    float: left;
+    height: 299px;
+    margin: 0 9px 9px 0;
+    overflow: hidden;
+    position: relative;
+    width: 450px;
+}
+
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+}
+
+.viewport a img {
+    height: 332px;
+    left: -20px;
+    position: relative;
+    top: -20px;
+    width: 500px;
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.viewport a span {
+    display: none;
+    font-size: 3.0em;
+    font-weight: bold;
+    height: 100%;
+    padding-top: 120px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+    .viewport a span em {
+        display: block;
+        font-size: 0.45em;
+        font-weight: normal;
+    }
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {
+    background-color: rgba($oil, 0.75);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+    .dark-background em {
+        color: #ccc;
+    }
+
+
+  // Portfolio modal overlay DESKTOP
+  .portfolio_modal {
+    h2 {
+      margin-bottom:0;
+      line-height:2.5rem;
+    }
+
+    label {
+      margin-bottom:2rem;
+    }
+
+    .emphasis {
+      margin-right:15rem;
+      margin-bottom:2rem;
+      //line-height: 1.5rem;
+    }
+
+    .row {
+      margin-bottom:2.5rem;
+    }
+    div.left {
+      padding-right:1.5rem;
+    }
+    li {position:relative;} .clearing-featured-img img {width:100%;}
+    .caption {
+      position: absolute;
+      bottom:0;
+      right: 0;
+      background-color: rgba($oil,0.75);
+      margin: 0;
+      padding: .25rem .5rem;
+      color: #fff;
+      font-weight: 200;
+      letter-spacing: .05rem;
+      font-size: small;
+      cursor: pointer;
+    }
+  }
+
+
+  // Portfolio slider overlay MOBILE
   .slider_overlay {
     z-index: 1;
     background-color: $offwhite;
@@ -321,7 +429,7 @@ body {
     padding-top:5rem;
     @include background_bg();
   }
-  .about {padding-top:1rem;}
+  .about {padding-top:2rem;}
 
   .gradient_up {
     // height on this should be mobile only
