@@ -392,13 +392,23 @@
 </section>
 
 <script type="text/javascript">
-    // Reinitialize clearing functions
-    $(document).foundation('clearing');
+  // Reinitialize clearing functions
+  $(document).foundation('clearing');
 
+  $(document).ready(function(){
     // Create jquery zoom targets object
     //var test = $('#otp_modal img').atr
 
     // Execute zoom method
     $('li a.photo').zoom({url: 'images/portfolio/visual/otp_visual_04.png'});
 
+    // This example is for use of zoom on img elements
+  //   $('img')
+  //  .wrap('<span style="display:inline-block"></span>')
+  //  .css('display', 'block')
+  //  .parent()
+  //  .zoom({
+  //    url: 'images/portfolio/visual/otp_visual_04.png'
+  //  });
+  // });
 </script>

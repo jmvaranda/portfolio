@@ -217,7 +217,7 @@ body {
         margin:0 auto;
         .portfolio_grid {
           cursor:pointer;
-          border:1px solid $lightgray;
+          border:2px solid $primary;
           opacity:.9;
           &:hover {opacity:1;}
         }

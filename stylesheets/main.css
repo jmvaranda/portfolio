@@ -9652,7 +9652,7 @@ p.subheader, .skills, .experience {
 /* line 218, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_grid {
   cursor: pointer;
-  border: 1px solid #aaaaaa;
+  border: 2px solid #555555;
   opacity: .9;
 }
 /* line 222, ../scss/main.scss */
