@@ -20,7 +20,6 @@
               <small>UX &amp; UI Designer</small>
             </h1>
           </a>
-          <div id="ajax"></div>
         </header>
       </div>
     </div>

@@ -120,12 +120,6 @@ body.js .nojs { display: none; }
     .portfolio_grid,
     .portfolio_overlay {@include single-transition;}
 
-    .portfolio_grid {
-      opacity:.5;
-    }
-    .portfolio_overlay {
-      opacity:0;
-    }
 
   }
 
@@ -224,39 +218,37 @@ body {
         .portfolio_grid {
           cursor:pointer;
           border:1px solid $lightgray;
+          opacity:.9;
+          &:hover {opacity:1;}
         }
         .portfolio_overlay {
-          position:relative;
-          top:3.5rem;
-          display: block;
-          padding: .5rem;
-          width: 100%;
-          min-height: 9.5rem;
+          position:absolute;
+          //padding: .5rem;
+          height: 100%;
+          width:100%;
           vertical-align:middle;
-          background-color: rgba($darkgray, 0.8);
-            .project_logo, .project_label {
-              //padding-top: 1.75rem;
-              position: relative;
-              top: 2rem;
-              transform: translateY(-20%);
-            }
-
-            .project_logo {
-              //
-            }
-            .project_label {
-              margin-top:1rem;
-              text-align: center;
-              @include text_shadow($primary);
-              h3 {
-                line-height:1rem;
-                & small {
-                  color: $white;
-                  letter-spacing: -0.025rem;
-                  margin:0;
-                }
-              }
-              h3.subhead small {color:$lightgray;}
+          background-color: rgba($darkgray, 0.75);
+          text-align: center;
+          opacity:0;
+          &:hover {opacity:1;}
+          .portfolio_text {
+            position:relative;
+            top:4.5rem;
+            //border-bottom:.25rem solid $lightgray;
+            //border-top:.25rem solid $lightgray;
+            margin:0 1.25rem;
+            padding:1.5rem .5rem;
+            @include text_shadow($darkgray);
+          }
+          h3 {
+            color:$offwhite;
+            font-weight: 500;
+            letter-spacing: 0.05rem;
+          }
+            .subheader {
+              font-size:1.25rem;
+              color:$lightgray;
+              margin:0;
             }
         }
 
@@ -273,7 +265,7 @@ body {
             background: url('../images/solutions_grid.jpg') center center / 100% no-repeat;
             }
         .portfolio_music_answer {
-            background: url('../images/portfolio_music_answer.png') center center / 100% no-repeat;
+            background: url('../images/music_grid.jpg') center center / 100% no-repeat;
             }
         .portfolio_tonglen {
             background: url('../images/tonglen_grid.jpg') center center / 100% no-repeat;
@@ -347,7 +339,7 @@ body {
     }
 
     .emphasis {
-      margin-right:15rem;
+      //margin-right:10rem;
       margin-bottom:2rem;
       //line-height: 1.5rem;
     }

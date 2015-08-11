@@ -9574,24 +9574,16 @@ body.js .nojs {
   .portfolio_items .portfolio_overlay {
     transition: all 300ms ease-out;
   }
-  /* line 123, ../scss/main.scss */
-  .portfolio_items .portfolio_grid {
-    opacity: .5;
-  }
-  /* line 126, ../scss/main.scss */
-  .portfolio_items .portfolio_overlay {
-    opacity: 0;
-  }
 }
 /* min-width 641px, medium screens */
-/* line 147, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 .header {
   padding-top: 13rem;
   background-color: #ffffff;
   text-align: center;
 }
 
-/* line 154, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 .branding a {
   display: block;
   width: 286px;
@@ -9601,130 +9593,132 @@ body.js .nojs {
   background-position: center center;
   background-size: cover;
 }
-/* line 166, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 .branding h1 {
   line-height: 2.25rem;
   text-indent: -99999px;
 }
-/* line 169, ../scss/main.scss */
+/* line 163, ../scss/main.scss */
 .branding h1 small {
   display: inline-block;
 }
 
-/* line 180, ../scss/main.scss */
+/* line 174, ../scss/main.scss */
 .about img {
   margin-bottom: 2rem;
 }
 
-/* line 185, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 p.subheader, .skills, .experience {
   margin: 0 0 2rem 0;
 }
 
-/* line 190, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 .skills li {
   margin-left: 1rem;
   padding-left: .5rem;
 }
 
-/* line 197, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 .experience li {
   list-style: none;
   padding: 0 0 .5rem 0;
   margin-bottom: 2.5rem;
 }
-/* line 201, ../scss/main.scss */
+/* line 195, ../scss/main.scss */
 .experience li p:first-child {
   margin-bottom: 0;
 }
 
-/* line 209, ../scss/main.scss */
+/* line 203, ../scss/main.scss */
 .portfolio ul {
   margin: 0;
 }
-/* line 212, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .portfolio li {
   list-style: none;
 }
-/* line 215, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .portfolio .portfolio_grid {
   position: relative;
   display: block;
   min-height: 280px;
   margin-bottom: 2rem;
 }
-/* line 222, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 .portfolio .portfolio_items {
   margin: 0 auto;
 }
-/* line 224, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_grid {
   cursor: pointer;
   border: 1px solid #aaaaaa;
+  opacity: .9;
 }
-/* line 228, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_grid:hover {
+  opacity: 1;
+}
+/* line 224, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay {
-  position: relative;
-  top: 3.5rem;
-  display: block;
-  padding: .5rem;
+  position: absolute;
+  height: 100%;
   width: 100%;
-  min-height: 9.5rem;
   vertical-align: middle;
-  background-color: rgba(51, 51, 51, 0.8);
-}
-/* line 237, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_logo, .portfolio .portfolio_items .portfolio_overlay .project_label {
-  position: relative;
-  top: 2rem;
-  transform: translateY(-20%);
-}
-/* line 247, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label {
-  margin-top: 1rem;
+  background-color: rgba(51, 51, 51, 0.75);
   text-align: center;
-  text-shadow: 4px 4px 3px #555555;
+  opacity: 0;
 }
-/* line 251, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label h3 {
-  line-height: 1rem;
+/* line 233, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay:hover {
+  opacity: 1;
 }
-/* line 253, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label h3 small {
-  color: #ffffff;
-  letter-spacing: -0.025rem;
+/* line 234, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .portfolio_text {
+  position: relative;
+  top: 4.5rem;
+  margin: 0 1.25rem;
+  padding: 1.5rem .5rem;
+  text-shadow: 2px 2px 1px #333333;
+}
+/* line 243, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay h3 {
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+/* line 248, ../scss/main.scss */
+.portfolio .portfolio_items .portfolio_overlay .subheader {
+  font-size: 1.25rem;
+  color: #aaaaaa;
   margin: 0;
 }
-/* line 259, ../scss/main.scss */
-.portfolio .portfolio_items .portfolio_overlay .project_label h3.subhead small {
-  color: #aaaaaa;
-}
-/* line 263, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_otp {
   background: url("../images/otp_grid.jpg") center center/100% no-repeat;
 }
-/* line 266, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_qf {
   background: url("../images/qf_grid.png") center center/100% no-repeat;
 }
-/* line 269, ../scss/main.scss */
+/* line 261, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_header {
   background: url("../images/header_grid.jpg") center center/100% no-repeat;
 }
-/* line 272, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_solutions {
   background: url("../images/solutions_grid.jpg") center center/100% no-repeat;
 }
-/* line 275, ../scss/main.scss */
+/* line 267, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_music_answer {
-  background: url("../images/portfolio_music_answer.png") center center/100% no-repeat;
+  background: url("../images/music_grid.jpg") center center/100% no-repeat;
 }
-/* line 278, ../scss/main.scss */
+/* line 270, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_tonglen {
   background: url("../images/tonglen_grid.jpg") center center/100% no-repeat;
 }
 
-/* line 284, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .viewport {
   float: left;
   height: 299px;
@@ -9735,13 +9729,13 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Link configuration that contains the image and label ----------------------------- */
-/* line 295, ../scss/main.scss */
+/* line 287, ../scss/main.scss */
 .viewport a {
   display: block;
   position: relative;
 }
 
-/* line 300, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
 .viewport a img {
   height: 332px;
   left: -20px;
@@ -9751,7 +9745,7 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Label configuration -------------------------------------------------------------- */
-/* line 309, ../scss/main.scss */
+/* line 301, ../scss/main.scss */
 .viewport a span {
   display: none;
   font-size: 3.0em;
@@ -9765,7 +9759,7 @@ p.subheader, .skills, .experience {
   z-index: 100;
 }
 
-/* line 321, ../scss/main.scss */
+/* line 313, ../scss/main.scss */
 .viewport a span em {
   display: block;
   font-size: 0.45em;
@@ -9773,53 +9767,52 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Dark hover background ------------------------------------------------------------ */
-/* line 328, ../scss/main.scss */
+/* line 320, ../scss/main.scss */
 .dark-background {
   background-color: rgba(51, 51, 51, 0.75);
   color: #fff;
   text-shadow: #000 0px 0px 20px;
 }
 
-/* line 333, ../scss/main.scss */
+/* line 325, ../scss/main.scss */
 .dark-background em {
   color: #ccc;
 }
 
-/* line 340, ../scss/main.scss */
+/* line 332, ../scss/main.scss */
 .portfolio_modal h2 {
   margin-bottom: 0;
   line-height: 2.5rem;
 }
-/* line 345, ../scss/main.scss */
+/* line 337, ../scss/main.scss */
 .portfolio_modal label {
   margin-bottom: 2rem;
 }
-/* line 349, ../scss/main.scss */
+/* line 341, ../scss/main.scss */
 .portfolio_modal .emphasis {
-  margin-right: 15rem;
   margin-bottom: 2rem;
 }
-/* line 355, ../scss/main.scss */
+/* line 347, ../scss/main.scss */
 .portfolio_modal .row {
   margin-bottom: 2.5rem;
 }
-/* line 358, ../scss/main.scss */
+/* line 350, ../scss/main.scss */
 .portfolio_modal div.left {
   padding-right: 1.5rem;
 }
-/* line 361, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
 .portfolio_modal li {
   position: relative;
 }
-/* line 362, ../scss/main.scss */
+/* line 354, ../scss/main.scss */
 .portfolio_modal li a > img {
   border: 1px solid #aaaaaa;
 }
-/* line 363, ../scss/main.scss */
+/* line 355, ../scss/main.scss */
 .portfolio_modal .clearing-featured-img img {
   width: 100%;
 }
-/* line 364, ../scss/main.scss */
+/* line 356, ../scss/main.scss */
 .portfolio_modal .caption {
   position: absolute;
   bottom: 0;
@@ -9834,68 +9827,68 @@ p.subheader, .skills, .experience {
   cursor: pointer;
 }
 
-/* line 381, ../scss/main.scss */
+/* line 373, ../scss/main.scss */
 .slider_overlay {
   z-index: 1;
   background-color: #f2f2f2;
   background: url("../images/crossword.png") repeat;
 }
-/* line 385, ../scss/main.scss */
+/* line 377, ../scss/main.scss */
 .slider_overlay header {
   padding: 2.75rem 1rem .75rem 1rem;
 }
-/* line 389, ../scss/main.scss */
+/* line 381, ../scss/main.scss */
 .slider_overlay h1 {
   line-height: 2rem;
   margin: 0;
 }
-/* line 390, ../scss/main.scss */
+/* line 382, ../scss/main.scss */
 .slider_overlay h2 {
   line-height: 1.25rem;
   margin: .5rem 0 1.25rem 0;
 }
-/* line 391, ../scss/main.scss */
+/* line 383, ../scss/main.scss */
 .slider_overlay small {
   font-size: 80%;
 }
-/* line 392, ../scss/main.scss */
+/* line 384, ../scss/main.scss */
 .slider_overlay .emphasis {
   margin: 0;
 }
-/* line 393, ../scss/main.scss */
+/* line 385, ../scss/main.scss */
 .slider_overlay .clearing-thumbs {
   margin-bottom: 1.5rem;
 }
-/* line 396, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .slider_overlay .text {
   margin-top: 1rem;
 }
 
-/* line 402, ../scss/main.scss */
+/* line 394, ../scss/main.scss */
 .footer {
   padding: 10rem 0;
   background-color: #222222;
   color: #ffffff;
 }
 
-/* line 409, ../scss/main.scss */
+/* line 401, ../scss/main.scss */
 h3.subheader {
   color: #aaaaaa;
 }
 
-/* line 415, ../scss/main.scss */
+/* line 407, ../scss/main.scss */
 .about, .portfolio, .resume, .contact {
   background-color: #f2f2f2;
   padding-top: 5rem;
   background: url("../images/crossword.png") repeat;
 }
 
-/* line 420, ../scss/main.scss */
+/* line 412, ../scss/main.scss */
 .about {
   padding-top: 2rem;
 }
 
-/* line 422, ../scss/main.scss */
+/* line 414, ../scss/main.scss */
 .gradient_up {
   height: 13.5rem;
   background-color: #ffffff;
@@ -9903,37 +9896,37 @@ h3.subheader {
   border-bottom: 1px solid #ffffff;
 }
 
-/* line 429, ../scss/main.scss */
+/* line 421, ../scss/main.scss */
 .background_dark {
   background-color: #f2f2f2;
 }
 
-/* line 430, ../scss/main.scss */
+/* line 422, ../scss/main.scss */
 .no_scroll {
   overflow: hidden;
 }
 
-/* line 431, ../scss/main.scss */
+/* line 423, ../scss/main.scss */
 .scroll_y {
   overflow-y: scroll;
 }
 
-/* line 432, ../scss/main.scss */
+/* line 424, ../scss/main.scss */
 .opacity_show {
   opacity: 1 !important;
 }
 
-/* line 434, ../scss/main.scss */
+/* line 426, ../scss/main.scss */
 .divider {
   color: #aaaaaa;
-  text-shadow: 4px 4px 3px #f2f2f2;
+  text-shadow: 2px 2px 1px #f2f2f2;
   width: 100%;
   margin: 1.5rem auto;
   overflow: hidden;
   text-align: center;
   line-height: 1.2em;
 }
-/* line 442, ../scss/main.scss */
+/* line 434, ../scss/main.scss */
 .divider:after, .divider:before {
   content: "";
   vertical-align: top;
@@ -9943,24 +9936,24 @@ h3.subheader {
   border-bottom: 1px solid #dddddd;
   margin: 0 3% 0 -55%;
 }
-/* line 451, ../scss/main.scss */
+/* line 443, ../scss/main.scss */
 .divider:after {
   margin: 0 -55% 0 3%;
 }
 
-/* line 457, ../scss/main.scss */
+/* line 449, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: .025rem;
 }
 
-/* line 465, ../scss/main.scss */
+/* line 457, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 467, ../scss/main.scss */
+/* line 459, ../scss/main.scss */
 .slider_close {
   opacity: 0;
   top: 0;
@@ -9973,7 +9966,7 @@ html, .portfolio, .about {
   background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 479, ../scss/main.scss */
+/* line 471, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9982,7 +9975,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 487, ../scss/main.scss */
+/* line 479, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }
