@@ -317,41 +317,43 @@
   <div class="row">
     <div class="large-4 left">
       <ul class="clearing-thumbs clearing-feature" data-clearing>
-        <li class="clearing-featured-img"><a href="images/portfolio/process/solutions_process_02.jpg"><img src="images/portfolio/process/solutions_process_02.jpg"></a>
+        <li class="clearing-featured-img"><a href="images/portfolio/process/music_process_01.jpg"><img src="images/portfolio/process/music_process_01.jpg"></a>
         <p class="caption">View collection</p>
         </li>
-        <li class="th"><a href="images/portfolio/process/solutions_process_01.jpg"><img class="hide" src="images/portfolio/process/solutions_process_01.jpg"></a></li>
+        <li class="th"><a href="images/portfolio/process/music_process_02.jpg"><img src="images/portfolio/process/music_process_02.jpg"></a></li>
       </ul>
-    </div>
+  </div>
 
     <div class="large-8 left">
       <h4>Design challenge</h4>
-      <p>The main challenge of this particular feature was honing the UX of how content would be ordered when a user would search for music --  whether by artist,  album, or song title. </p>
+      <p>The main challenge for this particular feature was exploring solutions on how content would be ordered when a user would search for music  whether by artist, album, or song title. </p>
     </div>
   </div>
+
   <div class="row">
     <div class="large-4 left">
       <ul class="clearing-thumbs clearing-feature" data-clearing>
-        <li class="clearing-featured-img"><a href="images/portfolio/visual/solutions_visual_01.jpg"><img src="images/portfolio/visual/solutions_visual_01.jpg"></a>
+        <li class="clearing-featured-img"><a href="images/portfolio/visual/music_exploration_01.jpg"><img src="images/portfolio/visual/music_exploration_01.jpg"></a>
         <p class="caption">View collection</p>
         </li>
+        <li class="th"><a href="images/portfolio/visual/music_exploration_02.jpg"><img src="images/portfolio/visual/music_exploration_02.jpg"></a></li>
+        <li class="th"><a href="images/portfolio/visual/music_exploration_03.jpg"><img src="images/portfolio/visual/music_exploration_03.jpg"></a></li>
+        <li class="th"><a href="images/portfolio/visual/music_exploration_04.jpg"><img src="images/portfolio/visual/music_exploration_04.jpg"></a></li>
       </ul>
+    </div>
+    <div class="large-8 left">
+      <h4>Wireframing &amp; exploration</h4>
+      <p>During the exploration process, I found that a swipeable list affordance would be the most engaging and discoverable interaction to list music content. </p>
+      <p>Depending upon selecting a song or album, a requery would occur showing the user either a song answer with a video &ndash; or a list view of songs. The single song answer also had the song list above it as well with the current song highlighted.</p>
+    </div>
   </div>
-
-  <div class="large-8 left">
-    <h4>Wireframing &amp; exploration</h4>
-    <p>--
-    </p>
-
-  </div>
-</div>
 
   <div class="row">
-    <div class="large-8 left">
-      <h4>Implementation</h4>
-      <p>--</p>
-      <p>--</p>
-      <p><strong>To view feature live</strong> on a mobile device, search for "artist name" and "album" on bing.com
+    <div class="large-8 left large-offset-4">
+      <h4>Visual iteration</h4>
+      <p>Visually, this experience was built using mostly common controls for the text styles. The swipeable list interaction was a new custom design affordance I created allowing users to discover content quickly.</p>
+      <p>One of the product requirements was that the mobile music answer be available on Windows Phone. The Windows Phone  music answer design was built following the WP common controls and visual guidelines. </p>
+      <p><strong>To view feature live:</strong> on a mobile device, open your browser and search for "artist name" and "album" on bing.com
     </div>
   </div>
 </section>
@@ -395,12 +397,12 @@
   // Reinitialize clearing functions
   $(document).foundation('clearing');
 
-  $(document).ready(function(){
+  //$(document).ready(function(){
     // Create jquery zoom targets object
     //var test = $('#otp_modal img').atr
 
     // Execute zoom method
-    $('li a.photo').zoom({url: 'images/portfolio/visual/otp_visual_04.png'});
+    // $('li a.photo').zoom({url: 'images/portfolio/visual/otp_visual_04.png'});
 
     // This example is for use of zoom on img elements
   //   $('img')
