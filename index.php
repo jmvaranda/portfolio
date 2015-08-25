@@ -126,11 +126,11 @@
         <!-- Portfolio Items END -->
     </section>
 
-    <section class="portfolio_slider hide-for-medium-up">
+    <!-- <section class="portfolio_slider hide-for-medium-up"> -->
       <!-- Slider Overlay Items BEGIN -->
 
       <!-- Slider Overlay Items END -->
-      </section>
+      <!-- </section> -->
 
 
 

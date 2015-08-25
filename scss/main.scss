@@ -20,11 +20,12 @@ body.js .nojs { display: none; }
 
 // This centers magellan nav
 .sub-nav {
-  display: table; // Centers nav on IE
+  //display: table; // Centers nav on IE
   margin: 0 auto !important;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  // margin-left: 0 !important;
+  // width: -webkit-fit-content;
+  // width: -moz-fit-content;
+  // width: fit-content;
   dd {margin-left:.4rem;}
 }
 .magellan-nav {

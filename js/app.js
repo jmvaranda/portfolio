@@ -56,15 +56,15 @@ $(document).ready(function() {
 
  //Set portfolio contents container
  var $portfolioContainer = $('section.portfolio');
- var $portfolioSlider = $('section.portfolio_slider');
+ //var $portfolioSlider = $('section.portfolio_slider');
 
  function portfolioDesktop() {
    $portfolioContainer.load('ajax/portfolio-contents-desktop.html')
    .animsition(fadeAnimation);
  }
  function portfolioMobile() {
-   $portfolioContainer.load('ajax/portfolio-contents-mobile.html')      .animsition(fadeAnimation);
-   $portfolioSlider.load('ajax/portfolio-slider-mobile.html');
+   $portfolioContainer.load('ajax/portfolio-contents-desktop.html')      .animsition(fadeAnimation);
+   //$portfolioSlider.load('ajax/portfolio-slider-mobile.html');
  }
 
  enquire
@@ -73,7 +73,8 @@ $(document).ready(function() {
      //deferSetup : true,
      match : function() {
        // Load Desktop contents
-       portfolioMobile();
+       //portfolioMobile();
+       portfolioDesktop();
      },
      unmatch : function() {
        // Empty portfolio contents
@@ -87,7 +88,6 @@ $(document).ready(function() {
      match : function() {
        // Load Desktop contents
        portfolioDesktop();
-       //$(portfolioSlider).empty();
      },
      unmatch : function() {
        // Empty portfolio contents
@@ -99,99 +99,99 @@ $(document).ready(function() {
 
  // Slide reveal overlay for mobile
  // Set portfolio overlay object properties
- var $portfolio_items = {
-   slider_overlay : $('.slider_overlay'),
-   magellan : $('#magellan'),
-   html : $('html'),
-   body : $('body'),
-   content_fade : $('.portfolio, .about')
- };
-
- // Set portfolio trigger variables
- var $slider_otp_trigger = $('.slider_close.trigger_otp');
- var $slider_qf_trigger = $('.slider_close.trigger_qf');
-
- // Set portfolio transition on OPEN methods
- function portfolio_transition_open() {
-   $portfolio_items.magellan.addClass('hide');
-   $portfolio_items.html.addClass('background_dark');
-   $portfolio_items.body.addClass('no_scroll');
-   $portfolio_items.content_fade.css( "opacity", ".25" );
-   // Make sure slider is always scrollable on open
-   $portfolio_items.slider_overlay.addClass('scroll_y');
- }
-
- // Set portfolio transition on CLOSE methods
- function portfolio_transition_close() {
-   //$portfolio_items.magellan.removeClass('hide');
-   $portfolio_items.html.removeClass('background_dark');
-   $portfolio_items.body.removeClass('no_scroll');
-   $portfolio_items.content_fade.css( "opacity", "1" );
- }
-
- function magellan_show() {
-   $portfolio_items.magellan.removeClass('hide');
- }
-
- //Slider item 1
- $('#slider_otp').slideReveal({
-   trigger: $('.trigger_otp'),
-   //on slider open
-   show: function(slider, trigger){
-     portfolio_transition_open(),
-       $slider_otp_trigger.css({
-       'position' : 'fixed',
-       'opacity' : '1'
-     });
-     // Pull slider_close out of slider overlay to prevent overflow from hiding element
-     $slider_otp_trigger.parent().after($slider_otp_trigger);
-   },
-
-   //on slider close
-   hide: function(slider, trigger){
-     portfolio_transition_close();
-       $slider_otp_trigger.css({
-       'position' : '',
-       'opacity' : '0'
-     });
-     // Put slider_close back inside slider_overlay
-     $slider_otp_trigger.siblings('section.portfolio_slider').append($slider_otp_trigger);
-   },
-   // show magellan nav
-   hidden: function(slider, trigger){
-     magellan_show();
-   }
- });
-
-
- //Slider item 2
-   $('#slider_qf').slideReveal({
-     trigger: $('.trigger_qf'),
-     //on slider show, hide magellan nav + animate background
-     show: function(slider, trigger){
-       portfolio_transition_open();
-       $slider_qf_trigger.css({
-       'position' : 'fixed',
-       'opacity' : '1'
-     });
-       // Pull slider_close out of slider overlay to prevent overflow from hiding element
-       $slider_qf_trigger.parent().after($slider_qf_trigger);
-     },
-     // on slider close animate
-     hide: function(slider, trigger){
-       portfolio_transition_close();
-       $slider_qf_trigger.css({
-         'position' : '',
-         'opacity' : '0'
-       });
-       // Put slider_close back inside slider_overlay
-       $slider_qf_trigger.siblings('section.portfolio_slider').append($slider_qf_trigger);
-     },
-     // show magellan nav
-     hidden: function(slider, trigger){
-       magellan_show();
-     }
-   });
+ // var $portfolio_items = {
+ //   slider_overlay : $('.slider_overlay'),
+ //   magellan : $('#magellan'),
+ //   html : $('html'),
+ //   body : $('body'),
+ //   content_fade : $('.portfolio, .about')
+ // };
+ //
+ // // Set portfolio trigger variables
+ // var $slider_otp_trigger = $('.slider_close.trigger_otp');
+ // var $slider_qf_trigger = $('.slider_close.trigger_qf');
+ //
+ // // Set portfolio transition on OPEN methods
+ // function portfolio_transition_open() {
+ //   $portfolio_items.magellan.addClass('hide');
+ //   $portfolio_items.html.addClass('background_dark');
+ //   $portfolio_items.body.addClass('no_scroll');
+ //   $portfolio_items.content_fade.css( "opacity", ".25" );
+ //   // Make sure slider is always scrollable on open
+ //   $portfolio_items.slider_overlay.addClass('scroll_y');
+ // }
+ //
+ // // Set portfolio transition on CLOSE methods
+ // function portfolio_transition_close() {
+ //   //$portfolio_items.magellan.removeClass('hide');
+ //   $portfolio_items.html.removeClass('background_dark');
+ //   $portfolio_items.body.removeClass('no_scroll');
+ //   $portfolio_items.content_fade.css( "opacity", "1" );
+ // }
+ //
+ // function magellan_show() {
+ //   $portfolio_items.magellan.removeClass('hide');
+ // }
+ //
+ // //Slider item 1
+ // $('#slider_otp').slideReveal({
+ //   trigger: $('.trigger_otp'),
+ //   //on slider open
+ //   show: function(slider, trigger){
+ //     portfolio_transition_open(),
+ //       $slider_otp_trigger.css({
+ //       'position' : 'fixed',
+ //       'opacity' : '1'
+ //     });
+ //     // Pull slider_close out of slider overlay to prevent overflow from hiding element
+ //     $slider_otp_trigger.parent().after($slider_otp_trigger);
+ //   },
+ //
+ //   //on slider close
+ //   hide: function(slider, trigger){
+ //     portfolio_transition_close();
+ //       $slider_otp_trigger.css({
+ //       'position' : '',
+ //       'opacity' : '0'
+ //     });
+ //     // Put slider_close back inside slider_overlay
+ //     $slider_otp_trigger.siblings('section.portfolio_slider').append($slider_otp_trigger);
+ //   },
+ //   // show magellan nav
+ //   hidden: function(slider, trigger){
+ //     magellan_show();
+ //   }
+ // });
+ //
+ //
+ // //Slider item 2
+ //   $('#slider_qf').slideReveal({
+ //     trigger: $('.trigger_qf'),
+ //     //on slider show, hide magellan nav + animate background
+ //     show: function(slider, trigger){
+ //       portfolio_transition_open();
+ //       $slider_qf_trigger.css({
+ //       'position' : 'fixed',
+ //       'opacity' : '1'
+ //     });
+ //       // Pull slider_close out of slider overlay to prevent overflow from hiding element
+ //       $slider_qf_trigger.parent().after($slider_qf_trigger);
+ //     },
+ //     // on slider close animate
+ //     hide: function(slider, trigger){
+ //       portfolio_transition_close();
+ //       $slider_qf_trigger.css({
+ //         'position' : '',
+ //         'opacity' : '0'
+ //       });
+ //       // Put slider_close back inside slider_overlay
+ //       $slider_qf_trigger.siblings('section.portfolio_slider').append($slider_qf_trigger);
+ //     },
+ //     // show magellan nav
+ //     hidden: function(slider, trigger){
+ //       magellan_show();
+ //     }
+ //   });
 // End
 
 
