@@ -59,34 +59,42 @@
     </section>
 
     <section id="resume" class="resume reveal-modal medium hide-for-small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-      <label>Resume</label>
+      <div class="large-12 medium-12 columns">
+        <label>Resume</label>
+      </div>
 
-      <div class="large-7 medium-7 text left">
+      <div class="large-7 medium-7 text columns">
         <h4>Experience</h4>
         <ul class="experience">
           <li>
             <p><strong>Bing</strong></p>
-            <p>Product Designer <br/>
+            <p>Product designer <br/>
               04/2014 &ndash; Present</p>
-            <p>Designing and producing user experiences for multiple platforms( mobile, desktop, tablet).</p> <p>Project involved communicating with various product teams and stakeholders, working within existing visual systems and creating new explorartory ...</p>
+            <p>Collaborate with multiple product teams in designing user experiences under the Bing brand. Worked within the current Bing visualsystem and design production as well as iterate on future-planned exploration projects</p>
           </li>
           <li>
             <p><strong>Windows Phone</strong></p>
-            <p>Design Integrator <br/>
-            09/2013 &ndash; 12/2014 </p>
-            <p>Proin sodales ullamcorper enim ac porta. Donec malesuada fringilla neque, vitae accumsan nisl tincidunt vel. Nulla facilisi. Sed ultricies ultricies mi sit amet euismod. Integer quis ante est. Nulla lacinia, neque eu volutpat pellentesque, arcu urna fringilla urna</p>
+            <p>Design integrator <br/>
+            02/2013 &ndash; 12/2013 </p>
+            <p>Building interactive prototypes and front end development using proprietary XML-based markup. Communicate with design &amp; development team to ensure proper design and interaction specifications were met.</p>
           </li>
           <li>
             <p><strong>Bizango</strong></p>
-            <p>Visual Designer &amp; Front-end Developer <br/>
-            04/2012 &ndash; 09/2013</p>
-            <p>Mauris eget metus eget massa efficitur viverra in ac mi. Ut consectetur lobortis tortor at euismod. Sed aliquet mi id dictum gravida. Phasellus et mi egestas</p>
+            <p>Visual designer &amp; front-end developer <br/>
+            10/2012 &ndash; 02/2013</p>
+            <p>Visual exploration and interaction design for web-based projects, as well as graphic design. Also involved in building front-end markup for web experiences.</p>
+          </li>
+          <li>
+            <p><strong>Freelance</strong></p>
+            <p>Visual designer &amp; front-end developer <br/>
+            02/2011 &ndash; 03/2013</p>
+            <p>Worked with small to medium-sized clients in building web experiences and print / identity design. Involved from product inception, visual design, iteration and production. </p>
           </li>
         </ul>
       </div>
 
       <!-- Experience & Skills -->
-        <div class="large-5 right">
+        <div class="large-5 columns">
           <div class="text">
             <h4>What I know</h4>
               <ul class="skills">
@@ -94,9 +102,11 @@
                 <li>Adobe Creative Cloud</li>
                 <li>Sketch</li>
                 <li>PC &amp; Mac fluent</li>
+                <li>Responsive &amp; mobile design principles.</li>
                 <li>HTML5 / CSS3 / SASS</li>
                 <li>Light jQuery</li>
                 <li>Git</li>
+                <li>WordPress &amp; ExpressionEngine</li>
               </ul>
 
               <h4>Education</h4>
@@ -108,12 +118,12 @@
                 </li>
                 <li>
                   <p><strong>Art Institute of Seattle</strong></p>
-                  <p>Graphic Design<br/>
+                  <p>Visual Communications<br/>
                   09/2007 &ndash; 12/2009 </p>
                 </li>
               </ul>
           </div>
-
+          <p><a href="assets/julian-varanda-resume.pdf" target="_blank">View pdf version</a></p>
         </div>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </section>
