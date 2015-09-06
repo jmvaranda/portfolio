@@ -9459,127 +9459,134 @@ body.js .nojs {
 }
 
 /* line 22, ../scss/main.scss */
-.sub-nav {
-  margin: 0 auto !important;
-}
-/* line 29, ../scss/main.scss */
-.sub-nav dd {
-  margin-left: .4rem;
+#magellan {
+  padding: .75rem;
 }
 
-/* line 31, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
+.sub-nav {
+  text-align: center;
+}
+/* line 30, ../scss/main.scss */
+.sub-nav dd {
+  display: inline-block;
+  margin-left: .4rem;
+  float: none;
+}
+
+/* line 36, ../scss/main.scss */
 .magellan-nav {
   right: 0;
 }
 
 /* Fixed magellan nav styles, override default styles */
-/* line 35, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 #magellan.fixed {
   background-color: #333333;
   transition: all 300ms ease-out;
   opacity: .95 !important;
 }
-/* line 39, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 #magellan.fixed dd a {
   font-weight: bold;
   transition: all 150ms ease-out;
 }
-/* line 40, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 #magellan.fixed dd.active a {
   background: none !important;
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
-  /* line 48, ../scss/main.scss */
+  /* line 53, ../scss/main.scss */
   .text, .contact .row, .row label, .row input.button {
     text-align: left;
   }
 
-  /* line 49, ../scss/main.scss */
+  /* line 54, ../scss/main.scss */
   .row {
     text-align: center;
   }
 
-  /* line 51, ../scss/main.scss */
+  /* line 56, ../scss/main.scss */
   .experience {
     padding-right: 1rem;
   }
-  /* line 53, ../scss/main.scss */
+  /* line 58, ../scss/main.scss */
   .experience li {
     border-bottom: 1px solid #cccccc;
   }
-  /* line 55, ../scss/main.scss */
+  /* line 60, ../scss/main.scss */
   .experience li:last-child {
     border-bottom: none;
   }
 
-  /* line 59, ../scss/main.scss */
+  /* line 64, ../scss/main.scss */
   .portfolio .portfolio_grid {
     min-height: 240px !important;
   }
 }
 @media (min-width: 320px) and (max-width: 359px) {
-  /* line 69, ../scss/main.scss */
+  /* line 74, ../scss/main.scss */
   .slider_overlay {
     width: 17.5rem !important;
   }
 }
 @media (min-width: 360px) and (max-width: 374px) {
-  /* line 73, ../scss/main.scss */
+  /* line 78, ../scss/main.scss */
   .slider_overlay {
     width: 20rem !important;
   }
 }
 @media (min-width: 375px) and (max-width: 383px) {
-  /* line 77, ../scss/main.scss */
+  /* line 82, ../scss/main.scss */
   .slider_overlay {
     width: 21rem !important;
   }
 }
 @media (min-width: 384px) and (max-width: 410px) {
-  /* line 82, ../scss/main.scss */
+  /* line 87, ../scss/main.scss */
   .slider_overlay {
     width: 21.5rem !important;
   }
 }
 @media (min-width: 412px) and (max-width: 414px) {
-  /* line 87, ../scss/main.scss */
+  /* line 92, ../scss/main.scss */
   .slider_overlay {
     width: 23.5rem !important;
   }
 }
 @media (min-width: 375px) and (max-width: 415px) {
-  /* line 93, ../scss/main.scss */
+  /* line 98, ../scss/main.scss */
   .gradient_up {
     margin-top: 8rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 105, ../scss/main.scss */
+  /* line 110, ../scss/main.scss */
   .about .intro a {
     display: inline !important;
   }
-  /* line 107, ../scss/main.scss */
+  /* line 112, ../scss/main.scss */
   .about img {
     width: 90%;
     display: block;
   }
 
-  /* line 121, ../scss/main.scss */
+  /* line 126, ../scss/main.scss */
   .portfolio_items .portfolio_grid,
   .portfolio_items .portfolio_overlay {
     transition: all 300ms ease-out;
   }
 }
 /* min-width 641px, medium screens */
-/* line 142, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .header {
   padding-top: 13rem;
   background-color: #ffffff;
   text-align: center;
 }
 
-/* line 149, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 .branding a {
   display: block;
   width: 286px;
@@ -9589,73 +9596,73 @@ body.js .nojs {
   background-position: center center;
   background-size: cover;
 }
-/* line 161, ../scss/main.scss */
+/* line 166, ../scss/main.scss */
 .branding h1 {
   line-height: 2.25rem;
   text-indent: -99999px;
 }
-/* line 164, ../scss/main.scss */
+/* line 169, ../scss/main.scss */
 .branding h1 small {
   display: inline-block;
 }
 
-/* line 175, ../scss/main.scss */
+/* line 180, ../scss/main.scss */
 .about img {
   margin-bottom: 2rem;
 }
 
-/* line 180, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 p.subheader, .skills, .experience {
   margin: 0 0 2rem 0;
 }
 
-/* line 185, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 .skills li {
   margin-left: 1rem;
   padding-left: .5rem;
 }
 
-/* line 192, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 .experience li {
   list-style: none;
   padding: 0 0 .5rem 0;
   margin-bottom: 2.5rem;
 }
-/* line 196, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .experience li p:first-child {
   margin-bottom: 0;
 }
 
-/* line 204, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .portfolio ul {
   margin: 0;
 }
-/* line 207, ../scss/main.scss */
+/* line 212, ../scss/main.scss */
 .portfolio li {
   list-style: none;
 }
-/* line 210, ../scss/main.scss */
+/* line 215, ../scss/main.scss */
 .portfolio .portfolio_grid {
   position: relative;
   display: block;
   min-height: 280px;
   margin-bottom: 2rem;
 }
-/* line 217, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .portfolio .portfolio_items {
   margin: 0 auto;
 }
-/* line 219, ../scss/main.scss */
+/* line 224, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_grid {
   cursor: pointer;
   border: 2px solid #999999;
   opacity: .9;
 }
-/* line 223, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_grid:hover {
   opacity: 1;
 }
-/* line 225, ../scss/main.scss */
+/* line 230, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay {
   position: absolute;
   height: 100%;
@@ -9665,11 +9672,11 @@ p.subheader, .skills, .experience {
   text-align: center;
   opacity: 0;
 }
-/* line 234, ../scss/main.scss */
+/* line 239, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay:hover {
   opacity: 1;
 }
-/* line 235, ../scss/main.scss */
+/* line 240, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .portfolio_text {
   position: relative;
   top: 4.5rem;
@@ -9677,44 +9684,44 @@ p.subheader, .skills, .experience {
   padding: 1.5rem .5rem;
   text-shadow: 2px 2px 1px #333333;
 }
-/* line 244, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay h3 {
   color: #f2f2f2;
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
-/* line 249, ../scss/main.scss */
+/* line 254, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_overlay .subheader {
   font-size: 1.25rem;
   color: #aaaaaa;
   margin: 0;
 }
-/* line 256, ../scss/main.scss */
+/* line 261, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_otp {
   background: url("../images/otp_grid.jpg") center center/100% no-repeat;
 }
-/* line 259, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_qf {
   background: url("../images/qf_grid.png") center center/100% no-repeat;
 }
-/* line 262, ../scss/main.scss */
+/* line 267, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_header {
   background: url("../images/header_grid.jpg") center center/100% no-repeat;
 }
-/* line 265, ../scss/main.scss */
+/* line 270, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_solutions {
   background: url("../images/solutions_grid.jpg") center center/100% no-repeat;
 }
-/* line 268, ../scss/main.scss */
+/* line 273, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_music_answer {
   background: url("../images/music_grid.jpg") center center/100% no-repeat;
 }
-/* line 271, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .portfolio .portfolio_items .portfolio_tonglen {
   background: url("../images/tonglen_grid.jpg") center center/100% no-repeat;
 }
 
-/* line 277, ../scss/main.scss */
+/* line 282, ../scss/main.scss */
 .viewport {
   float: left;
   height: 299px;
@@ -9725,13 +9732,13 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Link configuration that contains the image and label ----------------------------- */
-/* line 288, ../scss/main.scss */
+/* line 293, ../scss/main.scss */
 .viewport a {
   display: block;
   position: relative;
 }
 
-/* line 293, ../scss/main.scss */
+/* line 298, ../scss/main.scss */
 .viewport a img {
   height: 332px;
   left: -20px;
@@ -9741,7 +9748,7 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Label configuration -------------------------------------------------------------- */
-/* line 302, ../scss/main.scss */
+/* line 307, ../scss/main.scss */
 .viewport a span {
   display: none;
   font-size: 3.0em;
@@ -9755,7 +9762,7 @@ p.subheader, .skills, .experience {
   z-index: 100;
 }
 
-/* line 314, ../scss/main.scss */
+/* line 319, ../scss/main.scss */
 .viewport a span em {
   display: block;
   font-size: 0.45em;
@@ -9763,52 +9770,52 @@ p.subheader, .skills, .experience {
 }
 
 /* --- Dark hover background ------------------------------------------------------------ */
-/* line 321, ../scss/main.scss */
+/* line 326, ../scss/main.scss */
 .dark-background {
   background-color: rgba(51, 51, 51, 0.75);
   color: #fff;
   text-shadow: #000 0px 0px 20px;
 }
 
-/* line 326, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 .dark-background em {
   color: #ccc;
 }
 
-/* line 333, ../scss/main.scss */
+/* line 338, ../scss/main.scss */
 .portfolio_modal h2 {
   margin-bottom: 0;
   line-height: 2.5rem;
 }
-/* line 338, ../scss/main.scss */
+/* line 343, ../scss/main.scss */
 .portfolio_modal label {
   margin-bottom: 2rem;
 }
-/* line 342, ../scss/main.scss */
+/* line 347, ../scss/main.scss */
 .portfolio_modal .emphasis {
   margin-bottom: 2rem;
 }
-/* line 348, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
 .portfolio_modal .row {
   margin-bottom: 2.5rem;
 }
-/* line 351, ../scss/main.scss */
+/* line 356, ../scss/main.scss */
 .portfolio_modal div.left {
   padding-right: 1.5rem;
 }
-/* line 354, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 .portfolio_modal li {
   position: relative;
 }
-/* line 355, ../scss/main.scss */
+/* line 360, ../scss/main.scss */
 .portfolio_modal li a > img {
   border: 1px solid #aaaaaa;
 }
-/* line 356, ../scss/main.scss */
+/* line 361, ../scss/main.scss */
 .portfolio_modal .clearing-featured-img img {
   width: 100%;
 }
-/* line 357, ../scss/main.scss */
+/* line 362, ../scss/main.scss */
 .portfolio_modal .caption {
   position: absolute;
   bottom: 0;
@@ -9823,68 +9830,68 @@ p.subheader, .skills, .experience {
   cursor: pointer;
 }
 
-/* line 374, ../scss/main.scss */
+/* line 379, ../scss/main.scss */
 .slider_overlay {
   z-index: 1;
   background-color: #f2f2f2;
   background: url("../images/crossword.png") repeat;
 }
-/* line 378, ../scss/main.scss */
+/* line 383, ../scss/main.scss */
 .slider_overlay header {
   padding: 2.75rem 1rem .75rem 1rem;
 }
-/* line 382, ../scss/main.scss */
+/* line 387, ../scss/main.scss */
 .slider_overlay h1 {
   line-height: 2rem;
   margin: 0;
 }
-/* line 383, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .slider_overlay h2 {
   line-height: 1.25rem;
   margin: .5rem 0 1.25rem 0;
 }
-/* line 384, ../scss/main.scss */
+/* line 389, ../scss/main.scss */
 .slider_overlay small {
   font-size: 80%;
 }
-/* line 385, ../scss/main.scss */
+/* line 390, ../scss/main.scss */
 .slider_overlay .emphasis {
   margin: 0;
 }
-/* line 386, ../scss/main.scss */
+/* line 391, ../scss/main.scss */
 .slider_overlay .clearing-thumbs {
   margin-bottom: 1.5rem;
 }
-/* line 389, ../scss/main.scss */
+/* line 394, ../scss/main.scss */
 .slider_overlay .text {
   margin-top: 1rem;
 }
 
-/* line 395, ../scss/main.scss */
+/* line 400, ../scss/main.scss */
 .footer {
   padding: 10rem 0;
   background-color: #222222;
   color: #ffffff;
 }
 
-/* line 402, ../scss/main.scss */
+/* line 407, ../scss/main.scss */
 h3.subheader {
   color: #aaaaaa;
 }
 
-/* line 408, ../scss/main.scss */
+/* line 413, ../scss/main.scss */
 .about, .portfolio, .resume, .contact {
   background-color: #f2f2f2;
   padding-top: 5rem;
   background: url("../images/crossword.png") repeat;
 }
 
-/* line 413, ../scss/main.scss */
+/* line 418, ../scss/main.scss */
 .about {
   padding-top: 2rem;
 }
 
-/* line 415, ../scss/main.scss */
+/* line 420, ../scss/main.scss */
 .gradient_up {
   height: 13.5rem;
   background-color: #ffffff;
@@ -9892,27 +9899,27 @@ h3.subheader {
   border-bottom: 1px solid #ffffff;
 }
 
-/* line 422, ../scss/main.scss */
+/* line 427, ../scss/main.scss */
 .background_dark {
   background-color: #f2f2f2;
 }
 
-/* line 423, ../scss/main.scss */
+/* line 428, ../scss/main.scss */
 .no_scroll {
   overflow: hidden;
 }
 
-/* line 424, ../scss/main.scss */
+/* line 429, ../scss/main.scss */
 .scroll_y {
   overflow-y: scroll;
 }
 
-/* line 425, ../scss/main.scss */
+/* line 430, ../scss/main.scss */
 .opacity_show {
   opacity: 1 !important;
 }
 
-/* line 427, ../scss/main.scss */
+/* line 432, ../scss/main.scss */
 .divider {
   color: #aaaaaa;
   text-shadow: 2px 2px 1px #f2f2f2;
@@ -9922,7 +9929,7 @@ h3.subheader {
   text-align: center;
   line-height: 1.2em;
 }
-/* line 435, ../scss/main.scss */
+/* line 440, ../scss/main.scss */
 .divider:after, .divider:before {
   content: "";
   vertical-align: top;
@@ -9932,24 +9939,24 @@ h3.subheader {
   border-bottom: 1px solid #dddddd;
   margin: 0 3% 0 -55%;
 }
-/* line 444, ../scss/main.scss */
+/* line 449, ../scss/main.scss */
 .divider:after {
   margin: 0 -55% 0 3%;
 }
 
-/* line 450, ../scss/main.scss */
+/* line 455, ../scss/main.scss */
 .emphasis {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: .025rem;
 }
 
-/* line 458, ../scss/main.scss */
+/* line 463, ../scss/main.scss */
 html, .portfolio, .about {
   transition: all 300ms ease-out;
 }
 
-/* line 460, ../scss/main.scss */
+/* line 465, ../scss/main.scss */
 .slider_close {
   opacity: 0;
   top: 0;
@@ -9962,7 +9969,7 @@ html, .portfolio, .about {
   background-color: rgba(51, 51, 51, 0.15);
 }
 
-/* line 472, ../scss/main.scss */
+/* line 477, ../scss/main.scss */
 .th {
   border: solid 4px #FFFFFF;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -9971,7 +9978,7 @@ html, .portfolio, .about {
   max-width: 50%;
 }
 
-/* line 480, ../scss/main.scss */
+/* line 485, ../scss/main.scss */
 .smallspacer {
   margin-bottom: 2.5rem;
 }

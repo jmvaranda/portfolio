@@ -19,14 +19,19 @@
 body.js .nojs { display: none; }
 
 // This centers magellan nav
+#magellan {padding: .75rem;}
 .sub-nav {
+  text-align: center;
   //display: table; // Centers nav on IE
-  margin: 0 auto !important;
   // margin-left: 0 !important;
   // width: -webkit-fit-content;
   // width: -moz-fit-content;
   // width: fit-content;
-  dd {margin-left:.4rem;}
+  dd {
+    display: inline-block;
+    margin-left:.4rem;
+    float:none;
+  }
 }
 .magellan-nav {
   right: 0;
